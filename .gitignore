@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Claude Code: personal overrides
+.claude/settings.local.json
+
+# Obsidian: per-device UI state and trash
+obsidian/.obsidian/workspace*.json
+obsidian/.trash/
+
+# Secrets
+.env
+.env.*

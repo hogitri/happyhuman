@@ -12,7 +12,7 @@ A free, community group-training class in Blomvåg run by trainer [[People/Kaja 
 - **Who for:** Everyone, from beginners to the very fit. Every exercise is shown with easier and harder alternatives.
 - **Kids welcome:** No babysitter? Bring the kids. Sessions are adapted on the spot and sometimes combined with a *leketreff* (playdate) for the children.
 - **Length:** about 60 minutes.
-- **Price:** free.
+- **Price:** free, and group classes stay free ([[Decisions/2026-10-26 Free group classes, paid personal training]]). Personal training will be paid. The 10-session punch card design ([[Features/Brand Identity#Punch card (klippekort)]]) could be reused for PT packages.
 - **Where:** the gym hall at Blomvåg Barnehage in winter; outdoors in spring and summer when the weather allows.
 - **When:** irregular, announced in the group. Seen so far: weekday evenings 17:30–18:30 (Thursdays) and weekend mornings at 10:00 (Saturdays).
 

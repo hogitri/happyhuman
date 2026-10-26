@@ -1,0 +1,285 @@
+{
+  "nav": {
+    "about": "About us",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms of participation",
+    "sales": "Terms of sale"
+  },
+  "footer": {
+    "pagesLabel": "About Happy Human",
+    "orgNr": "Org. no."
+  },
+  "updated": "Last updated",
+  "pages": {
+    "about": {
+      "meta": {
+        "title": "About us",
+        "description": "Happy Human is training, community and content for feeling good in body and mind. Meet Kaja and Hoang."
+      },
+      "title": "About Happy Human",
+      "lead": "We want to make the world a little better – with more happy, genuine people who look out for each other.",
+      "sections": [
+        {
+          "heading": "What we do",
+          "paragraphs": [
+            "Happy Human started as a free bootcamp in Blomvåg. Now we're building on it with free group classes, personal training, and content about training, food, mental health and the outdoors. Our own clothing will follow later.",
+            "The group classes are free and will stay free. Everyone is welcome – from beginners to the very fit, and kids can come along."
+          ]
+        },
+        {
+          "heading": "Body and mind belong together",
+          "paragraphs": [
+            "Your mind and body are connected. What you do every day – how you sleep, eat, move and spend time with others – matters more than the few workouts you do each week.",
+            "That's why training with us is about feeling good, not about how you look. We want you to feel capable, enjoy moving, and go home happier than when you came."
+          ]
+        },
+        {
+          "heading": "Who we are",
+          "paragraphs": [
+            "Kaja Haugen is a personal trainer with a master's degree in sport science from the Norwegian School of Sport Sciences. She has worked as a PT and group instructor for more than seven years and works at Anti-Doping Norway today. Kaja leads the training at Happy Human.",
+            "Hoang Minh Trinh has started several companies and helped thousands of founders get going. Hoang also trained as a PT at the Norwegian School of Sport Sciences and leads business and growth at Happy Human."
+          ]
+        },
+        {
+          "heading": "Want to join?",
+          "paragraphs": [
+            "Join the Facebook group, come to a group class, or [send us an email](mailto:{email}). There's room for everyone."
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "meta": {
+        "title": "Contact",
+        "description": "Get in touch with Happy Human about group classes, personal training or working together."
+      },
+      "title": "Contact us",
+      "lead": "Questions about the group classes, personal training or working together? Send us an email and we'll reply as soon as we can.",
+      "details": {
+        "emailTitle": "Email",
+        "emailCta": "Send us an email",
+        "groupTitle": "Group classes",
+        "groupText": "New classes and changes are posted in the Facebook group. You can also let us know there if you're coming.",
+        "groupCta": "Go to the Facebook group",
+        "companyTitle": "Company"
+      },
+      "sections": []
+    },
+    "privacy": {
+      "meta": {
+        "title": "Privacy",
+        "description": "How Happy Human handles personal data, and what your rights are."
+      },
+      "title": "Privacy",
+      "lead": "This page explains what personal data Happy Human processes, why we do it, and what rights you have.",
+      "sections": [
+        {
+          "heading": "Who is responsible?",
+          "paragraphs": [
+            "{company} (org. no. {orgNr}), {address}, Norway, is the controller for the personal data described here.",
+            "If you have questions about privacy, email [{email}](mailto:{email})."
+          ]
+        },
+        {
+          "heading": "When you visit the website",
+          "paragraphs": [
+            "The website doesn't use analytics, ad tracking, or cookies that track you.",
+            "The provider that hosts the website records technical data such as IP address, browser type and time in server logs. This is needed to deliver the website and protect it from abuse. The legal basis is our legitimate interest (GDPR Article 6(1)(f)). The logs are deleted automatically after a short time.",
+            "If you choose the light or dark theme, your choice is saved in your browser (localStorage). It isn't sent to us, and you can delete it by clearing your browser data."
+          ]
+        },
+        {
+          "heading": "When you contact us",
+          "paragraphs": [
+            "If you email us, we process your name, email address and what you write, so we can reply. The legal basis is our legitimate interest in answering enquiries, or that you want to enter into an agreement with us (Article 6(1)(f) or (b)).",
+            "We delete the enquiry when the matter is closed, and no later than 12 months after our last contact, unless the law requires us to keep it longer."
+          ]
+        },
+        {
+          "heading": "Group classes",
+          "paragraphs": [
+            "New classes are currently posted in our Facebook group, where you can say whether you're coming. Meta is itself responsible for data on Facebook; see [Meta's privacy policy](https://www.facebook.com/privacy/policy).",
+            "We only use attendance to plan the classes.",
+            "We never publish photos or video in which you can be recognised without your permission. We only publish photos of children with their parents' consent. You can withdraw your consent at any time, and we'll remove the photo."
+          ]
+        },
+        {
+          "heading": "Personal training (PT)",
+          "paragraphs": [
+            "If you buy PT, we process your name, contact details, bookings and payments to fulfil our agreement with you (Article 6(1)(b)). We keep accounting records for five years after the end of the financial year, as the Norwegian Bookkeeping Act requires.",
+            "To keep training safe, your trainer may ask about injuries, illness or pregnancy. You share this health information voluntarily, and we only process it with your explicit consent (Article 9(2)(a)). We delete it when your PT programme ends."
+          ]
+        },
+        {
+          "heading": "Who we share data with",
+          "paragraphs": [
+            "We never sell personal data. We use providers (processors) for website hosting, email and payments. They only get access to what they need to provide the service, and have a data processing agreement with us.",
+            "If a provider processes data outside the EU/EEA, we make sure there is a lawful basis for the transfer, such as the European Commission's standard contractual clauses."
+          ]
+        },
+        {
+          "heading": "Your rights",
+          "paragraphs": [
+            "You have the right to:"
+          ],
+          "items": [
+            "know what data we hold about you (access)",
+            "have incorrect data corrected",
+            "have your data deleted",
+            "restrict or object to processing",
+            "receive your data in a common format (data portability)",
+            "withdraw your consent at any time"
+          ]
+        },
+        {
+          "heading": "How to use your rights",
+          "paragraphs": [
+            "Email [{email}](mailto:{email}). We'll reply within one month.",
+            "If you believe we process your data unlawfully, you can complain to the Norwegian Data Protection Authority, [Datatilsynet](https://www.datatilsynet.no/en/). We'd appreciate it if you contact us first so we can put it right."
+          ]
+        },
+        {
+          "heading": "Changes",
+          "paragraphs": [
+            "We update this policy when we change how we process personal data. The date at the top shows when it was last changed."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "meta": {
+        "title": "Terms of participation",
+        "description": "Simple terms for Happy Human's free group classes: health, children, photos and good vibes."
+      },
+      "title": "Terms of participation",
+      "lead": "Our group classes are free and open to everyone. So that everyone can have a safe and fun time, these simple terms apply.",
+      "sections": [
+        {
+          "heading": "Free and voluntary",
+          "paragraphs": [
+            "The group classes are free, and taking part is voluntary. Please let us know in the Facebook group if you're coming, so we know roughly how many we'll be."
+          ]
+        },
+        {
+          "heading": "Health and your own pace",
+          "paragraphs": [
+            "You train at your own risk and at your own pace. Listen to your body, choose the version of each exercise that suits you, and take a break when you need one."
+          ],
+          "items": [
+            "If you have an injury or illness, are pregnant or have recently given birth, or aren't sure whether training is right for you now: talk to your doctor before you start.",
+            "Tell the trainer before the class about anything we should take into account, and we'll adapt.",
+            "Stop and tell us straight away if you feel pain, get dizzy or feel unwell."
+          ]
+        },
+        {
+          "heading": "Children",
+          "paragraphs": [
+            "Children are very welcome. Children who come along are their parents' or guardians' responsibility at all times, including when they join in. Keep children away from equipment and stations that are in use."
+          ]
+        },
+        {
+          "heading": "Venue and equipment",
+          "paragraphs": [
+            "We borrow venues, including the gym hall at Blomvåg kindergarten. Follow the venue's rules, wear clean indoor shoes inside, and help tidy up after the class. Tell us if something breaks."
+          ]
+        },
+        {
+          "heading": "Liability and insurance",
+          "paragraphs": [
+            "Happy Human is liable under the ordinary rules of Norwegian tort law. We aren't liable for injuries caused by not following instructions, or for loss of or damage to personal belongings.",
+            "We recommend that you have your own accident insurance."
+          ]
+        },
+        {
+          "heading": "Photos",
+          "paragraphs": [
+            "We sometimes take photos during classes for Facebook and Instagram. We never publish photos in which you can be recognised without your permission, and photos of children only with their parents' consent. Read more in our [privacy policy](/{lang}/personvern)."
+          ]
+        },
+        {
+          "heading": "Changes and cancellations",
+          "paragraphs": [
+            "We may move or cancel classes, for example because of illness or bad weather. Changes are posted in the Facebook group as early as possible."
+          ]
+        },
+        {
+          "heading": "Good vibes",
+          "paragraphs": [
+            "Respect the other participants. We don't compare ourselves with each other here, and we don't comment on other people's bodies. Anyone who spoils it for others may be asked to leave."
+          ]
+        }
+      ]
+    },
+    "sales": {
+      "meta": {
+        "title": "Terms of sale",
+        "description": "Terms of sale for personal training (PT) from Happy Human: prices, cancellation, right of withdrawal and complaints."
+      },
+      "title": "Terms of sale",
+      "lead": "These terms apply when you buy personal training (PT) from Happy Human. PT isn't on sale yet – prices and booking are coming soon.",
+      "sections": [
+        {
+          "heading": "The parties",
+          "paragraphs": [
+            "The seller is {company}, org. no. {orgNr}, {address}, Norway, email [{email}](mailto:{email}). The buyer is you, the person booking PT.",
+            "If you're under 18, a parent or guardian must approve the purchase."
+          ]
+        },
+        {
+          "heading": "The agreement",
+          "paragraphs": [
+            "The agreement consists of these terms, the details in your booking and anything we agree in writing. It becomes binding when we have confirmed your booking by email."
+          ]
+        },
+        {
+          "heading": "Prices and payment",
+          "paragraphs": [
+            "Prices are in Norwegian kroner (NOK) and include all taxes and fees. There are no costs on top of what's shown in your booking. You pay when you book, using the payment methods shown there."
+          ]
+        },
+        {
+          "heading": "Sessions and cancellation",
+          "items": [
+            "You agree session times with your trainer.",
+            "You can move or cancel a session free of charge up to 24 hours before it starts. If you cancel later or don't show up, the session counts as used.",
+            "If we have to cancel, for example because of illness, you get a new session or a refund for that session.",
+            "PT packages are valid for the period shown in your booking."
+          ]
+        },
+        {
+          "heading": "Right of withdrawal",
+          "paragraphs": [
+            "If you buy PT online, by email or by phone, you have a 14-day right of withdrawal under the Norwegian Cancellation Act (angrerettloven). The period starts on the day the agreement is made.",
+            "To withdraw, tell us at [{email}](mailto:{email}) within the deadline. You can use the standard withdrawal form from the [Norwegian Consumer Authority](https://www.forbrukertilsynet.no), but you don't have to.",
+            "If you asked us to start training before the deadline, you pay for the sessions you've used and get the rest back. We refund you no later than 14 days after we receive your message."
+          ]
+        },
+        {
+          "heading": "Health and safety",
+          "paragraphs": [
+            "Tell your trainer about injuries, illness, pregnancy or anything else that may affect your training. Otherwise, the same rules as in our [terms of participation](/{lang}/vilkar) apply."
+          ]
+        },
+        {
+          "heading": "Not happy?",
+          "paragraphs": [
+            "Let us know as soon as possible after you notice the problem. We'll find a solution together, such as a new session or a refund."
+          ]
+        },
+        {
+          "heading": "Personal data",
+          "paragraphs": [
+            "For how we handle your data, see our [privacy policy](/{lang}/personvern)."
+          ]
+        },
+        {
+          "heading": "Disputes",
+          "paragraphs": [
+            "We always try to resolve disagreements amicably. If we can't agree, you can get help from the [Norwegian Consumer Council (Forbrukerrådet)](https://www.forbrukerradet.no). Norwegian law applies."
+          ]
+        }
+      ]
+    }
+  }
+}

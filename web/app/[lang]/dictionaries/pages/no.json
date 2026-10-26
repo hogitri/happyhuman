@@ -1,0 +1,285 @@
+{
+  "nav": {
+    "about": "Om oss",
+    "contact": "Kontakt",
+    "privacy": "Personvern",
+    "terms": "Vilkår for deltakelse",
+    "sales": "Salgsvilkår"
+  },
+  "footer": {
+    "pagesLabel": "Om Happy Human",
+    "orgNr": "Org.nr."
+  },
+  "updated": "Sist oppdatert",
+  "pages": {
+    "about": {
+      "meta": {
+        "title": "Om oss",
+        "description": "Happy Human er trening, fellesskap og innhold for deg som vil ha det godt i både kropp og sinn. Møt Kaja og Hoang."
+      },
+      "title": "Om Happy Human",
+      "lead": "Vi vil gjøre verden litt bedre – med flere glade, ekte mennesker som tar vare på hverandre.",
+      "sections": [
+        {
+          "heading": "Hva vi gjør",
+          "paragraphs": [
+            "Happy Human startet med en gratis bootcamp i Blomvåg. Nå bygger vi videre med gratis gruppetimer, personlig trening og innhold om trening, mat, psykisk helse og friluftsliv. Etter hvert kommer også egne klær.",
+            "Gruppetimene er og blir gratis. Her er alle velkommen – fra nybegynner til topptrent, og barna kan bli med."
+          ]
+        },
+        {
+          "heading": "Kropp og sinn henger sammen",
+          "paragraphs": [
+            "Hodet og kroppen henger sammen. Det du gjør i hverdagen – hvordan du sover, spiser, beveger deg og har det med andre – betyr mer enn de få øktene du har i uka.",
+            "Derfor handler trening hos oss om å ha det bra, ikke om hvordan du ser ut. Vi vil at du skal kjenne på mestring og treningsglede, og gå hjem gladere enn da du kom."
+          ]
+        },
+        {
+          "heading": "Hvem vi er",
+          "paragraphs": [
+            "Kaja Haugen er personlig trener og har en master i idrettsvitenskap fra Norges idrettshøgskole. Hun har jobbet som PT og gruppeinstruktør i over sju år, og jobber i dag i Antidoping Norge. Kaja leder treningen i Happy Human.",
+            "Hoang Minh Trinh har startet flere selskaper og hjulpet tusenvis av gründere i gang. Hoang har også PT-utdanning fra Norges idrettshøgskole og står for forretning og vekst i Happy Human."
+          ]
+        },
+        {
+          "heading": "Vil du bli med?",
+          "paragraphs": [
+            "Bli med i Facebook-gruppa, kom på en gruppetime, eller [send oss en e-post](mailto:{email}). Vi har plass til alle."
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "meta": {
+        "title": "Kontakt",
+        "description": "Ta kontakt med Happy Human om gruppetimer, personlig trening eller samarbeid."
+      },
+      "title": "Kontakt oss",
+      "lead": "Lurer du på noe om gruppetimene, personlig trening eller samarbeid? Send oss en e-post, så svarer vi så fort vi kan.",
+      "details": {
+        "emailTitle": "E-post",
+        "emailCta": "Send oss en e-post",
+        "groupTitle": "Gruppetimene",
+        "groupText": "Nye timer og endringer legges ut i Facebook-gruppa. Der kan du også si fra om du kommer.",
+        "groupCta": "Gå til Facebook-gruppa",
+        "companyTitle": "Firma"
+      },
+      "sections": []
+    },
+    "privacy": {
+      "meta": {
+        "title": "Personvern",
+        "description": "Slik behandler Happy Human personopplysninger, og dette er rettighetene dine."
+      },
+      "title": "Personvern",
+      "lead": "Her forklarer vi hvilke personopplysninger Happy Human behandler, hvorfor vi gjør det, og hvilke rettigheter du har.",
+      "sections": [
+        {
+          "heading": "Hvem er ansvarlig?",
+          "paragraphs": [
+            "{company} (org.nr. {orgNr}), {address}, er behandlingsansvarlig for personopplysningene som beskrives her.",
+            "Har du spørsmål om personvern, send en e-post til [{email}](mailto:{email})."
+          ]
+        },
+        {
+          "heading": "Når du besøker nettsiden",
+          "paragraphs": [
+            "Nettsiden bruker ikke analyseverktøy, annonsesporing eller informasjonskapsler (cookies) som sporer deg.",
+            "Leverandøren som drifter nettsiden, registrerer tekniske opplysninger som IP-adresse, nettlesertype og tidspunkt i serverlogger. Det er nødvendig for å levere nettsiden og beskytte den mot misbruk. Grunnlaget er vår berettigede interesse (personvernforordningen artikkel 6 nr. 1 bokstav f). Loggene slettes automatisk etter kort tid.",
+            "Velger du lyst eller mørkt tema, lagres valget i nettleseren din (localStorage). Det sendes ikke til oss, og du kan slette det ved å tømme nettleserdataene."
+          ]
+        },
+        {
+          "heading": "Når du kontakter oss",
+          "paragraphs": [
+            "Sender du oss en e-post, behandler vi navnet ditt, e-postadressen og det du skriver, for å kunne svare deg. Grunnlaget er vår berettigede interesse i å svare på henvendelser, eller at du ønsker å inngå en avtale med oss (artikkel 6 nr. 1 bokstav f eller b).",
+            "Vi sletter henvendelsen når saken er ferdig, og senest 12 måneder etter siste kontakt, med mindre loven krever at vi tar vare på den lenger."
+          ]
+        },
+        {
+          "heading": "Gruppetimene",
+          "paragraphs": [
+            "Nye timer legges i dag ut i Facebook-gruppa vår, og der kan du si fra om du kommer. Meta er selv ansvarlig for opplysningene på Facebook. Se [Metas personvernregler](https://www.facebook.com/privacy/policy).",
+            "Vi bruker oppmøtet bare til å planlegge timene.",
+            "Vi publiserer aldri bilder eller video der du kan gjenkjennes, uten at du har sagt ja. Bilder av barn publiserer vi bare med samtykke fra foreldrene. Du kan trekke samtykket tilbake når som helst, og da fjerner vi bildet."
+          ]
+        },
+        {
+          "heading": "Personlig trening (PT)",
+          "paragraphs": [
+            "Kjøper du PT, behandler vi navn, kontaktinformasjon, bestillinger og betalinger for å oppfylle avtalen med deg (artikkel 6 nr. 1 bokstav b). Regnskapsopplysninger oppbevarer vi i fem år etter utgangen av regnskapsåret, slik bokføringsloven krever.",
+            "For at treningen skal være trygg, kan treneren spørre om skader, sykdom eller graviditet. Slike helseopplysninger gir du frivillig, og vi behandler dem bare med ditt uttrykkelige samtykke (artikkel 9 nr. 2 bokstav a). Vi sletter dem når PT-forløpet er over."
+          ]
+        },
+        {
+          "heading": "Hvem vi deler opplysninger med",
+          "paragraphs": [
+            "Vi selger aldri personopplysninger. Vi bruker leverandører (databehandlere) til drift av nettsiden, e-post og betaling. De får bare tilgang til det de trenger for å levere tjenesten, og har en databehandleravtale med oss.",
+            "Behandler en leverandør opplysninger utenfor EU/EØS, sørger vi for et lovlig overføringsgrunnlag, for eksempel EU-kommisjonens standardavtaler."
+          ]
+        },
+        {
+          "heading": "Rettighetene dine",
+          "paragraphs": [
+            "Du har rett til å:"
+          ],
+          "items": [
+            "få vite hvilke opplysninger vi har om deg (innsyn)",
+            "få rettet opplysninger som er feil",
+            "få slettet opplysninger",
+            "begrense eller protestere mot behandlingen",
+            "få utlevert opplysningene dine i et vanlig format (dataportabilitet)",
+            "trekke tilbake et samtykke når som helst"
+          ]
+        },
+        {
+          "heading": "Slik bruker du rettighetene",
+          "paragraphs": [
+            "Send en e-post til [{email}](mailto:{email}). Vi svarer innen én måned.",
+            "Mener du at vi behandler opplysningene dine i strid med regelverket, kan du klage til [Datatilsynet](https://www.datatilsynet.no). Vi setter pris på om du tar kontakt med oss først, så vi kan rydde opp."
+          ]
+        },
+        {
+          "heading": "Endringer",
+          "paragraphs": [
+            "Vi oppdaterer denne erklæringen når vi endrer hvordan vi behandler personopplysninger. Datoen øverst viser når den sist ble endret."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "meta": {
+        "title": "Vilkår for deltakelse",
+        "description": "Enkle vilkår for de gratis gruppetimene til Happy Human: helse, barn, bilder og god stemning."
+      },
+      "title": "Vilkår for deltakelse",
+      "lead": "Gruppetimene våre er gratis og åpne for alle. For at alle skal ha det trygt og gøy, gjelder disse enkle vilkårene.",
+      "sections": [
+        {
+          "heading": "Gratis og frivillig",
+          "paragraphs": [
+            "Gruppetimene er gratis, og det er frivillig å delta. Si gjerne fra i Facebook-gruppa om du kommer, så vet vi omtrent hvor mange vi blir."
+          ]
+        },
+        {
+          "heading": "Helse og eget tempo",
+          "paragraphs": [
+            "Du trener på eget ansvar og i ditt eget tempo. Lytt til kroppen, velg den varianten av øvelsen som passer for deg, og ta pause når du trenger det."
+          ],
+          "items": [
+            "Har du en skade eller sykdom, er gravid eller har nylig født, eller er du usikker på om trening passer for deg nå: snakk med legen din før du begynner.",
+            "Si fra til treneren før timen om noe vi bør ta hensyn til, så tilpasser vi.",
+            "Stopp og si fra med en gang hvis du får vondt, blir svimmel eller føler deg uvel."
+          ]
+        },
+        {
+          "heading": "Barn",
+          "paragraphs": [
+            "Barn er hjertelig velkomne. Barn som blir med, er foreldrenes eller de foresattes ansvar hele tiden, også når de er med på øvelser. Hold barna unna utstyr og stasjoner som er i bruk."
+          ]
+        },
+        {
+          "heading": "Sted og utstyr",
+          "paragraphs": [
+            "Vi låner lokaler, blant annet gymsalen i Blomvåg barnehage. Følg reglene for lokalet, bruk rene innesko inne, og hjelp til med å rydde etter timen. Si fra hvis noe går i stykker."
+          ]
+        },
+        {
+          "heading": "Ansvar og forsikring",
+          "paragraphs": [
+            "Happy Human er ansvarlig etter de vanlige reglene i norsk erstatningsrett. Vi er ikke ansvarlige for skader som skyldes at du ikke følger instruksjonene, eller for tap av eller skade på personlige eiendeler.",
+            "Vi anbefaler at du har din egen ulykkesforsikring."
+          ]
+        },
+        {
+          "heading": "Bilder",
+          "paragraphs": [
+            "Vi tar av og til bilder under timene til Facebook og Instagram. Vi publiserer aldri bilder der du kan gjenkjennes, uten at du har sagt ja, og bilder av barn bare med samtykke fra foreldrene. Les mer i [personvernerklæringen](/{lang}/personvern)."
+          ]
+        },
+        {
+          "heading": "Endringer og avlysning",
+          "paragraphs": [
+            "Vi kan flytte eller avlyse timer, for eksempel ved sykdom eller dårlig vær. Endringer legges ut i Facebook-gruppa så tidlig som mulig."
+          ]
+        },
+        {
+          "heading": "God stemning",
+          "paragraphs": [
+            "Vis respekt for de andre deltakerne. Her sammenligner vi oss ikke med hverandre, og vi kommenterer ikke andres kropper. Den som ødelegger for andre, kan bli bedt om å gå."
+          ]
+        }
+      ]
+    },
+    "sales": {
+      "meta": {
+        "title": "Salgsvilkår",
+        "description": "Salgsvilkår for kjøp av personlig trening (PT) fra Happy Human: priser, avbestilling, angrerett og reklamasjon."
+      },
+      "title": "Salgsvilkår",
+      "lead": "Disse vilkårene gjelder når du kjøper personlig trening (PT) fra Happy Human. Vi har ikke åpnet for kjøp av PT ennå – priser og bestilling kommer snart.",
+      "sections": [
+        {
+          "heading": "Partene",
+          "paragraphs": [
+            "Selger er {company}, org.nr. {orgNr}, {address}, e-post [{email}](mailto:{email}). Kjøper er deg som bestiller PT.",
+            "Er du under 18 år, må en forelder eller foresatt godkjenne kjøpet."
+          ]
+        },
+        {
+          "heading": "Avtalen",
+          "paragraphs": [
+            "Avtalen består av disse vilkårene, opplysningene i bestillingen og det vi blir enige om skriftlig. Avtalen er bindende når vi har bekreftet bestillingen på e-post."
+          ]
+        },
+        {
+          "heading": "Priser og betaling",
+          "paragraphs": [
+            "Prisene står i norske kroner og inkluderer alle avgifter. Det kommer ingen kostnader i tillegg til det som står i bestillingen. Du betaler når du bestiller, med betalingsmåtene som vises der."
+          ]
+        },
+        {
+          "heading": "Timer og avbestilling",
+          "items": [
+            "Du avtaler tidspunkt for timene med treneren.",
+            "Du kan flytte eller avbestille en time gratis fram til 24 timer før den starter. Avbestiller du senere, eller kommer du ikke, regnes timen som brukt.",
+            "Må vi avlyse, for eksempel ved sykdom, får du en ny time eller pengene tilbake for den timen.",
+            "PT-pakker har en gyldighetstid som står i bestillingen."
+          ]
+        },
+        {
+          "heading": "Angrerett",
+          "paragraphs": [
+            "Kjøper du PT på nett, på e-post eller på telefon, har du 14 dagers angrerett etter angrerettloven. Fristen regnes fra dagen avtalen ble inngått.",
+            "Vil du bruke angreretten, gi beskjed til [{email}](mailto:{email}) innen fristen. Du kan bruke angreskjemaet fra [Forbrukertilsynet](https://www.forbrukertilsynet.no), men det er ikke påkrevd.",
+            "Har du bedt oss starte treningen før fristen er ute, betaler du for timene du har brukt, og får resten tilbake. Vi betaler tilbake senest 14 dager etter at vi fikk beskjeden din."
+          ]
+        },
+        {
+          "heading": "Helse og sikkerhet",
+          "paragraphs": [
+            "Fortell treneren om skader, sykdom, graviditet eller annet som kan påvirke treningen. Ellers gjelder de samme reglene som i [vilkår for deltakelse](/{lang}/vilkar)."
+          ]
+        },
+        {
+          "heading": "Er du ikke fornøyd?",
+          "paragraphs": [
+            "Si fra til oss så snart som mulig etter at du oppdaget problemet. Vi finner en løsning sammen, for eksempel en ny time eller pengene tilbake."
+          ]
+        },
+        {
+          "heading": "Personopplysninger",
+          "paragraphs": [
+            "Slik behandler vi opplysningene dine: se [personvernerklæringen](/{lang}/personvern)."
+          ]
+        },
+        {
+          "heading": "Uenighet",
+          "paragraphs": [
+            "Vi prøver alltid å løse uenighet i minnelighet. Kommer vi ikke til enighet, kan du få hjelp fra [Forbrukerrådet](https://www.forbrukerradet.no). Norsk rett gjelder."
+          ]
+        }
+      ]
+    }
+  }
+}

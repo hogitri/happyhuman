@@ -17,6 +17,7 @@ You review code changes in the Happy Human repo. Don't edit files. Only run read
 - **Bugs:** wrong logic, missing error or loading states, broken server/client component boundaries, wrong Next.js 16 APIs, type holes (`any`, unchecked casts).
 - **Conventions:** `@/` imports, shadcn components reused rather than rebuilt, helpers in `lib/` and hooks in `hooks/`.
 - **i18n:** no hard-coded user-facing text, and `no.json` and `en.json` keys in sync.
+- **Design system** (AGENTS.md → Design system): no raw colours (hex, `rgb()`, `oklch()`, Tailwind palette classes like `bg-zinc-*`) in components; semantic tokens used so dark mode works; white/sand text on coral, plain coral text on light surfaces, or lime used as text are all bugs; more than one coral primary action per view; brand components (`components/brand/*`) reused instead of hand-rolled sections, headings or CTAs; new tokens or brand components also added to the style guide (`web/app/[lang]/styleguide/page.tsx`).
 - **Accessibility:** labels, alt text, keyboard focus, colour contrast, semantic elements.
 - **Privacy and secrets:** no keys, tokens, personal data or real member names in code or fixtures.
 - **Definition of done:** is the vault updated for this change? Is anything left unverified?

@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "Happy Human – trening som gjør deg glad",
+    "description": "Gratis, leken og intensiv funksjonell trening i Blomvåg med PT og idrettsviter Kaja Haugen. For alle – fra nybegynner til topptrent."
+  },
+  "ui": {
+    "language": "Språk",
+    "theme": {
+      "toggle": "Bytt tema",
+      "light": "Lyst",
+      "dark": "Mørkt",
+      "system": "System"
+    },
+    "home": "Til forsiden",
+    "skipToContent": "Hopp til innholdet",
+    "opensFacebook": "åpnes på Facebook"
+  },
+  "cta": {
+    "join": "Bli med i gruppa",
+    "how": "Slik funker det"
+  },
+  "hero": {
+    "title": "Trening som gjør deg glad.",
+    "lead": "Gratis, leken funksjonell trening i Blomvåg. Ingen krav til form – her er alle velkommen.",
+    "imageLabel": "Bilde: gjengen i sving",
+    "stats": [
+      {
+        "value": "60",
+        "label": "minutter"
+      },
+      {
+        "value": "8–10",
+        "label": "stasjoner"
+      },
+      {
+        "value": "0 kr",
+        "label": "alltid gratis"
+      }
+    ]
+  },
+  "why": {
+    "title": "Trening skal føles bra – i kropp og hode",
+    "lead": "Ingen før-og-etter-bilder, ingen kroppspress. Bare trening du gleder deg til.",
+    "items": [
+      {
+        "icon": "trophy",
+        "title": "Mestring",
+        "text": "Hver øvelse har en lettere og en tøffere variant, så du alltid kan utfordre deg – på ditt nivå."
+      },
+      {
+        "icon": "smile",
+        "title": "Treningsglede",
+        "text": "Leken og variert trening med god stemning. Du skal gå hjem gladere enn da du kom."
+      },
+      {
+        "icon": "users",
+        "title": "Plass til alle",
+        "text": "Fra nybegynner til topptrent. Ingen sammenligning – bare fellesskap."
+      },
+      {
+        "icon": "heart",
+        "title": "Kropp og sinn",
+        "text": "Helse er mer enn muskler. Trening handler om å ha det bra, ikke om hvordan du ser ut."
+      }
+    ]
+  },
+  "sessions": {
+    "title": "En leken, intensiv time",
+    "lead": "Styrke, kondis og mobilitet med egen kroppsvekt og enkelt utstyr. Alle øvelser har en lettere og en tøffere variant.",
+    "imageLabel": "Bilde: sirkeltrening i gymsalen",
+    "details": [
+      {
+        "label": "Format",
+        "text": "Sirkel med 8–10 stasjoner, eller puls + mobilitet"
+      },
+      {
+        "label": "Hvor",
+        "text": "Gymsalen i Blomvåg barnehage – ute om sommeren"
+      },
+      {
+        "label": "Når",
+        "text": "Legges ut i Facebook-gruppa, ofte hverdager kl. 17.30 eller lørdager kl. 10"
+      },
+      {
+        "label": "Pris",
+        "text": "Gratis"
+      },
+      {
+        "label": "Ta med",
+        "text": "Treningstøy, sko, vann – og gjerne en venn"
+      }
+    ]
+  },
+  "trainer": {
+    "imageLabel": "Bilde: Kaja Haugen",
+    "name": "Kaja Haugen",
+    "role": "Grunnlegger, PT og idrettsviter",
+    "bio": "PT og gruppeinstruktør i over sju år, med master i idrettsvitenskap fra Norges idrettshøgskole. I dag jobber hun i Antidoping Norge. Kaja brenner for trening som gjør godt – for både kropp og sinn.",
+    "quote": "Målet mitt er at du skal føle på mestring og treningsglede.",
+    "facts": [
+      {
+        "value": "7+",
+        "label": "år som PT og instruktør"
+      },
+      {
+        "value": "3000",
+        "label": "PT-timer"
+      },
+      {
+        "value": "MSc",
+        "label": "idrettsvitenskap, NIH"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Lurer du på noe?",
+    "items": [
+      {
+        "q": "Må jeg være i god form?",
+        "a": "Nei! Alle øvelser har lettere og tøffere varianter, så timen passer for alle – fra nybegynner til topptrent."
+      },
+      {
+        "q": "Hvordan melder jeg meg på?",
+        "a": "Bli med i Facebook-gruppa. Der legger Kaja ut nye økter, og du huker av for om du kommer."
+      },
+      {
+        "q": "Kan jeg ta med barn?",
+        "a": "Ja. Ingen barnevakt? Ta med ungene, så tilpasser vi underveis."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Klar for å bli med?",
+    "lead": "Finn neste økt i gruppa – kom alene eller ta med en venn. Vi har plass til alle."
+  },
+  "footer": {
+    "linksTitle": "Snarveier",
+    "placeTitle": "Hvor",
+    "place": "Blomvåg, Øygarden",
+    "facebook": "Facebook-gruppa",
+    "tagline": "Trening som gjør deg glad.",
+    "copyright": "© 2026 Happy Human"
+  }
+}

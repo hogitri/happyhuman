@@ -9,6 +9,10 @@ tags: [founder, people]
 
 Co-founder of Happy Human. A serial founder and startup investor with a PT background, based in Bergen.
 
+![[Hoang Minh Trinh - portrait.jpg|240]]
+
+*Portrait in a Centrum Tigers basketball jersey (#22), shared by Hoang in October 2026.*
+
 Source: [[Sources/Hoang Minh Trinh - LinkedIn]]
 
 ## In short
@@ -17,6 +21,9 @@ Source: [[Sources/Hoang Minh Trinh - LinkedIn]]
 - **Boards:** chair of Haralt; board member at Proppy, EzBench, Nexus Connect and Kiip.app.
 - **Education:** Bachelor's in Creativity, Innovation and Business Development (Kristiania), plus a Personal Trainer qualification from NIH and Performance Specialist certification (Scandinavian Top Team).
 - **Languages:** English, Norwegian, Vietnamese.
+
+## Role in Happy Human
+- Chair of the board of **HAPPY HUMAN AS** (org.nr. 933 037 495, founded 2024-01-31). See [[Project Overview#Company]].
 
 ## Career
 | Period | Role | Organisation |

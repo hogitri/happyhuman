@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "Happy Human – training that makes you happy",
+    "description": "Free, playful and intense functional training in Blomvåg, Norway, with personal trainer and sport scientist Kaja Haugen. For everyone, from beginner to super fit."
+  },
+  "ui": {
+    "language": "Language",
+    "theme": {
+      "toggle": "Change theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "home": "Home",
+    "skipToContent": "Skip to content",
+    "opensFacebook": "opens on Facebook"
+  },
+  "cta": {
+    "join": "Join the group",
+    "how": "How it works"
+  },
+  "hero": {
+    "title": "Training that makes you happy.",
+    "lead": "Free, playful functional training in Blomvåg. No fitness level required – everyone's welcome.",
+    "imageLabel": "Photo: the crew in action",
+    "stats": [
+      {
+        "value": "60",
+        "label": "minutes"
+      },
+      {
+        "value": "8–10",
+        "label": "stations"
+      },
+      {
+        "value": "0 kr",
+        "label": "always free"
+      }
+    ]
+  },
+  "why": {
+    "title": "Training should feel good – in body and mind",
+    "lead": "No before-and-after photos, no body pressure. Just training you look forward to.",
+    "items": [
+      {
+        "icon": "trophy",
+        "title": "Mastery",
+        "text": "Every exercise has an easier and a harder version, so you can always challenge yourself – at your level."
+      },
+      {
+        "icon": "smile",
+        "title": "Joy of training",
+        "text": "Playful, varied training with good vibes. You should leave happier than you arrived."
+      },
+      {
+        "icon": "users",
+        "title": "Room for everyone",
+        "text": "From beginner to super fit. No comparing – just community."
+      },
+      {
+        "icon": "heart",
+        "title": "Body and mind",
+        "text": "Health is more than muscles. Training is about feeling good, not about how you look."
+      }
+    ]
+  },
+  "sessions": {
+    "title": "A playful, intense hour",
+    "lead": "Strength, cardio and mobility with bodyweight and simple gear. Every exercise has an easier and a harder version.",
+    "imageLabel": "Photo: circuit training in the gym hall",
+    "details": [
+      {
+        "label": "Format",
+        "text": "A circuit of 8–10 stations, or cardio + mobility"
+      },
+      {
+        "label": "Where",
+        "text": "The gym hall at Blomvåg kindergarten – outdoors in summer"
+      },
+      {
+        "label": "When",
+        "text": "Posted in the Facebook group, often weekdays at 17:30 or Saturdays at 10:00"
+      },
+      {
+        "label": "Price",
+        "text": "Free"
+      },
+      {
+        "label": "Bring",
+        "text": "Workout clothes, shoes, water – and a friend, if you like"
+      }
+    ]
+  },
+  "trainer": {
+    "imageLabel": "Photo: Kaja Haugen",
+    "name": "Kaja Haugen",
+    "role": "Founder, personal trainer and sport scientist",
+    "bio": "A personal trainer and group instructor for over seven years, with a master's in sport science from the Norwegian School of Sport Sciences. Today she works at Anti-Doping Norway. Kaja is passionate about training that does you good – body and mind.",
+    "quote": "My goal is for you to feel mastery and joy in training.",
+    "facts": [
+      {
+        "value": "7+",
+        "label": "years as PT and instructor"
+      },
+      {
+        "value": "3000",
+        "label": "PT hours"
+      },
+      {
+        "value": "MSc",
+        "label": "sport science, NIH"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Got questions?",
+    "items": [
+      {
+        "q": "Do I need to be fit?",
+        "a": "No! Every exercise has easier and harder versions, so the class works for everyone – from beginner to super fit."
+      },
+      {
+        "q": "How do I sign up?",
+        "a": "Join the Facebook group. Kaja posts new sessions there, and you just mark whether you're coming."
+      },
+      {
+        "q": "Can I bring kids?",
+        "a": "Yes. No babysitter? Bring the kids and we'll adapt as we go."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Ready to join?",
+    "lead": "Find the next session in the group – come on your own or bring a friend. There's room for everyone."
+  },
+  "footer": {
+    "linksTitle": "Quick links",
+    "placeTitle": "Where",
+    "place": "Blomvåg, Øygarden",
+    "facebook": "The Facebook group",
+    "tagline": "Training that makes you happy.",
+    "copyright": "© 2026 Happy Human"
+  }
+}

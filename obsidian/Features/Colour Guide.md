@@ -1,7 +1,7 @@
 ---
 type: feature
 status: in-progress
-updated: 2026-10-26
+updated: 2026-11-02
 ---
 # Colour Guide
 
@@ -33,6 +33,9 @@ All body-text pairs are ≥ 4.5:1 (WCAG AA). The ratios are listed on the style 
 - Body: Geist (`font-sans`).
 - Fonts are loaded in `web/lib/fonts.ts`. The punch card uses other (Canva) fonts; the type has not been changed to match yet.
 
+## Shape
+One motif: the rising-sun arch from the H monogram. `Visual shape="arch"` masks photos with it, and `SunArch` draws it as a bullet or a band. Items are separated by space or tone steps, not hairlines. See [[Decisions/2026-11-02 Rising-sun arch as the one motif]].
+
 ## How it works
 - The palette lives in `web/app/globals.css` as CSS variables. shadcn's token names (`--primary`, `--accent`, …) point at the brand colours, so every installed shadcn component is already on brand.
 - Brand utilities: `bg-fjord`, `bg-sun`, `bg-mist`, `text-link`.
@@ -43,6 +46,9 @@ All body-text pairs are ≥ 4.5:1 (WCAG AA). The ratios are listed on the style 
 - `web/app/[lang]/styleguide/page.tsx` — the style guide page
 - `web/components/brand/` — Logo, Section (tones: default, muted, fjord, sun), SectionHeading, FacebookCta/SecondaryCta/CtaLink, ValueCard, BrandIcon, Visual (illustrations / photo slot), Logo + LogoMark (H monogram), LanguageToggle, ThemeToggle
 - Small edits to shadcn files: the `link` variant uses `text-link` and is always underlined (`components/ui/button.tsx`, `badge.tsx`); new `accent` (sun) badge variant.
+
+## DESIGN.md
+`DESIGN.md` at the repo root describes this system in the [Google Stitch DESIGN.md format](https://stitch.withgoogle.com/docs/design-md/overview/), so design tools and agents outside the codebase (Stitch, Figma, Claude, Lovable) can make on-brand mockups and social assets. It is derived from the style guide and `globals.css`; keep it in sync. The format was found via [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md), a collection of other brands' DESIGN.md files used only as format examples, never copied into this project.
 
 ## Rules for agents
 The binding version of these rules is in the **Design system** section of the root `AGENTS.md`, with a short pointer in `web/AGENTS.md`. The `code-reviewer` agent checks changes against it, and the Definition of done requires it.

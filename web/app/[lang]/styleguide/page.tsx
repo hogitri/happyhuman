@@ -9,7 +9,7 @@ import { Section } from "@/components/brand/section"
 import { SectionHeading } from "@/components/brand/section-heading"
 import { ThemeToggle } from "@/components/brand/theme-toggle"
 import { ValueCard } from "@/components/brand/value-card"
-import { Visual } from "@/components/brand/visual"
+import { SunArch, Visual } from "@/components/brand/visual"
 import {
   Accordion,
   AccordionContent,
@@ -69,6 +69,8 @@ const rules = {
     "Write text in fjord (light) or mist (dark) – the foreground token.",
     "Underline links: in light mode they share the text colour.",
     "Alternate section tones (default → muted → fjord → sun) for rhythm.",
+    "Use the one motif, the rising-sun arch from the H monogram: arch-masked photos, SunArch bullets and bands.",
+    "Separate items with space or a tone step; skip hairline dividers.",
   ],
   dont: [
     "Never put white or mist text on sun (1.7:1, fails WCAG).",
@@ -339,6 +341,7 @@ export default async function StyleguidePage({ params }: PageProps<"/[lang]/styl
               <div className="flex flex-wrap items-center gap-8">
                 <Logo />
                 <Logo size="lg" />
+                <span className="text-sm text-muted-foreground">size=&quot;xl&quot; – footer, built large across the page</span>
                 <LogoMark className="h-12 w-auto" />
                 <span className="flex size-16 items-center justify-center rounded-2xl bg-fjord text-mist"><LogoMark className="h-8 w-auto" /></span>
                 <span className="flex size-16 items-center justify-center rounded-2xl bg-sun text-fjord"><LogoMark className="h-8 w-auto" /></span>
@@ -366,8 +369,19 @@ export default async function StyleguidePage({ params }: PageProps<"/[lang]/styl
               <p className="font-mono text-sm text-muted-foreground">&lt;Visual scene=&quot;sunrise&quot; | &quot;sun&quot; | &quot;mist&quot; /&gt; – illustrations until photos exist; pass src for a photo</p>
               <div className="grid gap-4 sm:grid-cols-3">
                 <Visual scene="sunrise" alt={dict.hero.imageLabel} className="aspect-4/5" />
-                <Visual scene="sun" alt={dict.sessions.imageLabel} className="aspect-4/5" />
+                <Visual scene="sun" alt={dict.trainer.imageLabel} className="aspect-4/5" />
                 <Visual scene="mist" alt="Mist" className="aspect-4/5 ring-1 ring-foreground/10" />
+              </div>
+            </div>
+
+            <div className="grid gap-3">
+              <p className="font-mono text-sm text-muted-foreground">&lt;Visual shape=&quot;arch&quot; src=&#123;[…]&#125; /&gt; – the motif as a photo mask; several srcs crossfade · &lt;SunArch /&gt; – the motif as bullet or band</p>
+              <div className="grid items-end gap-4 sm:grid-cols-2">
+                <Visual src={["/images/place/blomvaag.jpg", "/images/place/ulvsund.jpg"]} alt={dict.hero.imageAlt} shape="arch" sizes="33vw" className="aspect-4/5" />
+                <div className="flex flex-col gap-4">
+                  <SunArch className="aspect-2/1 w-12" />
+                  <SunArch className="aspect-2/1 w-full" />
+                </div>
               </div>
             </div>
 

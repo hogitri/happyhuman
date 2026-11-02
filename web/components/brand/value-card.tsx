@@ -31,7 +31,7 @@ export function ValueCard({
         >
           <BrandIcon name={icon} aria-hidden className="size-6" />
         </span>
-        <CardTitle className="text-xl font-bold">{title}</CardTitle>
+        <CardTitle className="text-xl font-semibold">{title}</CardTitle>
       </CardHeader>
       <CardContent>
         <p className="text-base text-muted-foreground">{text}</p>

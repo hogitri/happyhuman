@@ -3,11 +3,14 @@ import { notFound } from "next/navigation"
 import { Faq } from "@/components/landing/faq"
 import { FinalCta } from "@/components/landing/final-cta"
 import { Hero } from "@/components/landing/hero"
-import { Sessions } from "@/components/landing/sessions"
+import { Intro } from "@/components/landing/intro"
+import { Session } from "@/components/landing/session"
+import { Stations } from "@/components/landing/stations"
 import { SiteFooter } from "@/components/landing/site-footer"
 import { SiteHeader } from "@/components/landing/site-header"
 import { Trainer } from "@/components/landing/trainer"
 import { Values } from "@/components/landing/values"
+import { Reveal } from "@/components/brand/reveal"
 import { hasLocale } from "@/lib/i18n"
 import { getDictionary } from "./dictionaries"
 
@@ -25,16 +28,19 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
       >
         {dict.ui.skipToContent}
       </a>
-      <SiteHeader lang={lang} dict={dict} />
+      <SiteHeader lang={lang} dict={dict} ctaVariant="outline" />
       <main id="main" className="flex-1">
         <Hero dict={dict} />
+        <Intro dict={dict} />
+        <Session dict={dict} />
+        <Stations dict={dict} />
         <Values dict={dict} />
-        <Sessions dict={dict} />
         <Trainer dict={dict} />
         <Faq dict={dict} />
         <FinalCta dict={dict} />
       </main>
       <SiteFooter lang={lang} dict={dict} />
+      <Reveal />
     </>
   )
 }

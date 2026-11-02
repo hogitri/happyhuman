@@ -46,7 +46,7 @@ There is no test runner yet.
 
 ## Design system
 
-Every page is built from the colour guide and the brand components. **Before building or changing UI, open the style guide** at http://localhost:3000/no/styleguide (source: `web/app/[lang]/styleguide/page.tsx`) and read `obsidian/Features/Colour Guide.md`. The style guide is the source of truth: if you add a token, brand component or pattern, add it to the style guide in the same task.
+Every page is built from the colour guide and the brand components. **Before building or changing UI, open the style guide** at http://localhost:3000/no/styleguide (source: `web/app/[lang]/styleguide/page.tsx`) and read `obsidian/Features/Colour Guide.md`. The style guide is the source of truth: if you add a token, brand component or pattern, add it to the style guide in the same task. `DESIGN.md` at the repo root is a summary of the same system for design tools (Google Stitch, Figma, Claude); it follows the style guide, so update it too when tokens, type or brand components change.
 
 ### Colours
 The palette is defined once, in `web/app/globals.css` (`:root` for light, `.dark` for dark), and mapped onto shadcn's tokens.
@@ -84,12 +84,16 @@ Rules:
 | `Section` / `SectionHeading` | Every page band and its heading |
 | `FacebookCta`, `SecondaryCta`, `CtaLink` | Pill-shaped calls to action (`h-12 rounded-full`) |
 | `ValueCard` + `BrandIcon` | Icon + title + text cards. Icons are referenced by name from the dictionaries; add new ones to `components/brand/icons.tsx` |
-| `Visual` | Every image slot. Without `src` it draws a brand illustration (`scene` = `sunrise`, `sun`, `mist`); pass `src` + `alt` for a real photo (rendered with `next/image`). Never show "Bilde:"-style placeholder labels |
+| `Visual` | Every image slot. Without `src` it draws a brand illustration (`scene` = `sunrise`, `sun`, `mist`); pass `src` + `alt` for a real photo (rendered with `next/image`). `shape="arch"` masks it with the brand motif; an array of `src` slowly crossfades. Never show "Bilde:"-style placeholder labels |
+| `SunArch` | The motif itself: a half sun standing on its box's bottom edge. Text size for list bullets, poster size for bands |
+| `Reveal` | Mounted once per page: staggered entrances for every `[data-reveal]` block (nothing is hidden without JS or with reduced motion) |
 | `LanguageToggle`, `ThemeToggle` | Language (NO/EN links) and light/dark/system switching. The language switch lives in the **footer**, not the navbar or mobile menu |
 
 - Shape and feel: rounded and friendly (`--radius` 0.875rem, `rounded-2xl`/`rounded-3xl` cards, `rounded-full` buttons and badges), generous whitespace, icons from `lucide-react` only.
-- **Less is more.** Few sections, short copy, lots of white space (`Section` uses `py-20 md:py-32`). Prefer one big visual and large type over grids of small cards, icons and badges. Use thin `border-t` dividers instead of boxes. Don't add a section or element unless it earns its place.
-- **Visuals carry the page.** Every main section on the landing page pairs text with a large `Visual` (rounded-3xl, aspect 4/5 or wider), or is itself large type (the values list).
+- **One motif: the rising-sun arch** from the H monogram (a half circle standing on a flat line). Use it for photo masks (`Visual shape="arch"`), bullets and bands (`SunArch`). Don't introduce a second decorative shape. See `obsidian/Decisions/2026-11-02 Rising-sun arch as the one motif.md`.
+- **Less is more.** Few sections, short copy, lots of white space (`Section` uses `py-20 md:py-32`). Prefer one big visual and large type over grids of small cards, icons and badges. Separate items with space or a tone step (filled tiles), not hairline dividers or outlined boxes. Don't add a section or element unless it earns its place.
+- **Visuals carry the page.** Every main section on the landing page pairs text with a large `Visual` (arch or rounded-3xl, aspect 4/5 or wider), a large `SunArch`, or is itself large type (the values list). Real photos come first: our own, then openly licensed photos of the place, credited in the footer via `web/lib/photo-credits.ts`; never stock photos of strangers presented as members.
+- **Motion** lives in `globals.css` (end of file) and `Reveal`, always inside `prefers-reduced-motion: no-preference`, transform and opacity only.
 - **Imagery:** show real people training together, having fun, of different ages, sizes and levels. No before/after shots, no shirtless "physique" photos, no focus on appearance (see Product principles).
 - **Editing shadcn files** in `components/ui/` is allowed for brand reasons (e.g. the `link` variant uses `text-link` and is always underlined, Badge has an `accent` variant). Keep such edits small and note them in `obsidian/Features/Colour Guide.md`. Re-running `shadcn add --overwrite` would undo them.
 

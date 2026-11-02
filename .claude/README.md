@@ -32,6 +32,15 @@ Claude Code configuration for Happy Human. Project-wide instructions live in `AG
 | `/add-source <material>` | Saves pasted material to `obsidian/Sources/` and summarises it |
 | `/add-person <details>` | Adds or updates a person in `obsidian/People/` |
 | `/decision <title>` | Records a decision in `obsidian/Decisions/` |
+| `/ui-review [files]` | Reviews UI code against Vercel's Web Interface Guidelines, adapted for bokmål copy and the Design system (sentence case, «guillemets», "vi" allowed) |
+
+## Skills (`skills/`)
+
+Installed with `npx skills add` (pinned in `skills-lock.json` at the repo root).
+
+| Skill | What it does |
+|-------|--------------|
+| `web-design-guidelines` ([vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)) | Fetches Vercel's guidelines fresh each run and reviews UI code against them, unmodified. Prefer `/ui-review` for this project: the upstream copy rules (Title Case, “curly quotes”, no first person) don't fit bokmål |
 
 ## Plugins
 

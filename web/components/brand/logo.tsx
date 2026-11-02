@@ -21,8 +21,10 @@ export function LogoMark({ className, title }: { className?: string; title?: str
 }
 
 const sizes = {
-  sm: { mark: "h-7", text: "text-[0.95rem]" },
-  lg: { mark: "h-14 md:h-16", text: "text-2xl md:text-3xl" },
+  sm: { mark: "h-7", text: "text-[0.95rem]/[0.95]" },
+  lg: { mark: "h-14 md:h-16", text: "text-2xl/[0.95] md:text-3xl/[0.95]" },
+  // Footer close: the mark built large across the page
+  xl: { mark: "h-[24vw] lg:h-[min(21vw,20rem)]", text: "text-[13vw]/[0.95] lg:text-[min(11vw,10.5rem)]/[0.95]" },
 }
 
 // Monogram + two-line "Happy Human" wordmark, always one colour (currentColor)
@@ -34,7 +36,7 @@ export function Logo({
   className?: string
 }) {
   return (
-    <span className={cn("inline-flex items-center gap-2.5", className)}>
+    <span className={cn("inline-flex items-center gap-2.5", size === "xl" && "gap-[3vw]", className)}>
       <LogoMark className={cn("w-auto shrink-0", sizes[size].mark)} />
       <span className={cn("flex flex-col font-sans leading-[0.95] font-medium tracking-tight", sizes[size].text)}>
         <span>Happy</span>

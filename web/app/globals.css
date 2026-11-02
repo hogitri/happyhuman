@@ -143,3 +143,84 @@
     @apply font-heading;
   }
 }
+/* ── Landing page motion and the level switch (see DESIGN.md) ───────────────── */
+
+/* Level switch: show the easier or harder version of every station. Without :has() both show. */
+.hh-level:has(input[value="easier"]:checked) [data-level="harder"],
+.hh-level:has(input[value="harder"]:checked) [data-level="easier"] {
+  display: none;
+}
+/* …and the sun in each bullet rises higher on the harder level */
+.hh-level-sun .hh-sun {
+  transform: translateY(25%);
+  transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.hh-level:has(input[value="harder"]:checked) .hh-level-sun .hh-sun {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Hero: the photos of Blomvåg and Ulvsund slowly crossfade, like evening light shifting */
+  .hh-crossfade > :not(:first-child) {
+    opacity: 0;
+    animation: hh-crossfade 16s ease-in-out infinite;
+  }
+  .hh-drift {
+    animation: hh-drift 24s ease-in-out infinite alternate;
+  }
+  /* Hero: the sun rises from the card's bottom edge on load */
+  .hh-rise-in .hh-sun {
+    animation: hh-rise-in 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  /* Section entrances (components/brand/reveal.tsx): parts rise in, staggered, once */
+  .hh-reveal-ready [data-reveal] > *,
+  .hh-reveal-ready p[data-reveal],
+  .hh-reveal-ready h2[data-reveal] {
+    transition: opacity 700ms cubic-bezier(0.22, 1, 0.36, 1), transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .hh-reveal-ready [data-reveal] > :nth-child(2) { transition-delay: 80ms; }
+  .hh-reveal-ready [data-reveal] > :nth-child(3) { transition-delay: 160ms; }
+  .hh-reveal-ready [data-reveal] > :nth-child(4) { transition-delay: 240ms; }
+  .hh-reveal-ready [data-reveal] > :nth-child(n + 5) { transition-delay: 320ms; }
+  .hh-reveal-ready [data-reveal]:not(.is-revealed) > *,
+  .hh-reveal-ready p[data-reveal]:not(.is-revealed),
+  .hh-reveal-ready h2[data-reveal]:not(.is-revealed) {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  .hh-reveal-ready p[data-reveal] > *,
+  .hh-reveal-ready h2[data-reveal] > * {
+    opacity: 1;
+    transform: none;
+  }
+
+  @supports (animation-timeline: view()) {
+    /* Values band: the sun rises out of the bottom edge as you scroll */
+    .hh-sunrise .hh-sun {
+      animation: hh-sunrise linear both;
+      animation-timeline: view();
+      animation-range: entry 10% cover 55%;
+    }
+  }
+}
+
+@keyframes hh-crossfade {
+  0%, 40% { opacity: 0; }
+  50%, 90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes hh-drift {
+  from { transform: scale(1); }
+  to { transform: scale(1.06); }
+}
+@keyframes hh-rise-in {
+  from { transform: translateY(35%); }
+}
+@keyframes hh-reveal {
+  from { opacity: 0; transform: translateY(24px); }
+}
+@keyframes hh-sunrise {
+  from { transform: translateY(30%); }
+  to { transform: translateY(0); }
+}

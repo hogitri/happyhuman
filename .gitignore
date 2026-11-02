@@ -11,3 +11,7 @@ obsidian/.trash/
 # Secrets
 .env
 .env.*
+
+# Design-skill and browser-test working files
+.taste-skill/
+.playwright-cli/

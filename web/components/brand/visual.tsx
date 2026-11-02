@@ -36,29 +36,67 @@ const scenes = {
 
 export type VisualScene = keyof typeof scenes
 
+// The brand motif: the rising-sun arch from the H monogram (round top, flat base on the horizon)
+const shapes = {
+  rounded: "rounded-3xl",
+  arch: "rounded-t-full",
+}
+
+export type VisualShape = keyof typeof shapes
+
 export function Visual({
   scene = "sunrise",
   src,
   alt,
+  shape = "rounded",
+  sizes = "(min-width: 1024px) 60vw, 100vw",
   priority,
   className,
+  imageClassName,
 }: {
   scene?: VisualScene
-  src?: string
+  /** One photo, or several of the same framing that slowly crossfade (the first one is described by `alt`) */
+  src?: string | string[]
   /** Describes the photo; illustrations are decorative and hidden from screen readers */
   alt: string
+  shape?: VisualShape
+  sizes?: string
   priority?: boolean
   className?: string
+  imageClassName?: string
 }) {
+  const sources = src ? (Array.isArray(src) ? src : [src]) : []
+
   return (
-    <div className={cn("relative isolate overflow-hidden rounded-3xl", className)}>
-      {src ? (
-        <Image src={src} alt={alt} fill priority={priority} sizes="(min-width: 1024px) 60vw, 100vw" className="object-cover" />
+    <div className={cn("relative isolate overflow-hidden", shapes[shape], className)}>
+      {sources.length > 0 ? (
+        <div className={cn("absolute inset-0", sources.length > 1 && "hh-crossfade")}>
+          {sources.map((source, i) => (
+            <Image
+              key={source}
+              src={source}
+              alt={i === 0 ? alt : ""}
+              fill
+              priority={priority && i === 0}
+              sizes={sizes}
+              className={cn("object-cover", imageClassName)}
+            />
+          ))}
+        </div>
       ) : (
         <div aria-hidden className="absolute inset-0">
           {scenes[scene]}
         </div>
       )}
     </div>
+  )
+}
+
+// A half sun sitting on the bottom edge of its box: the motif at text size (list bullets) or poster size
+export function SunArch({ className }: { className?: string }) {
+  return (
+    <span aria-hidden className={cn("relative block overflow-hidden", className)}>
+      <span className="hh-sun absolute inset-x-0 top-0 block aspect-square rounded-full bg-sun" />
+    </span>
   )
 }

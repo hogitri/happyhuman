@@ -3,13 +3,13 @@
 The project's knowledge base. Kept up to date by both people and AI agents (see `AGENTS.md` in the project root).
 
 ## Start here
-- [[Project Overview]] — what Happy Human is, goals, status
+- [[Project Overview]] — what Happy Human is, goals, status (summarised for design agents in `PRODUCT.md` at the project root)
 - [[Brand Strategy]] — audience, USP, clothing, fitness philosophy, marketing and vision
 - [[Architecture/Overview|Architecture]] — how the code fits together
 - [[Glossary]] — project terms
 - [[Features/UI Components|UI Components]] — the shadcn component library
 - [[Features/Colour Guide|Colour Guide]] — brand colours, type and building blocks
-- [[Features/Landing Page|Landing Page]] — the bootcamp landing page at `/no` and `/en`
+- [[Features/Landing Page|Landing Page]] — the movement front page at `/no` and `/en`, and the bootcamp page at `/no/trening`
 - [[Features/Info Pages|Info Pages]] — about, contact, privacy, terms and terms of sale; sitemap and robots.txt
 - [[Features/Brand Identity|Brand Identity]] — logo wordmark, lockups and the 2025 brand explorations
 - [[People/Kaja Haugen|Kaja Haugen]] — co-founder

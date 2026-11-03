@@ -12,8 +12,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 Project-wide rules live in the root `../AGENTS.md`. Read its **Design system** section before building UI. In short:
 
-- Style guide: `app/[lang]/styleguide/page.tsx` (http://localhost:3000/no/styleguide). Keep it updated when you add tokens or brand components.
-- Colour tokens: `app/globals.css` (light `:root`, dark `.dark`). No raw hex values or Tailwind palette colours in components.
-- Build pages from `components/brand/*` (Logo/LogoMark, Section, SectionHeading, FacebookCta, Visual, …), then page sections in `components/landing/`, then `components/ui/*` (shadcn).
-- Fjord text on sun (never white), sun only as a fill on light backgrounds, and `text-link` links are always underlined.
-- All text comes from `app/[lang]/dictionaries/{no,en}.json`.
+- Reference build: the front page, `app/[lang]/page.tsx` and `components/home/`.
+- Palette in `app/globals.css`: foam, sea glass, deep sea, buoy orange (the one main action, deep text on it), seaglass; field classes `.hh-deep`, `.hh-glass`, `.hh-buoy`. No raw colours in components.
+- Albert Sans only, semibold headings, five type steps; pill buttons; large rounded media; still photos only.
+- Norwegian only: all text comes from `app/[lang]/dictionaries/no.json`.

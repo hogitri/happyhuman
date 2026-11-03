@@ -6,6 +6,13 @@ import { useEffect } from "react"
 // block enters the screen. Content is only hidden once this has run, so without JavaScript or with
 // reduced motion everything is simply shown.
 export function Reveal() {
+  // Pause looping motion (the hero crossfade) while the tab is hidden
+  useEffect(() => {
+    const sync = () => document.documentElement.toggleAttribute("data-tab-hidden", document.hidden)
+    document.addEventListener("visibilitychange", sync)
+    return () => document.removeEventListener("visibilitychange", sync)
+  }, [])
+
   useEffect(() => {
     if (!("IntersectionObserver" in window)) return
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return

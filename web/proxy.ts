@@ -1,25 +1,16 @@
 import { NextResponse, type NextRequest } from "next/server"
 
-import { defaultLocale, hasLocale, type Locale } from "@/lib/i18n"
+import { defaultLocale, hasLocale } from "@/lib/i18n"
 
-// Pick the first supported language from Accept-Language, in the browser's order
-function getLocale(request: NextRequest): Locale {
-  const header = request.headers.get("accept-language") ?? ""
-  for (const part of header.split(",")) {
-    const tag = part.split(";")[0].trim().toLowerCase()
-    if (/^(no|nb|nn)\b/.test(tag)) return "no"
-    if (/^en\b/.test(tag)) return "en"
-  }
-  return defaultLocale
-}
-
+// Norwegian only: every path without /no gets it, and old /en links move to the same page in Norwegian
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
-  if (hasLocale(pathname.split("/")[1] ?? "")) return
+  const [, first = "", ...rest] = pathname.split("/")
+  if (hasLocale(first)) return
 
-  const locale = getLocale(request)
-  request.nextUrl.pathname = `/${locale}${pathname === "/" ? "" : pathname}`
-  return NextResponse.redirect(request.nextUrl)
+  const tail = first === "en" ? rest.join("/") : pathname.replace(/^\//, "")
+  request.nextUrl.pathname = `/${defaultLocale}${tail ? `/${tail}` : ""}`
+  return NextResponse.redirect(request.nextUrl, first === "en" ? 308 : 307)
 }
 
 export const config = {

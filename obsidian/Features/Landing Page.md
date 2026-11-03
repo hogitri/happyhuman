@@ -1,14 +1,31 @@
 ---
 type: feature
 status: in-progress
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 # Landing Page
 
 ## Purpose
-The front page at `/no` (and `/en`). It presents [[Bootcamp i Blomvåg]] to new people and sends them to the Facebook group, which is where sessions are posted and sign-up happens today. It is the first real page of the site.
+Two pages share this note:
+- **Front page** (`/no`, `/en`): the Happy Human movement, told through its founders Kaja and Hoang. It explains what Happy Human is (training and lifestyle for body and mind), shows who started it, and sends people to a free class. New on 2026-11-03.
+- **Training page** (`/no/trening`, `/en/trening`): the old front page about [[Bootcamp i Blomvåg]], moved here unchanged.
 
-## How it works
+## Front page (2026-11-03, "sea and buoy")
+Crisp and minimal, inspired by wearecollins.com and fornebuporten.no/lifestyle; copy from the earlier live site. **No menu** on any page: the logo sits alone at the top (inside the hero on the front page). See [[Decisions/2026-11-03 Sea and buoy front page]]. Top to bottom:
+1. **Hero** on deep sea: the logo, "Trening som gjør deg glad.", the lead, the orange "Bli med i gruppa" button and a "Personlig trening" link; one still photo of Hjeltefjorden that opens from a rounded card to full width as you scroll.
+2. **Why** (`#bevegelsen`): "Trening skal føles bra i kropp og hode", the four values, a wide photo of Ulvsund, and a short description of the sessions.
+3. **Dette tilbyr vi** (`#tilbud`): the bootcamp card (illustration: a group training at stations by the sea, with a child) and the personal training card (illustration: one-to-one training indoors in our home gym, a deep, upright back squat in the rack seen from the front, with the trainer beside, a bench and dumbbells) ("Ta kontakt for ulike pakker tilpasset dine behov"; "Ta kontakt" opens an email).
+4. **Lurer du på noe?**: three questions.
+5. **Klar for å bli med?**: a buoy-orange panel with the join button.
+6. **Footer** on deep sea: logo, contact, pages. No photo credits anywhere: every place photo is CC0 (the hero is the coastal path at Rong, the personal training card Hestdalen on Rong).
+
+Copy rules from the user (2026-11-03): no sentence dashes (commas or rephrased sentences instead; number ranges like 8–10 stay); -en endings instead of -a (gruppen, uken, barnene); nothing about food, mental health, clothing or outdoor life.
+
+## Training page (was the front page until 2026-11-03)
+
+On `/trening`, the half sun in the hero now carries three words instead of numbers: **Leken** (og variert), **Intensiv** (på ditt nivå), **For alle** (store og små). The user disliked "60 minutter / 8–10 stasjoner / 0 kr alltid gratis".
+Since 2026-11-03 the intro ("Vi trener ved sjøen…"), the values band ("Ingen før-og-etter-bilder…") and Kaja's quote are removed; "Slik er en time" has three simple flat illustrations (arriving, a warm-up ring, an easier and a harder step) instead of the big diagram; and the people section was later removed (Kaja and Hoang are presented on `/om-oss`). The layout below is from the 2026-11-02 world. Since 2026-11-03 it uses the new header, palette and fonts through the shared tokens, but still has the arches, pills and semibold headings: it needs a redesign in the new world. The header no longer links to its sections.
+
 Redesigned on 2026-11-02 to be "visually stunning" ([[Decisions/2026-11-02 Rising-sun arch as the one motif]]). The whole page is built from **one shape**: the rising-sun arch in the H monogram. It shows up as the hero's two halves, the mask on every photo, the bullets in the lists, and a full-width sunrise band. Top to bottom:
 1. **Header**: logo, four section links (Timen, Stasjonene, Kaja, Spørsmål; hidden on phones) and an outline "Bli med i gruppa" button. The hero holds the page's one sun button.
 2. **Hero**: the monogram split in two. Right: a tall arch-shaped photo of Blomvåg that slowly crossfades to Ulvsund. Left: a card with the headline, lead and sun button, with a big half sun rising from its bottom edge carrying the three facts (60 min, 8–10 stations, 0 kr).
@@ -32,6 +49,8 @@ The English headline is "Feel-good training." (not a literal translation of "Tre
 All text comes from the dictionaries (`nav`, `hero`, `intro`, `session`, `stations`, `why`, `trainer`, `faq`, `finalCta`, `footer`).
 
 ## Code
+- Front page: `web/app/[lang]/page.tsx`; sections in `web/components/home/` (`hero`, `letter`, `founders`, `offer`, `room-for-all`, `join`)
+- Training page: `web/app/[lang]/trening/page.tsx`
 - `web/app/[lang]/page.tsx` — assembles the sections and mounts `Reveal`
 - `web/components/landing/` — `site-header`, `hero`, `intro`, `session`, `stations`, `values`, `trainer`, `faq`, `final-cta`, `site-footer`
 - `web/components/brand/visual.tsx` — `Visual` (now with `shape="arch"` and crossfading `src` arrays) and `SunArch`; `logo.tsx` — `Logo` (new `xl` size)
@@ -40,6 +59,9 @@ All text comes from the dictionaries (`nav`, `hero`, `intro`, `session`, `statio
 - `web/public/images/place/`, `web/public/images/people/` — photos; credits in `web/lib/photo-credits.ts`
 
 ## Open questions / TODO
+- **For Kaja and Hoang:** approve or rewrite the front page texts, bios and facts (`home` in the dictionaries).
+- Real photos for the front page: training and lifestyle photos, and a sharper portrait of Hoang (current file 427 × 534 px).
+- Redesign `/trening` (and the info pages and style guide) in the new visual world.
 - **For Kaja:** confirm or replace the 8 sample stations and their easier/harder versions (`stations.items`). They are examples written for the design.
 - **For Kaja:** an FAQ on injuries, pregnancy and health conditions was drafted and taken out again, as agreed earlier, until she approves the wording.
 - Replace the place photos with our own photos of classes (people of different ages and levels training together) once they exist and members have agreed to be shown.

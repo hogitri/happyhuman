@@ -2,10 +2,10 @@ import { FacebookCta } from "@/components/brand/cta-button"
 import { SunArch, Visual } from "@/components/brand/visual"
 import type { Dictionary } from "@/app/[lang]/dictionaries"
 
-const heroPhotos = ["/images/place/blomvaag.jpg", "/images/place/ulvsund.jpg"]
+const heroPhotos = ["/images/home/ill-blomvaag-tall.webp", "/images/home/ill-ulvsund-tall.webp"]
 
 // The H monogram split in two: the photo of Blomvåg under the top arch on the right,
-// the sun rising from the bottom of the card on the left, carrying the three facts.
+// the sun rising from the bottom of the card on the left, carrying three words about the class.
 export function Hero({ dict }: { dict: Dictionary }) {
   const { hero } = dict
 
@@ -40,7 +40,7 @@ export function Hero({ dict }: { dict: Dictionary }) {
               {hero.stats.map((stat) => (
                 <div key={stat.label} className="flex flex-col-reverse gap-0.5">
                   <dt className="text-sm font-medium">{stat.label}</dt>
-                  <dd className="text-3xl font-semibold tracking-tighter tabular-nums md:text-5xl">{stat.value}</dd>
+                  <dd className="text-xl font-semibold tracking-tight sm:text-2xl lg:text-3xl xl:text-4xl">{stat.value}</dd>
                 </div>
               ))}
             </dl>

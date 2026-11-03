@@ -21,6 +21,7 @@ Source: [[Sources/Hoang Minh Trinh - LinkedIn]]
 - **Boards:** chair of Haralt; board member at Proppy, EzBench, Nexus Connect and Kiip.app.
 - **Education:** Bachelor's in Creativity, Innovation and Business Development (Kristiania), plus a Personal Trainer qualification from NIH and Performance Specialist certification (Scandinavian Top Team).
 - **Languages:** English, Norwegian, Vietnamese.
+- **Own sport:** basketball at elite level, including Centrum Tigers in BLNO (Norway's top league); Proballers lists him on the 2017–18 roster (https://proballers.com/basketball/player/173796/hoang-trinh). Confirmed by Hoang, 2026-11-03.
 
 ## Role in Happy Human
 - Chair of the board of **HAPPY HUMAN AS** (org.nr. 933 037 495, founded 2024-01-31). See [[Project Overview#Company]].

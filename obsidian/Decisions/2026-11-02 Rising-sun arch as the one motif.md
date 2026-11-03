@@ -1,7 +1,7 @@
 ---
 type: decision
 date: 2026-11-02
-status: accepted
+status: superseded
 ---
 # Rising-sun arch as the one motif
 
@@ -31,3 +31,5 @@ Items are separated by space or a tone step instead of hairline dividers. Brand 
 - [[Features/Colour Guide]]
 - [[Decisions/2026-10-26 H monogram as the logo]]
 - [[Decisions/2026-11-02 Open-licensed place photos until we have our own]]
+
+> **Superseded 2026-11-03** by [[Decisions/2026-11-03 Founder editorial front page]]: the site now uses a new visual world.

@@ -10,7 +10,7 @@ export function FinalCta({ dict }: { dict: Dictionary }) {
     <section aria-labelledby="cta-title" className="overflow-hidden py-20 md:py-32">
       <div className="grid grid-cols-2 gap-3 px-4 sm:px-6 lg:grid-cols-[1fr_minmax(0,64rem)_1fr] lg:px-0">
         <Visual
-          src="/images/place/hjeltefjorden-seen-from-rong-pier.jpg"
+          src="/images/home/ill-kyststien.webp"
           alt={dict.finalCta.imageAlt}
           shape="arch"
           sizes="(min-width: 1024px) 20vw, 50vw"

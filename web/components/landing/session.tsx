@@ -1,61 +1,53 @@
 import { Section } from "@/components/brand/section"
 import type { Dictionary } from "@/app/[lang]/dictionaries"
 
-type Dot = { x: number; y: number; zone: 0 | 1 | 2; tone: number }
+// Three small flat illustrations, one per part of the class. People are simple circles:
+// big ones for adults, small ones for kids. Colours come from the palette tokens.
 
-// Deterministic pseudo-random numbers, so the server and every visit draw the same picture
-function random(seed: number) {
-  return () => {
-    seed = (seed * 16807) % 2147483647
-    return (seed - 1) / 2147483646
-  }
-}
-
-// Many into one: people arriving on their own (scattered), the warm-up (a tight ribbon),
-// the stations (neat rows in sun). Drawn along a 1200 × 260 track.
-function buildDots(): Dot[] {
-  const rand = random(42)
-  const dots: Dot[] = []
-  for (let i = 0; i < 44; i++) {
-    dots.push({ x: 20 + rand() * 340, y: 24 + rand() * 216, zone: 0, tone: rand() > 0.5 ? 1 : 0 })
-  }
-  for (let row = 0; row < 3; row++) {
-    for (let col = 0; col < 15; col++) {
-      dots.push({ x: 430 + col * 22 + (row % 2) * 11, y: 108 + row * 20, zone: 1, tone: 1 })
-    }
-  }
-  for (let row = 0; row < 5; row++) {
-    for (let col = 0; col < 9; col++) {
-      dots.push({ x: 850 + col * 40, y: 40 + row * 46, zone: 2, tone: 2 })
-    }
-  }
-  return dots
-}
-
-const dots = buildDots()
-const toneClass = ["fill-foreground/20", "fill-foreground/40", "fill-sun"]
-
-// A half sun of radius r standing on (x, y): the page's motif at diagram size
-const arch = (x: number, y: number, r = 7) => `M${x - r} ${y}A${r} ${r} 0 0 1 ${x + r} ${y}Z`
-
-function Diagram({ vertical, label }: { vertical?: boolean; label: string }) {
+// Arriving: people come on their own, big and small, from all sides
+function Arrive() {
   return (
-    <svg
-      role="img"
-      aria-label={label}
-      viewBox={vertical ? "0 0 260 1200" : "0 0 1200 260"}
-      className={vertical ? "h-full w-full md:hidden" : "hidden w-full md:block"}
-    >
-      {dots.map((dot, i) => (
-        <path
-          key={i}
-          d={vertical ? arch(dot.y, dot.x, 9) : arch(dot.x, dot.y)}
-          className={toneClass[dot.tone]}
-        />
-      ))}
+    <svg viewBox="0 0 240 160" aria-hidden="true" className="h-auto w-full">
+      <circle cx="46" cy="58" r="14" className="fill-foreground" />
+      <circle cx="104" cy="104" r="14" className="fill-foreground" />
+      <circle cx="150" cy="44" r="9" className="fill-seaglass" />
+      <circle cx="190" cy="98" r="14" className="fill-foreground" />
+      <circle cx="70" cy="122" r="9" className="fill-seaglass" />
+      <circle cx="200" cy="40" r="5" className="fill-primary" />
     </svg>
   )
 }
+
+// Warm-up: everyone in one ring
+function WarmUp() {
+  const ring = Array.from({ length: 10 }, (_, i) => {
+    const angle = (i / 10) * Math.PI * 2 - Math.PI / 2
+    return { x: 120 + Math.cos(angle) * 52, y: 80 + Math.sin(angle) * 52, small: i % 3 === 2 }
+  })
+  return (
+    <svg viewBox="0 0 240 160" aria-hidden="true" className="h-auto w-full">
+      <circle cx="120" cy="80" r="52" className="fill-none stroke-seaglass" strokeWidth="6" />
+      {ring.map((p, i) => (
+        <circle key={i} cx={p.x} cy={p.y} r={p.small ? 8 : 12} className={p.small ? "fill-seaglass" : "fill-foreground"} />
+      ))}
+      <circle cx="120" cy="80" r="6" className="fill-primary" />
+    </svg>
+  )
+}
+
+// Stations: the same exercise at two levels, an easier step and a harder one
+function Levels() {
+  return (
+    <svg viewBox="0 0 240 160" aria-hidden="true" className="h-auto w-full">
+      <rect x="36" y="104" width="72" height="28" rx="6" className="fill-seaglass" />
+      <rect x="132" y="64" width="72" height="68" rx="6" className="fill-primary" />
+      <circle cx="72" cy="84" r="14" className="fill-foreground" />
+      <circle cx="168" cy="44" r="14" className="fill-foreground" />
+    </svg>
+  )
+}
+
+const illustrations = [Arrive, WarmUp, Levels]
 
 export function Session({ dict }: { dict: Dictionary }) {
   const { session } = dict
@@ -69,18 +61,22 @@ export function Session({ dict }: { dict: Dictionary }) {
         <p className="max-w-xl text-lg text-pretty md:text-xl">{session.lead}</p>
       </div>
 
-      <div className="mt-14 grid grid-cols-[6.5rem_1fr] gap-6 md:mt-20 md:block">
-        <Diagram vertical label={session.diagramLabel} />
-        <Diagram label={session.diagramLabel} />
-        <ol data-reveal className="grid gap-10 md:mt-12 md:grid-cols-3 md:gap-10">
-          {session.steps.map((step) => (
-            <li key={step.title} className="flex flex-col justify-center gap-2 md:justify-start">
-              <h3 className="text-xl font-semibold md:text-2xl">{step.title}</h3>
-              <p className="max-w-xs text-base text-pretty">{step.text}</p>
+      <ol data-reveal className="mt-14 grid gap-4 md:mt-20 md:grid-cols-3">
+        {session.steps.map((step, i) => {
+          const Illustration = illustrations[i] ?? Arrive
+          return (
+            <li key={step.title} className="flex flex-col gap-6 rounded-[1.75rem] bg-card p-6 text-card-foreground sm:p-8">
+              <div className="rounded-2xl bg-background px-6 py-4">
+                <Illustration />
+              </div>
+              <div className="flex flex-col gap-2">
+                <h3 className="text-xl font-semibold md:text-2xl">{step.title}</h3>
+                <p className="max-w-xs text-base text-pretty text-muted-foreground">{step.text}</p>
+              </div>
             </li>
-          ))}
-        </ol>
-      </div>
+          )
+        })}
+      </ol>
     </Section>
   )
 }

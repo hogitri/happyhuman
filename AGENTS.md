@@ -37,70 +37,68 @@ There is no test runner yet.
 ## Conventions
 
 - Import with the `@/` alias (`@/components/ui/button`, `@/lib/utils`).
-- **UI follows the [Design system](#design-system):** brand components from `components/brand/`, theme tokens instead of raw colours, and the style guide at `/no/styleguide` as the reference.
+- **UI follows the [Design system](#design-system):** brand components from `components/brand/`, theme tokens instead of raw colours, `DESIGN.md` and the front page (`components/home/`) as the reference.
 - Add UI components with the shadcn CLI (`npx shadcn@latest add <name>`) into `components/ui/` instead of writing them by hand. Build on the existing components before making new ones.
 - Shared helpers go in `lib/`, React hooks in `hooks/`.
-- Pages live under `app/[lang]/`. Locales are set in `lib/i18n.ts` (`no` is the default, `en` secondary).
-- **No hard-coded user-facing text in components.** Put it in `app/[lang]/dictionaries/no.json` and `en.json`, and load it with `getDictionary`. Keep both files in sync.
+- Pages live under `app/[lang]/`. **The site is Norwegian only** (`lib/i18n.ts` has just `no`; `/en/...` links redirect to `/no/...` in `proxy.ts`).
+- **No hard-coded user-facing text in components.** Put it in `app/[lang]/dictionaries/no.json` (and `pages/no.json` for the info pages) and load it with `getDictionary`.
 - Match the style of the surrounding code.
 
 ## Design system
 
 Every page is built from the colour guide and the brand components. **Before building or changing UI, open the style guide** at http://localhost:3000/no/styleguide (source: `web/app/[lang]/styleguide/page.tsx`) and read `obsidian/Features/Colour Guide.md`. The style guide is the source of truth: if you add a token, brand component or pattern, add it to the style guide in the same task. `DESIGN.md` at the repo root is a summary of the same system for design tools (Google Stitch, Figma, Claude); it follows the style guide, so update it too when tokens, type or brand components change.
 
+The current look (since 2026-11-03, "sea and buoy") takes its cues from wearecollins.com and fornebuporten.no/lifestyle: crisp, minimal, the calm of the coast with the energy of a rescue buoy. The front page (`web/components/home/`) is the reference build; `/trening`, the info pages and parts of the style guide still use older layouts. See `obsidian/Decisions/2026-11-03 Sea and buoy front page.md`. Check new UI with `node .claude/skills/design-taste-frontend/scripts/lint.mjs` and `inspect.mjs` (0 FAIL).
+
 ### Colours
-The palette is defined once, in `web/app/globals.css` (`:root` for light, `.dark` for dark), and mapped onto shadcn's tokens.
+Defined once in `web/app/globals.css` (`:root` light, `.dark` dark) and mapped onto shadcn's tokens.
 
 | Colour | Token / utility | Use for |
 |--------|-----------------|---------|
-| Sun `#E9C46A` | `primary`, `accent`, `bg-sun` | The **one** main action per view (e.g. "Bli med i gruppa"); small highlights: eyebrow badges, icon tiles, the logo dot |
-| Fjord `#264653` | `foreground` (light), `bg-fjord` | Text in light mode; background in dark mode and fjord sections; focus rings (light) |
-| Mist `#F4F8F8` | `background` (light), `bg-mist` | Page background in light mode; text in dark mode |
-| Light fjord `#E3ECEE` | `secondary`, `muted` | Alternate section bands, quiet surfaces |
-| Link (fjord / sun) | `text-link` | Link text: fjord on light, sun on dark. Always underlined |
+| Foam `#F2F5F3` | `background` (light), `bg-foam` | Page ground |
+| Sea glass `#D3E6E0` | `secondary`, `muted`, `.hh-glass` | Quiet bands and cards (personal training, the founders) |
+| Deep sea `#0F2B33` | `foreground` (light), `.hh-deep` | Text; the hero, the bootcamp card and the footer as deep fields |
+| Buoy `#FF5A36` | `primary`, `.hh-buoy`, `text-buoy` | The **one** main action per view (deep text on it, 4.8:1), the closing panel |
+| Seaglass `#9FD3C7` | `accent`, `bg-seaglass` | Small calm accents (text selection) |
+| Tide `#2F5E62` | `fill-tide` | A deep teal step, only inside illustrations (hills) |
+
+Dark mode is the sea at night (`#0B2026` ground, foam text, `#123039` cards); `.hh-deep`, `.hh-glass` and `.hh-buoy` keep their colours. Legacy names (`--sun`, `--fjord`, `--mist`, `--paper`, `--sand`, `--ink`, `--teal`) point at the new colours.
 
 Rules:
-- **Use semantic tokens** (`bg-background`, `text-foreground`, `text-muted-foreground`, `bg-primary`, `bg-card`, `border-border`) so dark mode works automatically. Use the brand utilities (`bg-sun`, `bg-fjord`, …) only for deliberate brand moments.
-- **No raw colours** in components: no hex, `rgb()`, `oklch()` or Tailwind palette colours like `bg-zinc-50` or `text-orange-500`. Need a new colour? Add a token to `globals.css` and the style guide, with light and dark values.
-- **Never white or mist text on sun** (1.7:1, fails WCAG). Text on sun is fjord (`text-primary-foreground`, 6.0:1).
-- **Sun is a fill, never text** or thin lines on light backgrounds (`text-primary` on mist or white fails).
-- **Links are always underlined**: in light mode `text-link` has the same colour as body text.
-- **One sun button per view.** Secondary actions use `SecondaryCta` or the `outline`/`ghost` button variants.
-- On a **sun section**, use `FacebookCta tone="inverse"` (fjord button), never a sun button.
-- Every text/background pair must reach **4.5:1** (3:1 for text ≥ 24px or bold ≥ 19px). Check new pairs and list them on the style guide.
+- **Use semantic tokens** and the field classes; **no raw colours** in components.
+- **Text on buoy is always deep sea** (never white: 2.8:1).
+- **One orange button per view.** The header repeats the action as an outline pill.
+- Every text/background pair must reach **4.5:1** (3:1 for text ≥ 24px).
 
 ### Type
-- **One typeface: Geist.** Headings `h1`–`h4` are Geist semibold with tight tracking (`font-heading` maps to Geist in `globals.css`), matching the plain grotesque of the "Happy Human" wordmark. Don't add other fonts; fonts live in `web/lib/fonts.ts`.
-- Use the scale shown on the style guide: h1 `text-5xl sm:text-6xl md:text-8xl`, h2 `text-4xl md:text-6xl` (both `font-semibold tracking-tighter`, via `SectionHeading`), h3 `text-2xl font-semibold`, h4 `text-xl font-semibold`, lead `text-lg md:text-xl text-muted-foreground`, body `text-base`. No `font-bold`/`font-extrabold` headings.
+- **One typeface: Albert Sans** (`web/lib/fonts.ts`). Headings **semibold** with tight tracking (`tracking-[-0.04em]` at display size, `-0.03em` for titles). Source Serif 4 is still loaded for older pages; don't use it in new work. Geist Mono only for code.
+- **Five steps** (tokens in `globals.css`): `text-display`, `text-title`, `text-lead` (20px), `text-base` (16px), `text-small` (13px minimum). Headings two lines or fewer at every width. Buttons in sentence case.
+- **No eyebrows or kicker labels above headings.**
 
 ### Building pages
-- **Reach for components in this order:** `web/components/brand/*` first, then `web/components/ui/*` (shadcn), and only then something new. Put new reusable brand pieces in `components/brand/` and page-specific sections in `components/<page>/` (e.g. `components/landing/`).
-- Page layout = a stack of `Section`s. Alternate tones for rhythm (`default` → `muted` → … → `fjord`/`sun` for emphasis). Each section starts with a `SectionHeading` (title, optional lead; no eyebrow badges on the landing page). Don't hand-roll padding or max-width; `Section` handles them.
-- The `fjord` tone applies the `.dark` class locally, so components inside it switch to dark tokens. Don't override colours inside it.
+- Reach for `web/components/brand/*`, then `web/components/ui/*`, then something new. Page sections live in `components/<page>/`.
+- Bands: one pair of margins, `px-4 sm:px-8`, `py-24`–`py-40` between sections. Front page order: deep hero (logo, centred headline, orange button, one photo that opens to full width as you scroll) → why (values, a wide illustration, a short description of the sessions) → the offer (bootcamp on deep, personal training on sea glass) → three questions → buoy closing panel → deep footer. **No menu** on any page.
+- **Shapes:** pill buttons (`rounded-full`), large media and panels at `rounded-[1.75rem]`, small cards `rounded-2xl`. No hairlines, outlined boxes, shadows, gradients or monospace.
 
 | Brand component | Use it for |
 |-----------------|-----------|
-| `Logo`, `LogoMark` | The H monogram + two-line "Happy Human" wordmark (`sm` in headers, `lg` in heroes); `LogoMark` alone for small spaces and icons. Always one colour (`currentColor`); never retype the name as a logo by hand |
-| `Section` / `SectionHeading` | Every page band and its heading |
-| `FacebookCta`, `SecondaryCta`, `CtaLink` | Pill-shaped calls to action (`h-12 rounded-full`) |
-| `ValueCard` + `BrandIcon` | Icon + title + text cards. Icons are referenced by name from the dictionaries; add new ones to `components/brand/icons.tsx` |
-| `Visual` | Every image slot. Without `src` it draws a brand illustration (`scene` = `sunrise`, `sun`, `mist`); pass `src` + `alt` for a real photo (rendered with `next/image`). `shape="arch"` masks it with the brand motif; an array of `src` slowly crossfades. Never show "Bilde:"-style placeholder labels |
-| `SunArch` | The motif itself: a half sun standing on its box's bottom edge. Text size for list bullets, poster size for bands |
-| `Reveal` | Mounted once per page: staggered entrances for every `[data-reveal]` block (nothing is hidden without JS or with reduced motion) |
-| `LanguageToggle`, `ThemeToggle` | Language (NO/EN links) and light/dark/system switching. The language switch lives in the **footer**, not the navbar or mobile menu |
+| Service illustrations (`components/home/service-illustrations.tsx`) | Flat SVG scenes of the bootcamp (a group at stations by the sea, a child along) and personal training (indoors in the home gym: a front-view back squat in the rack with the trainer beside, bench and dumbbells, the sun in the window). People are built from joints with thick round strokes; colours `glass`, `buoy`, `tide`, `seaglass`, `deep` |
+| Exercise pictograms (`components/brand/exercise-icons.tsx`) | One line pictogram per bootcamp station (squat, push-up, lunge, plank, kettlebell, jump rope, mountain climber, mobility), lucide-style 24px; shown in sea-glass tiles on `/trening` |
+| `Logo`, `LogoMark` | The H monogram + "Happy Human" wordmark, one colour (`currentColor`) |
+| `FacebookCta`, `SecondaryCta`, `CtaLink` | Pill calls to action (`h-12`) |
+| `SiteHeader`, `SiteFooter` | Header: the logo only, no menu (the front page puts it in the hero); footer on deep sea. No photo credits on the site |
+| `Reveal` | Section entrances for `[data-reveal]` blocks; also pauses looping motion while the tab is hidden |
+| `ThemeToggle` | Light/dark/system |
 
-- Shape and feel: rounded and friendly (`--radius` 0.875rem, `rounded-2xl`/`rounded-3xl` cards, `rounded-full` buttons and badges), generous whitespace, icons from `lucide-react` only.
-- **One motif: the rising-sun arch** from the H monogram (a half circle standing on a flat line). Use it for photo masks (`Visual shape="arch"`), bullets and bands (`SunArch`). Don't introduce a second decorative shape. See `obsidian/Decisions/2026-11-02 Rising-sun arch as the one motif.md`.
-- **Less is more.** Few sections, short copy, lots of white space (`Section` uses `py-20 md:py-32`). Prefer one big visual and large type over grids of small cards, icons and badges. Separate items with space or a tone step (filled tiles), not hairline dividers or outlined boxes. Don't add a section or element unless it earns its place.
-- **Visuals carry the page.** Every main section on the landing page pairs text with a large `Visual` (arch or rounded-3xl, aspect 4/5 or wider), a large `SunArch`, or is itself large type (the values list). Real photos come first: our own, then openly licensed photos of the place, credited in the footer via `web/lib/photo-credits.ts`; never stock photos of strangers presented as members.
-- **Motion** lives in `globals.css` (end of file) and `Reveal`, always inside `prefers-reduced-motion: no-preference`, transform and opacity only.
-- **Imagery:** show real people training together, having fun, of different ages, sizes and levels. No before/after shots, no shirtless "physique" photos, no focus on appearance (see Product principles).
-- **Editing shadcn files** in `components/ui/` is allowed for brand reasons (e.g. the `link` variant uses `text-link` and is always underlined, Badge has an `accent` variant). Keep such edits small and note them in `obsidian/Features/Colour Guide.md`. Re-running `shadcn add --overwrite` would undo them.
+- **Imagery:** places are shown as **flat palette illustrations made from real CC0 photos** (screen-print look: five palette tones and a buoy-orange sun), and the founders' portraits are gradient-mapped in the same palette (deep sea to foam). Still pictures only, never crossfading or changing. Files in `web/public/images/home/` (`ill-*.webp`, `*-duo.webp`), made from the originals in originals in `images/place`, `images/people`, `images/found`; each carries its origin in a `.json` sidecar). The script recipe is in `obsidian/Features/Landing Page.md`. **Only CC0 or our own photos**, because the site shows no photo credits (CC BY/BY-SA would require one).
+- **Motion:** the hero rises in on load; the hero photo opens from a rounded card to full width on scroll; offer and wide photos drift slightly inside their frames; buttons press. All inside `prefers-reduced-motion: no-preference`.
+- **Less is more.** Few sections, short copy, one idea per band.
+- **Imagery:** real people training together, different ages, sizes and levels. No before/after, no appearance focus (see Product principles).
 
 ### Accessibility and responsiveness
 - Mobile first. Check at 375px, 768px and 1280px, with no horizontal scroll.
 - Check both light and dark mode. The theme follows the system by default.
-- Keyboard: everything reachable, with a visible focus ring (the `ring` token: fjord in light mode, sun in dark; don't remove outlines).
+- Keyboard: everything reachable, with a visible focus ring (the `ring` token: deep sea in light mode, buoy in dark; don't remove outlines).
 - External links (Facebook) open in a new tab with `rel="noopener noreferrer"` and a screen-reader hint (`dict.ui.opensFacebook`).
 - Decorative icons get `aria-hidden`; placeholder images get a descriptive `aria-label`.
 
@@ -108,7 +106,7 @@ Rules:
 
 These apply to every screen, text, email and piece of training content.
 
-- **Language:** user-facing text is in **Norwegian bokmål** first, with English as secondary. Code, comments, commit messages and the vault are in English.
+- **Language:** user-facing text is **Norwegian bokmål only**. No sentence dashes (use commas or rephrase; number ranges like 8–10 are fine). Use **-en endings**, not -a (gruppen, uken, barnene). Nothing about food, mental health, clothing or outdoor life. Code, comments, commit messages and the vault are in English.
 - **Tone:** warm, playful and inclusive: "Vi har plass til alle." The goal is for people to feel *mestring* (mastery) and *treningsglede* (joy in training), not pressure.
 - **Health-safe content:**
   - No weight-loss, body-shaming, calorie-counting or "earn your food" framing.
@@ -130,7 +128,7 @@ For anything that needs looking up (libraries, APIs, tools, best practices, how 
 |-------|-----------|
 | `researcher` | Looking things up; saves notes to `obsidian/Research/` |
 | `health-content-reviewer` | Checking user-facing text and training content against the Product principles |
-| `copywriter` | Writing bokmål (and English) product text into the dictionaries |
+| `copywriter` | Writing bokmål product text into the dictionaries |
 | `code-reviewer` | Reviewing the current diff before calling work done |
 | `vault-keeper` | Finding and fixing outdated notes, broken links and duplicates in the vault |
 
@@ -141,7 +139,7 @@ Slash commands: `/research`, `/update-vault`, `/log-session`, `/add-source`, `/a
 A task is done when:
 
 1. `npm run lint` and `npm run build` pass in `web/` (if code changed).
-2. UI changes have been checked in the browser, in both `no` and `en`, in light and dark mode, and at mobile width.
+2. UI changes have been checked in the browser, in light and dark mode, and at mobile width.
 3. UI follows the **Design system**: tokens instead of raw colours, brand components reused, contrast rules met, and any new token or brand component added to the style guide.
 4. New user-facing text is in the dictionaries, in bokmål, and follows the Product principles.
 5. The vault is updated (see below).

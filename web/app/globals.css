@@ -7,10 +7,26 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-albert-sans);
+  --font-serif: var(--font-source-serif);
   --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-geist-sans);
+  --font-heading: var(--font-albert-sans);
+  /* Five type steps for the whole site: display, title, lead, body (text-base), small */
+  --text-display: clamp(2.25rem, 1rem + 5vw, 4.5rem);
+  --text-title: clamp(1.5rem, 1.15rem + 1.1vw, 2.25rem);
+  --text-lead: 1.25rem;
+  --text-small: 0.8125rem;
   --color-fjord: var(--fjord);
+  --color-paper: var(--paper);
+  --color-sand: var(--sand);
+  --color-ink: var(--ink);
+  --color-teal: var(--teal);
+  --color-foam: var(--foam);
+  --color-glass: var(--glass);
+  --color-seaglass: var(--seaglass);
+  --color-deep: var(--deep);
+  --color-tide: var(--tide);
+  --color-buoy: var(--buoy);
   --color-sun: var(--sun);
   --color-mist: var(--mist);
   --color-link: var(--link);
@@ -52,81 +68,128 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+/* Happy Human palette (2026-11-03): the calm of the coast with the energy of a rescue buoy.
+   Foam and sea glass grounds, deep-sea ink, one buoy orange for the main action. See DESIGN.md and /styleguide. */
 :root {
-  /* Happy Human palette (from the bootcamp punch card) — see /styleguide and obsidian/Features/Colour Guide.md */
-  --fjord: oklch(0.375 0.044 226.2); /* #264653 */
-  --sun: oklch(0.834 0.117 87.4); /* #E9C46A */
-  --mist: oklch(0.976 0.004 197.1); /* #F4F8F8 */
-  --link: var(--fjord); /* link text: fjord on light, sun on dark */
+  --foam: oklch(0.967 0.004 157.2); /* #F2F5F3 */
+  --glass: oklch(0.909 0.022 175); /* #D3E6E0 */
+  --seaglass: oklch(0.827 0.057 179); /* #9FD3C7 */
+  --deep: oklch(0.271 0.037 219.3); /* #0F2B33 */
+  --tide: oklch(0.43 0.047 202); /* #2F5E62, a deep teal step used in illustrations */
+  --buoy: oklch(0.684 0.207 33.9); /* #FF5A36 */
+  /* Legacy names (older pages and components) mapped onto the new palette */
+  --paper: var(--foam);
+  --sand: var(--glass);
+  --ink: var(--deep);
+  --teal: var(--deep);
+  --fjord: var(--deep);
+  --mist: var(--foam);
+  --sun: var(--buoy);
+  --link: var(--deep); /* links are always underlined */
 
-  --background: var(--mist);
-  --foreground: var(--fjord);
+  --background: var(--foam);
+  --foreground: var(--deep);
   --card: oklch(1 0 0);
-  --card-foreground: var(--fjord);
+  --card-foreground: var(--deep);
   --popover: oklch(1 0 0);
-  --popover-foreground: var(--fjord);
-  --primary: var(--sun);
-  --primary-foreground: var(--fjord);
-  --secondary: oklch(0.937 0.01 212.5); /* #E3ECEE */
-  --secondary-foreground: var(--fjord);
-  --muted: oklch(0.937 0.01 212.5); /* #E3ECEE */
-  --muted-foreground: oklch(0.51 0.037 224.1); /* #4F6B76 */
-  --accent: var(--sun);
-  --accent-foreground: var(--fjord);
+  --popover-foreground: var(--deep);
+  --primary: var(--buoy);
+  --primary-foreground: var(--deep);
+  --secondary: var(--glass);
+  --secondary-foreground: var(--deep);
+  --muted: var(--glass);
+  --muted-foreground: oklch(0.477 0.029 219.2); /* #4B6168 */
+  --accent: var(--seaglass);
+  --accent-foreground: var(--deep);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.898 0.015 213.1); /* #D3E0E3 */
-  --input: oklch(0.898 0.015 213.1);
-  --ring: var(--fjord);
-  --chart-1: var(--fjord);
-  --chart-2: var(--sun);
-  --chart-3: oklch(0.63 0.101 183); /* #2A9D8F */
-  --chart-4: oklch(0.781 0.127 57.9); /* #F4A261 */
-  --chart-5: oklch(0.678 0.156 35.2); /* #E76F51 */
-  --radius: 0.875rem;
-  --sidebar: oklch(0.953 0.008 207.1); /* #EAF1F2 */
-  --sidebar-foreground: var(--fjord);
-  --sidebar-primary: var(--sun);
-  --sidebar-primary-foreground: var(--fjord);
-  --sidebar-accent: var(--sun);
-  --sidebar-accent-foreground: var(--fjord);
-  --sidebar-border: oklch(0.898 0.015 213.1);
-  --sidebar-ring: var(--fjord);
+  --border: oklch(0.87 0.02 180); /* #C9D8D4 */
+  --input: oklch(0.87 0.02 180);
+  --ring: var(--deep);
+  --chart-1: var(--deep);
+  --chart-2: var(--buoy);
+  --chart-3: var(--seaglass);
+  --chart-4: oklch(0.781 0.127 57.9);
+  --chart-5: oklch(0.63 0.101 183);
+  --radius: 0.75rem;
+  --sidebar: var(--glass);
+  --sidebar-foreground: var(--deep);
+  --sidebar-primary: var(--buoy);
+  --sidebar-primary-foreground: var(--deep);
+  --sidebar-accent: var(--glass);
+  --sidebar-accent-foreground: var(--deep);
+  --sidebar-border: oklch(0.87 0.02 180);
+  --sidebar-ring: var(--deep);
 }
 
+/* Dark: the sea at night. The buoy keeps its colour. */
 .dark {
-  --link: var(--sun);
+  --link: var(--foreground);
 
-  --background: var(--fjord);
-  --foreground: var(--mist);
-  --card: oklch(0.428 0.05 225.5); /* #2F5564 */
-  --card-foreground: var(--mist);
-  --popover: oklch(0.428 0.05 225.5);
-  --popover-foreground: var(--mist);
-  --primary: var(--sun);
-  --primary-foreground: var(--fjord);
-  --secondary: oklch(0.428 0.05 225.5); /* #2F5564 */
-  --secondary-foreground: var(--mist);
-  --muted: oklch(0.428 0.05 225.5);
-  --muted-foreground: oklch(0.837 0.024 216.8); /* #B9CED4 */
-  --accent: var(--sun);
-  --accent-foreground: var(--fjord);
+  --background: oklch(0.229 0.029 218.9); /* #0B2026 */
+  --foreground: var(--foam);
+  --card: oklch(0.291 0.039 220.3); /* #123039 */
+  --card-foreground: var(--foam);
+  --popover: oklch(0.291 0.039 220.3);
+  --popover-foreground: var(--foam);
+  --primary: var(--buoy);
+  --primary-foreground: var(--deep);
+  --secondary: oklch(0.291 0.039 220.3);
+  --secondary-foreground: var(--foam);
+  --muted: oklch(0.291 0.039 220.3);
+  --muted-foreground: oklch(0.791 0.025 203); /* #A9C0C2 */
+  --accent: var(--seaglass);
+  --accent-foreground: var(--deep);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(0.493 0.053 224.4); /* #3E6878 */
-  --input: oklch(0.493 0.053 224.4);
-  --ring: var(--sun);
-  --chart-1: var(--sun);
-  --chart-2: oklch(0.63 0.101 183); /* #2A9D8F */
-  --chart-3: oklch(0.781 0.127 57.9); /* #F4A261 */
-  --chart-4: oklch(0.678 0.156 35.2); /* #E76F51 */
-  --chart-5: var(--mist);
-  --sidebar: oklch(0.428 0.05 225.5);
-  --sidebar-foreground: var(--mist);
-  --sidebar-primary: var(--sun);
-  --sidebar-primary-foreground: var(--fjord);
-  --sidebar-accent: oklch(0.493 0.053 224.4);
-  --sidebar-accent-foreground: var(--mist);
-  --sidebar-border: oklch(0.493 0.053 224.4);
-  --sidebar-ring: var(--sun);
+  --border: oklch(0.37 0.04 215); /* #1F4450 */
+  --input: oklch(0.37 0.04 215);
+  --ring: var(--buoy);
+  --chart-1: var(--buoy);
+  --chart-2: var(--seaglass);
+  --chart-3: oklch(0.781 0.127 57.9);
+  --chart-4: oklch(0.63 0.101 183);
+  --chart-5: var(--foam);
+  --sidebar: oklch(0.291 0.039 220.3);
+  --sidebar-foreground: var(--foam);
+  --sidebar-primary: var(--buoy);
+  --sidebar-primary-foreground: var(--deep);
+  --sidebar-accent: oklch(0.37 0.04 215);
+  --sidebar-accent-foreground: var(--foam);
+  --sidebar-border: oklch(0.37 0.04 215);
+  --sidebar-ring: var(--buoy);
+}
+
+/* Fields that keep their colour in both themes */
+.hh-deep,
+.hh-ink,
+.hh-teal {
+  --background: var(--deep);
+  --foreground: var(--foam);
+  --muted-foreground: oklch(0.791 0.025 203); /* #A9C0C2 */
+  --border: oklch(0.37 0.04 215);
+  --card: oklch(0.291 0.039 220.3);
+  --card-foreground: var(--foam);
+  --link: var(--foreground);
+  --ring: var(--buoy);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+.hh-buoy {
+  --background: var(--buoy);
+  --foreground: var(--deep);
+  --muted-foreground: var(--deep);
+  --primary: var(--deep);
+  --primary-foreground: var(--foam);
+  --link: var(--deep);
+  --ring: var(--deep);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+.hh-glass {
+  --background: var(--glass);
+  --foreground: var(--deep);
+  --muted-foreground: oklch(0.477 0.029 219.2);
+  background-color: var(--background);
+  color: var(--foreground);
 }
 
 @layer base {
@@ -138,6 +201,15 @@
   }
   html {
     @apply font-sans scroll-smooth;
+  }
+  /* Browser surfaces in the palette: selection, caret, scrollbar */
+  ::selection {
+    background-color: var(--seaglass);
+    color: var(--deep);
+  }
+  html {
+    caret-color: var(--foreground);
+    scrollbar-color: var(--muted-foreground) var(--background);
   }
   h1, h2, h3, h4 {
     @apply font-heading;
@@ -223,4 +295,40 @@
 @keyframes hh-sunrise {
   from { transform: translateY(30%); }
   to { transform: translateY(0); }
+}
+
+/* ── Front page motion (2026-11-03): no changing pictures; things rise, grow and drift ── */
+@media (prefers-reduced-motion: no-preference) {
+  /* Hero: the headline and its sentence rise in on load */
+  .hh-rise > * {
+    animation: hh-rise 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .hh-rise > :nth-child(2) { animation-delay: 90ms; }
+  .hh-rise > :nth-child(3) { animation-delay: 180ms; }
+
+  @supports (animation-timeline: view()) {
+    /* Hero photo: the rounded card opens up to the full width as you scroll */
+    .hh-open {
+      animation: hh-open linear both;
+      animation-timeline: view();
+      animation-range: entry 30% cover 50%;
+    }
+    /* Offer photos: a gentle drift inside their frame while they pass */
+    .hh-drift-y {
+      animation: hh-drift-y linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 100%;
+    }
+  }
+}
+@keyframes hh-rise {
+  from { opacity: 0; transform: translateY(28px); }
+}
+@keyframes hh-open {
+  from { transform: scale(0.86); border-radius: 2rem; }
+  to { transform: scale(1); border-radius: 0; }
+}
+@keyframes hh-drift-y {
+  from { transform: scale(1.12) translateY(-4%); }
+  to { transform: scale(1.12) translateY(4%); }
 }

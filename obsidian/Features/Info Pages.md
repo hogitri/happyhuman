@@ -45,3 +45,6 @@ These texts are a careful starting point, **not legal advice**. Check them, or h
 - [[Decisions/2026-10-26 Free group classes, paid personal training]]
 - [[Project Overview#Company]]
 - [[Brand Strategy]]
+
+## Update 2026-11-03
+`/om-oss` now carries the people: what we do (free bootcamp, personal training one-to-one in our home gym), how we work, and a section each for Kaja (MSc NIH, 7+ years as PT and instructor at SiO, about 3 000 PT hours, further training, football (Skogsvåg IL) and Norway's first women's futsal team at a European Championship, Antidoping Norge) and Hoang (PT from NIH, Performance Specialist, Centrum Tigers in BLNO, Head of Ventures in Agens, Founding Partner in Atlas Accelerator, co-founder of Firi), with links. No photos, no photo credits, no roles inside Happy Human.

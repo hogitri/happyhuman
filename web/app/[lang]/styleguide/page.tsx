@@ -3,7 +3,6 @@ import { notFound } from "next/navigation"
 import { CheckIcon, InfoIcon, XIcon } from "lucide-react"
 
 import { FacebookCta, SecondaryCta } from "@/components/brand/cta-button"
-import { LanguageToggle } from "@/components/brand/language-toggle"
 import { Logo, LogoMark } from "@/components/brand/logo"
 import { Section } from "@/components/brand/section"
 import { SectionHeading } from "@/components/brand/section-heading"
@@ -43,39 +42,38 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 }
 
-// Core brand colours. Values mirror app/globals.css.
+// Core brand colours. Values mirror app/globals.css ("sea and buoy", 2026-11-03).
 const brandColors = [
-  { name: "Fjord", token: "--fjord", className: "bg-fjord", hex: "#264653", dark: "#264653", role: "Text (light) · background (dark)", text: "text-mist" },
-  { name: "Sun", token: "--sun", className: "bg-sun", hex: "#E9C46A", dark: "#E9C46A", role: "Actions and highlights: buttons, badges, icon tiles", text: "text-fjord" },
-  { name: "Mist", token: "--mist", className: "bg-mist", hex: "#F4F8F8", dark: "#F4F8F8", role: "Background (light) · text (dark)", text: "text-fjord" },
-  { name: "Link", token: "--link", className: "bg-link", hex: "#264653", dark: "#E9C46A", role: "Link text: fjord on light, sun on dark", text: "text-background" },
+  { name: "Foam", token: "--foam", className: "bg-foam", hex: "#F2F5F3", dark: "#0B2026 (background)", role: "Page ground", text: "text-deep" },
+  { name: "Sea glass", token: "--glass", className: "bg-glass", hex: "#D3E6E0", dark: "#123039 (secondary)", role: "Quiet bands and cards", text: "text-deep" },
+  { name: "Deep sea", token: "--deep", className: "bg-deep", hex: "#0F2B33", dark: "#F2F5F3 (foreground)", role: "Text; deep fields (hero, footer)", text: "text-foam" },
+  { name: "Buoy", token: "--buoy", className: "bg-buoy", hex: "#FF5A36", dark: "#FF5A36", role: "The one main action; the closing panel", text: "text-deep" },
+  { name: "Seaglass", token: "--seaglass", className: "bg-seaglass", hex: "#9FD3C7", dark: "#9FD3C7", role: "Small calm accents, selection", text: "text-deep" },
 ]
 
 // Semantic shadcn tokens. Contrast = foreground on background, light / dark.
 const semanticTokens = [
-  { token: "background / foreground", bg: "bg-background", fg: "text-foreground", light: "#F4F8F8 / #264653", dark: "#264653 / #F4F8F8", contrast: ["9.4", "9.4"] },
-  { token: "card / card-foreground", bg: "bg-card", fg: "text-card-foreground", light: "#FFFFFF / #264653", dark: "#2F5564 / #F4F8F8", contrast: ["10.1", "7.5"] },
-  { token: "primary / primary-foreground", bg: "bg-primary", fg: "text-primary-foreground", light: "#E9C46A / #264653", dark: "#E9C46A / #264653", contrast: ["6.0", "6.0"] },
-  { token: "secondary / secondary-foreground", bg: "bg-secondary", fg: "text-secondary-foreground", light: "#E3ECEE / #264653", dark: "#2F5564 / #F4F8F8", contrast: ["8.4", "7.5"] },
-  { token: "muted / muted-foreground", bg: "bg-muted", fg: "text-muted-foreground", light: "#E3ECEE / #4F6B76", dark: "#2F5564 / #B9CED4", contrast: ["4.7", "4.9"] },
-  { token: "accent / accent-foreground", bg: "bg-accent", fg: "text-accent-foreground", light: "#E9C46A / #264653", dark: "#E9C46A / #264653", contrast: ["6.0", "6.0"] },
-  { token: "background / link", bg: "bg-background", fg: "text-link", light: "#F4F8F8 / #264653", dark: "#264653 / #E9C46A", contrast: ["9.4", "6.0"] },
+  { token: "background / foreground", bg: "bg-background", fg: "text-foreground", light: "#F2F5F3 / #0F2B33", dark: "#0B2026 / #F2F5F3", contrast: ["13.5", "15.3"] },
+  { token: "secondary / secondary-foreground", bg: "bg-secondary", fg: "text-secondary-foreground", light: "#D3E6E0 / #0F2B33", dark: "#123039 / #F2F5F3", contrast: ["11.4", "13.0"] },
+  { token: "primary / primary-foreground", bg: "bg-primary", fg: "text-primary-foreground", light: "#FF5A36 / #0F2B33", dark: "#FF5A36 / #0F2B33", contrast: ["4.8", "4.8"] },
+  { token: "muted / muted-foreground", bg: "bg-muted", fg: "text-muted-foreground", light: "#D3E6E0 / #4B6168", dark: "#123039 / #A9C0C2", contrast: ["5.0", "7.8"] },
+  { token: "hh-deep field / text, muted text", bg: "hh-deep", fg: "", light: "#0F2B33 / #F2F5F3, #A9C0C2", dark: "same", contrast: ["13.5", "7.8"] },
+  { token: "background / link", bg: "bg-background", fg: "text-link", light: "#F2F5F3 / #0F2B33", dark: "#0B2026 / #F2F5F3", contrast: ["13.5", "15.3"] },
 ]
 
 const rules = {
   do: [
-    "Use sun for the one main action on screen (join the group) and for small highlights.",
-    "Always put fjord text on sun (6.0:1).",
-    "Write text in fjord (light) or mist (dark) – the foreground token.",
-    "Underline links: in light mode they share the text colour.",
-    "Alternate section tones (default → muted → fjord → sun) for rhythm.",
-    "Use the one motif, the rising-sun arch from the H monogram: arch-masked photos, SunArch bullets and bands.",
-    "Separate items with space or a tone step; skip hairline dividers.",
+    "Use buoy orange only for the one main action on screen (join the group) and the closing panel.",
+    "Always put deep-sea text on buoy (4.8:1).",
+    "Set everything in Albert Sans; headings semibold with tight tracking.",
+    "Use pill buttons and large rounded media; keep photographs still.",
+    "Let deep, foam and sea-glass fields carry the rhythm; less is more.",
+    "Underline links: they share the text colour.",
   ],
   dont: [
-    "Never put white or mist text on sun (1.7:1, fails WCAG).",
-    "Never use sun for text on light backgrounds – it's a fill colour there.",
-    "Don't put a sun button on a sun section – use the inverse (fjord) CTA.",
+    "Never put white or foam text on buoy (2.8:1).",
+    "No eyebrow labels, hairlines, outlined boxes, gradients or shadows.",
+    "No crossfading or changing pictures.",
     "Don't hard-code hex values in components – use the tokens/utilities.",
   ],
 }
@@ -111,7 +109,7 @@ export default async function StyleguidePage({ params }: PageProps<"/[lang]/styl
 
         {/* 1. Palette */}
         <Section tone="muted" id="palette">
-          <SectionHeading eyebrow="1 · Palette" title="Brand colours" lead="From the bootcamp punch card: fjord for calm and trust, sun for joy and action, mist for air." />
+          <SectionHeading eyebrow="1 · Palette" title="Brand colours" lead="Sea and buoy (2026-11-03): the calm of the coast (foam, sea glass, deep sea) with the energy of a rescue buoy for the one main action." />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {brandColors.map((c) => (
               <div key={c.name} className="overflow-hidden rounded-2xl bg-card ring-1 ring-foreground/10">
@@ -189,31 +187,28 @@ export default async function StyleguidePage({ params }: PageProps<"/[lang]/styl
 
         {/* 3. Typography */}
         <Section tone="muted" id="type">
-          <SectionHeading eyebrow="3 · Typography" title="Type scale" lead="One family: Geist. Headings are semibold with tight tracking (tracking-tighter); body is regular. Calm and minimal, like the wordmark." />
-          <div className="mt-10 grid gap-6 rounded-3xl bg-card p-6 ring-1 ring-foreground/10 md:p-10">
-            <p className="text-xs font-mono text-muted-foreground">h1 · text-5xl sm:text-6xl md:text-8xl semibold tracking-tighter</p>
-            <p className="text-5xl leading-[0.98] font-semibold tracking-tighter sm:text-6xl md:text-8xl">Trening som gjør deg glad.</p>
+          <SectionHeading eyebrow="3 · Typography" title="Type scale" lead="Two faces: Albert Sans at regular weight for headings and body, Source Serif 4 light for leads, the letter and sign-offs. Tracking -0.02em on headings." />
+          <div className="mt-10 grid gap-6 bg-card p-6 ring-1 ring-foreground/10 md:p-10">
+            <p className="text-xs font-mono text-muted-foreground">h1 · text-[2.75rem] sm:text-6xl lg:text-7xl font-normal tracking-[-0.025em]</p>
+            <p className="text-[2.75rem] leading-[1.04] font-normal tracking-[-0.025em] sm:text-6xl lg:text-7xl">Trening og livsstil for glade mennesker.</p>
             <Separator />
-            <p className="text-xs font-mono text-muted-foreground">h2 · text-4xl md:text-6xl semibold tracking-tighter</p>
-            <p className="text-4xl leading-[1.05] font-semibold tracking-tighter md:text-6xl">En leken, intensiv time</p>
+            <p className="text-xs font-mono text-muted-foreground">h2 · text-4xl md:text-6xl font-normal tracking-[-0.02em]</p>
+            <p className="text-4xl font-normal tracking-[-0.02em] md:text-6xl">Kaja og Hoang</p>
             <Separator />
-            <p className="text-xs font-mono text-muted-foreground">h3 · text-2xl semibold</p>
-            <p className="text-2xl font-semibold tracking-tight">Klassisk sirkel</p>
+            <p className="text-xs font-mono text-muted-foreground">h3 · text-2xl–4xl font-normal</p>
+            <p className="text-3xl font-normal tracking-[-0.02em]">Bootcamp i Blomvåg</p>
             <Separator />
-            <p className="text-xs font-mono text-muted-foreground">h4 · text-xl semibold</p>
-            <p className="text-xl font-semibold">Mestring</p>
-            <Separator />
-            <p className="text-xs font-mono text-muted-foreground">lead · text-lg md:text-xl muted</p>
-            <p className="text-lg text-muted-foreground md:text-xl">Ingen krav til form – bare lyst til å bevege deg.</p>
+            <p className="text-xs font-mono text-muted-foreground">lead / letter · font-serif text-xl md:text-2xl font-light</p>
+            <p className="font-serif text-xl font-light md:text-2xl">Vi tror kropp og hode henger sammen.</p>
             <Separator />
             <p className="text-xs font-mono text-muted-foreground">body · text-base</p>
-            <p className="max-w-prose text-base">Funksjonell trening med egen kroppsvekt og enkelt utstyr. Vi utfordrer komfortsonen med enkle, effektive øvelser.</p>
+            <p className="max-w-prose text-base">Funksjonell trening med egen kroppsvekt og enkelt utstyr, med en lettere og en tøffere variant av hver øvelse.</p>
             <Separator />
-            <p className="text-xs font-mono text-muted-foreground">small · text-sm muted</p>
-            <p className="text-sm text-muted-foreground">Øktene varer ca. 60 minutter.</p>
+            <p className="text-xs font-mono text-muted-foreground">button · text-base font-medium, sentence case</p>
+            <p className="text-base font-medium">Bli med på en gratis time</p>
             <Separator />
-            <p className="text-xs font-mono text-muted-foreground">link · text-link</p>
-            <p><a href="#type" className="font-medium text-link underline underline-offset-4">Les mer om øktene</a></p>
+            <p className="text-xs font-mono text-muted-foreground">link · text-link, always underlined</p>
+            <p><a href="#type" className="text-link underline underline-offset-4">Les om timene</a></p>
           </div>
         </Section>
 
@@ -369,7 +364,7 @@ export default async function StyleguidePage({ params }: PageProps<"/[lang]/styl
               <p className="font-mono text-sm text-muted-foreground">&lt;Visual scene=&quot;sunrise&quot; | &quot;sun&quot; | &quot;mist&quot; /&gt; – illustrations until photos exist; pass src for a photo</p>
               <div className="grid gap-4 sm:grid-cols-3">
                 <Visual scene="sunrise" alt={dict.hero.imageLabel} className="aspect-4/5" />
-                <Visual scene="sun" alt={dict.trainer.imageLabel} className="aspect-4/5" />
+                <Visual scene="sun" alt={dict.hero.imageLabel} className="aspect-4/5" />
                 <Visual scene="mist" alt="Mist" className="aspect-4/5 ring-1 ring-foreground/10" />
               </div>
             </div>
@@ -377,7 +372,7 @@ export default async function StyleguidePage({ params }: PageProps<"/[lang]/styl
             <div className="grid gap-3">
               <p className="font-mono text-sm text-muted-foreground">&lt;Visual shape=&quot;arch&quot; src=&#123;[…]&#125; /&gt; – the motif as a photo mask; several srcs crossfade · &lt;SunArch /&gt; – the motif as bullet or band</p>
               <div className="grid items-end gap-4 sm:grid-cols-2">
-                <Visual src={["/images/place/blomvaag.jpg", "/images/place/ulvsund.jpg"]} alt={dict.hero.imageAlt} shape="arch" sizes="33vw" className="aspect-4/5" />
+                <Visual src={["/images/home/ill-blomvaag-tall.webp", "/images/home/ill-ulvsund-tall.webp"]} alt={dict.hero.imageAlt} shape="arch" sizes="33vw" className="aspect-4/5" />
                 <div className="flex flex-col gap-4">
                   <SunArch className="aspect-2/1 w-12" />
                   <SunArch className="aspect-2/1 w-full" />
@@ -386,9 +381,8 @@ export default async function StyleguidePage({ params }: PageProps<"/[lang]/styl
             </div>
 
             <div className="grid gap-3">
-              <p className="font-mono text-sm text-muted-foreground">&lt;LanguageToggle /&gt; · &lt;ThemeToggle /&gt;</p>
+              <p className="font-mono text-sm text-muted-foreground">&lt;ThemeToggle /&gt;</p>
               <div className="flex items-center gap-3">
-                <LanguageToggle lang={lang} label={dict.ui.language} />
                 <ThemeToggle labels={dict.ui.theme} />
               </div>
             </div>

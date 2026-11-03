@@ -26,3 +26,5 @@ The photos are cropped (arch mask) but not otherwise altered.
 ## Related
 - [[Features/Landing Page]]
 - [[Decisions/2026-11-02 Rising-sun arch as the one motif]]
+
+> **Update 2026-11-03:** the site no longer shows photo credits, so only CC0 photos (and our own) are used. The CC BY-SA photos of Hjeltefjorden and the kettlebell were removed.

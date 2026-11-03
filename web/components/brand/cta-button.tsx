@@ -4,8 +4,8 @@ import { buttonVariants } from "@/components/ui/button"
 import { FACEBOOK_GROUP_URL } from "@/lib/site"
 import { cn } from "@/lib/utils"
 
-// Brand-size pill on top of shadcn's button styles
-const ctaBase = "h-12 gap-2 rounded-full px-6 text-base font-semibold"
+// Brand-size pill button on top of shadcn's button styles, sentence-case label
+const ctaBase = "h-12 gap-2.5 rounded-full px-6 text-base font-medium transition-[transform,background-color] duration-150 ease-out active:scale-[0.97]"
 
 const tones = {
   // Sun (yellow) button: the default call to action
@@ -41,7 +41,7 @@ export function FacebookCta({
   variant = "default",
   className,
 }: {
-  label: string
+  label: React.ReactNode
   /** Screen-reader note that the link leaves the site, e.g. "opens on Facebook" */
   srHint: string
   tone?: keyof typeof tones

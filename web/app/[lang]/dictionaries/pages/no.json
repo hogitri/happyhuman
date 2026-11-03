@@ -15,36 +15,44 @@
     "about": {
       "meta": {
         "title": "Om oss",
-        "description": "Happy Human er trening, fellesskap og innhold for deg som vil ha det godt i både kropp og sinn. Møt Kaja og Hoang."
+        "description": "Happy Human holder gratis bootcamp i Blomvåg og tilbyr personlig trening. Møt Kaja og Hoang, og les om bakgrunnen deres i idrett og trening."
       },
       "title": "Om Happy Human",
-      "lead": "Vi vil gjøre verden litt bedre – med flere glade, ekte mennesker som tar vare på hverandre.",
+      "lead": "Gratis bootcamp og personlig trening i Øygarden, for alle uansett form.",
       "sections": [
         {
           "heading": "Hva vi gjør",
           "paragraphs": [
-            "Happy Human startet med en gratis bootcamp i Blomvåg. Nå bygger vi videre med gratis gruppetimer, personlig trening og innhold om trening, mat, psykisk helse og friluftsliv. Etter hvert kommer også egne klær.",
-            "Gruppetimene er og blir gratis. Her er alle velkommen – fra nybegynner til topptrent, og barna kan bli med."
+            "Vi holder gratis bootcamp i Blomvåg: en leken, intensiv time med funksjonell trening, der hver øvelse har en lettere og en tøffere variant. Alle er velkommen, fra nybegynner til topptrent, og barnene kan bli med.",
+            "Vi tilbyr også personlig trening, én til én i vårt eget hjemmegym. Der får du et opplegg som er laget for deg, og tett oppfølging underveis. Ta kontakt, så finner vi pakken som passer dine behov."
           ]
         },
         {
-          "heading": "Kropp og sinn henger sammen",
+          "heading": "Slik jobber vi",
           "paragraphs": [
-            "Hodet og kroppen henger sammen. Det du gjør i hverdagen – hvordan du sover, spiser, beveger deg og har det med andre – betyr mer enn de få øktene du har i uka.",
-            "Derfor handler trening hos oss om å ha det bra, ikke om hvordan du ser ut. Vi vil at du skal kjenne på mestring og treningsglede, og gå hjem gladere enn da du kom."
+            "Vi tror at trening skal være noe du gleder deg til. Derfor tilpasser vi hver øvelse til nivået ditt, viser deg teknikken, og øker belastningen i et tempo som kjennes trygt.",
+            "Vi lover ingen raske resultater eller snarveier. Vi lover god trening, ærlige råd og et fellesskap der du kan kjenne på mestring, uansett hvor du starter."
           ]
         },
         {
-          "heading": "Hvem vi er",
+          "heading": "Kaja Haugen",
           "paragraphs": [
-            "Kaja Haugen er personlig trener og har en master i idrettsvitenskap fra Norges idrettshøgskole. Hun har jobbet som PT og gruppeinstruktør i over sju år, og jobber i dag i Antidoping Norge. Kaja leder treningen i Happy Human.",
-            "Hoang Minh Trinh har startet flere selskaper og hjulpet tusenvis av gründere i gang. Hoang har også PT-utdanning fra Norges idrettshøgskole og står for forretning og vekst i Happy Human."
+            "Kaja er idrettsviter med master fra Norges idrettshøgskole og sertifisert personlig trener. Hun har jobbet som PT og gruppeinstruktør i mer enn sju år, blant annet hos SiO i Oslo, og har rundt 3 000 PT-timer bak seg. Hun har også videreutdanning i kettlebelltrening, prestasjonscoaching og trening under og etter graviditet.",
+            "Idretten har fulgt henne hele livet. Hun har spilt fotball i mange år, blant annet for Skogsvåg IL her på Sotra, og var med på det første norske kvinnelandslaget i futsal som deltok i EM. Hun vet hva god trening og et godt lag betyr.",
+            "I dag jobber Kaja i [Antidoping Norge](https://antidoping.no) med forebygging i idrettslag, skoler og treningssentre i Vestland. Kunnskapen derfra preger treningen hennes: trygg, faglig forankret og uten snarveier."
+          ]
+        },
+        {
+          "heading": "Hoang Minh Trinh",
+          "paragraphs": [
+            "Hoang er utdannet personlig trener fra Norges idrettshøgskole og sertifisert Performance Specialist. Han har spilt basketball på elitenivå, blant annet for Centrum Tigers i BLNO, den øverste basketballigaen i Norge, og har drevet med styrketrening i mange år.",
+            "Til daglig er han Head of Ventures i [Agens](https://agens.no) og Founding Partner i [Atlas Accelerator](https://www.atlasaccelerator.no), der han hjelper gründere med å bygge selskaper. Han var også med på å starte Firi. Den samme strukturen tar han med inn i treningen: tydelige mål, en plan og jevn fremgang."
           ]
         },
         {
           "heading": "Vil du bli med?",
           "paragraphs": [
-            "Bli med i Facebook-gruppa, kom på en gruppetime, eller [send oss en e-post](mailto:{email}). Vi har plass til alle."
+            "[Bli med i Facebook-gruppen](https://www.facebook.com/groups/1110397380364877), kom på en bootcamp, eller [send oss en e-post](mailto:{email}). Vi har plass til alle."
           ]
         }
       ]
@@ -60,8 +68,8 @@
         "emailTitle": "E-post",
         "emailCta": "Send oss en e-post",
         "groupTitle": "Gruppetimene",
-        "groupText": "Nye timer og endringer legges ut i Facebook-gruppa. Der kan du også si fra om du kommer.",
-        "groupCta": "Gå til Facebook-gruppa",
+        "groupText": "Nye timer og endringer legges ut i Facebook-gruppen. Der kan du også si fra om du kommer.",
+        "groupCta": "Gå til Facebook-gruppen",
         "companyTitle": "Firma"
       },
       "sections": []
@@ -99,7 +107,7 @@
         {
           "heading": "Gruppetimene",
           "paragraphs": [
-            "Nye timer legges i dag ut i Facebook-gruppa vår, og der kan du si fra om du kommer. Meta er selv ansvarlig for opplysningene på Facebook. Se [Metas personvernregler](https://www.facebook.com/privacy/policy).",
+            "Nye timer legges i dag ut i Facebook-gruppen vår, og der kan du si fra om du kommer. Meta er selv ansvarlig for opplysningene på Facebook. Se [Metas personvernregler](https://www.facebook.com/privacy/policy).",
             "Vi bruker oppmøtet bare til å planlegge timene.",
             "Vi publiserer aldri bilder eller video der du kan gjenkjennes, uten at du har sagt ja. Bilder av barn publiserer vi bare med samtykke fra foreldrene. Du kan trekke samtykket tilbake når som helst, og da fjerner vi bildet."
           ]
@@ -158,7 +166,7 @@
         {
           "heading": "Gratis og frivillig",
           "paragraphs": [
-            "Gruppetimene er gratis, og det er frivillig å delta. Si gjerne fra i Facebook-gruppa om du kommer, så vet vi omtrent hvor mange vi blir."
+            "Gruppetimene er gratis, og det er frivillig å delta. Si gjerne fra i Facebook-gruppen om du kommer, så vet vi omtrent hvor mange vi blir."
           ]
         },
         {
@@ -175,7 +183,7 @@
         {
           "heading": "Barn",
           "paragraphs": [
-            "Barn er hjertelig velkomne. Barn som blir med, er foreldrenes eller de foresattes ansvar hele tiden, også når de er med på øvelser. Hold barna unna utstyr og stasjoner som er i bruk."
+            "Barn er hjertelig velkomne. Barn som blir med, er foreldrenes eller de foresattes ansvar hele tiden, også når de er med på øvelser. Hold barnene unna utstyr og stasjoner som er i bruk."
           ]
         },
         {
@@ -200,7 +208,7 @@
         {
           "heading": "Endringer og avlysning",
           "paragraphs": [
-            "Vi kan flytte eller avlyse timer, for eksempel ved sykdom eller dårlig vær. Endringer legges ut i Facebook-gruppa så tidlig som mulig."
+            "Vi kan flytte eller avlyse timer, for eksempel ved sykdom eller dårlig vær. Endringer legges ut i Facebook-gruppen så tidlig som mulig."
           ]
         },
         {
@@ -217,7 +225,7 @@
         "description": "Salgsvilkår for kjøp av personlig trening (PT) fra Happy Human: priser, avbestilling, angrerett og reklamasjon."
       },
       "title": "Salgsvilkår",
-      "lead": "Disse vilkårene gjelder når du kjøper personlig trening (PT) fra Happy Human. Vi har ikke åpnet for kjøp av PT ennå – priser og bestilling kommer snart.",
+      "lead": "Disse vilkårene gjelder når du kjøper personlig trening (PT) fra Happy Human. Ta kontakt, så sender vi deg priser og pakker tilpasset dine behov.",
       "sections": [
         {
           "heading": "Partene",

@@ -21,8 +21,8 @@ Sources: [[Sources/Kaja Haugen - LinkedIn]], [[Sources/Bootcamp i Blomvåg - Fac
 - **Education:** MSc in Sport Science, Norwegian School of Sport Sciences (NIH), plus PT certification from Active Education.
 - **Training experience:** about 7 years as a PT and group fitness instructor at SiO in Oslo (2014–2021), with hundreds of clients and around 3,000 PT hours.
 - **Community:** runs [[Bootcamp i Blomvåg]], a free group-training class with 94 Facebook group members.
-- **Own sport:** represents Øygarden IL and takes part in regional races and sports events.
-- **Futsal:** linked to an article on the women's national futsal team heading to the Euros in Spain ("Kvinnelandslaget til futsal-EM i Spania"). The page couldn't be read, so her role (player, staff or other) and the year are unconfirmed. Her portrait above is in a Norway national team jersey (#4), which suggests she played, but the sport and year are still unconfirmed.
+- **Own sport:** a long football career, including **Skogsvåg IL** (Sotra), and part of **Norway's first women's futsal national team to play a European Championship** (Spain, reported November 2017). Source: [[Sources/Skogsvåg IL - Støtt Kaja til futsal-EM]]. She also represents Øygarden IL and takes part in regional races and sports events.
+- **Futsal:** confirmed as a player on Norway's first women's futsal team at a European Championship (Spain), see [[Sources/Skogsvåg IL - Støtt Kaja til futsal-EM]]. Her portrait is in that national team jersey (#4).
 
 ## Role in Happy Human
 - Daglig leder and board member of **HAPPY HUMAN AS** (org.nr. 933 037 495, founded 2024-01-31). See [[Project Overview#Company]].

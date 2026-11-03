@@ -9,13 +9,14 @@ Happy Human is a **lifestyle brand for health and happiness** with three parts:
 It's for people aged 18–44 who care about mental and physical health and want to be true to themselves and spread happiness. Full details in [[Brand Strategy]].
 
 - The founders combine training and health expertise ([[People/Kaja Haugen|Kaja]]) with startup and growth experience ([[People/Hoang Minh Trinh|Hoang]]).
-- The product will be in Norwegian bokmål first, with English as secondary. See [[Decisions/2026-10-26 Norwegian bokmål as primary language]].
+- The website is Norwegian bokmål only (since 2026-11-03). See [[Decisions/2026-11-03 Sea and buoy front page]].
 
 ## Company
 **HAPPY HUMAN AS** (aksjeselskap), org.nr. 933 037 495, Øygarden. Founded 2024-01-31. Registered business: "Undervisning innen sport og idrett" (teaching sport and recreation). Kaja Haugen is daglig leder and a board member; Hoang Trinh is chair of the board. Checked in Brønnøysundregistrene on 2026-10-26.
 
 ## Founders
 - [[People/Kaja Haugen|Kaja Haugen]]: co-founder. Trainer and sport scientist (NIH), County Coordinator at Antidoping Norge, runs [[Bootcamp i Blomvåg]].
+- Personal training takes place one-to-one, indoors in our home gym (squat rack, bench, dumbbells), confirmed 2026-11-03.
 - [[People/Hoang Minh Trinh|Hoang "Hogi" Minh Trinh]]: co-founder. Serial founder (Firi), Head of Ventures at Agens, Founding Partner at Atlas Accelerator, PT qualification from NIH.
 
 ## Background
@@ -29,7 +30,7 @@ Context collected so far: [[Bootcamp i Blomvåg]], a free community bootcamp in 
 - **Publish content** on mental health, nutrition, training and the outdoors.
 
 ## Status
-Project just started. The Next.js app in `web/` is set up with the full shadcn/ui component library; and a landing page for the bootcamp ([[Features/Landing Page]]). Early (2025) logo and merch mockups exist; the logo is now decided: the H monogram ([[Decisions/2026-10-26 H monogram as the logo]]). See [[Features/Brand Identity]].
+Project just started. The Next.js app in `web/` is set up with the full shadcn/ui component library. Since 2026-11-03 the front page presents the Happy Human movement through its founders, and the bootcamp has its own page at `/trening` ([[Features/Landing Page]], [[Decisions/2026-11-03 Founder editorial front page]]). Early (2025) logo and merch mockups exist; the logo is now decided: the H monogram ([[Decisions/2026-10-26 H monogram as the logo]]). See [[Features/Brand Identity]].
 
 **Next up:** training first ([[Decisions/2026-10-26 Launch training first, clothing second]]), with a group class schedule and sign-up (free) and PT info and booking (paid). The clothing store comes later, on Shopify.
 

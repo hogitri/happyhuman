@@ -1,7 +1,7 @@
 ---
 type: decision
 date: 2026-10-26
-status: accepted
+status: superseded
 ---
 # Norwegian bokmål as primary language
 
@@ -24,3 +24,5 @@ Happy Human starts from a Norwegian community ([[Bootcamp i Blomvåg]]), and bot
 ## Related
 - [[Project Overview]]
 - [[Bootcamp i Blomvåg]]
+
+> **Superseded 2026-11-03** by [[Decisions/2026-11-03 Sea and buoy front page]] (the site is now Norwegian only).

@@ -1,7 +1,7 @@
 ---
 type: decision
 date: 2026-10-26
-status: accepted
+status: superseded
 ---
 # Brand palette from the punch card
 
@@ -25,3 +25,5 @@ Fjord `#264653` (text / dark background), sun `#E9C46A` (main action and highlig
 ## Related
 - [[Features/Colour Guide]]
 - [[Features/Brand Identity]]
+
+> **Superseded 2026-11-03** by [[Decisions/2026-11-03 Founder editorial front page]]: the site now uses a new visual world.

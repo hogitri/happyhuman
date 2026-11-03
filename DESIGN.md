@@ -1,361 +1,265 @@
 ---
 version: alpha
 name: Happy Human
-description: Happy Human's design language — a calm fjord-and-mist palette lit by a single warm sun yellow, one plain grotesque (Geist) set large and tight, rounded friendly shapes, generous whitespace and photography of real people training together. Warm, playful and inclusive; never about appearance.
-
+description: A calm founder editorial on warm paper. Two real people invite you in; one coastal teal band, one pale sun button, square corners, full-bleed graded photography, a regular-weight sans and a light serif.
 colors:
   # Brand
-  sun: "#E9C46A"          # the one main action per view; small highlights
-  fjord: "#264653"        # text (light), background (dark, fjord sections)
-  mist: "#F4F8F8"         # background (light), text (dark)
+  paper: "#FAF8F4"          # light page background
+  sand: "#F0ECE4"           # alternate bands, footer, quiet surfaces
+  ink: "#232220"            # text (light), text on photos and on sun
+  teal: "#24403F"           # the one dark emphasis band per page
+  sun: "#F3D88A"            # fill of the one main action per view
   # Light mode roles
-  background: "#F4F8F8"
-  foreground: "#264653"
   card: "#FFFFFF"
-  primary: "#E9C46A"
-  on-primary: "#264653"
-  secondary: "#E3ECEE"    # alternate section bands, quiet surfaces
-  muted-foreground: "#4F6B76"
-  border: "#D3E0E3"
-  link: "#264653"         # always underlined
-  ring: "#264653"
+  muted-ink: "#66625B"      # secondary text, roles, captions
+  hairline: "#E2DDD3"       # borders, dividers, field strokes
+  # Teal band roles (.hh-teal, both themes)
+  on-teal: "#F3EFE7"
+  on-teal-muted: "#B7C9C5"
   # Dark mode roles
-  dark-background: "#264653"
-  dark-foreground: "#F4F8F8"
-  dark-card: "#2F5564"
-  dark-secondary: "#2F5564"
-  dark-muted-foreground: "#B9CED4"
-  dark-border: "#3E6878"
-  dark-link: "#E9C46A"
-  dark-ring: "#E9C46A"
-  # Charts only (same palette family)
-  chart-green: "#2A9D8F"
-  chart-orange: "#F4A261"
-  chart-red-orange: "#E76F51"
-
+  dark-background: "#1B1B19"
+  dark-foreground: "#F3EFE7"
+  dark-card: "#262623"      # cards and sand bands after sunset
+  dark-muted-foreground: "#B8B2A7"
+  dark-border: "#3A3935"
 typography:
-  display:          # h1
-    fontFamily: Geist
-    fontSize: 96px    # 48px mobile, 60px ≥640px
-    fontWeight: 600
-    lineHeight: 0.98
-    letterSpacing: -0.05em
-  heading-1:        # h2, section headings
-    fontFamily: Geist
-    fontSize: 60px    # 36px mobile
-    fontWeight: 600
-    lineHeight: 1.05
-    letterSpacing: -0.05em
-  statement:        # large-type values list
-    fontFamily: Geist
-    fontSize: 72px    # 36px mobile
-    fontWeight: 600
-    letterSpacing: -0.05em
-  quote:
-    fontFamily: Geist
-    fontSize: 48px    # 30px mobile
-    fontWeight: 600
-    lineHeight: 1.25
-    letterSpacing: -0.05em
-  heading-3:
-    fontFamily: Geist
-    fontSize: 24px
-    fontWeight: 600
-  heading-4:
-    fontFamily: Geist
-    fontSize: 20px
-    fontWeight: 600
-  lead:
-    fontFamily: Geist
-    fontSize: 20px    # 18px mobile
+  display:                  # h1, hero only
+    fontFamily: "Albert Sans, sans-serif"
+    fontSize: "4.5rem"      # 2.75rem mobile, 3.75rem >=640px
     fontWeight: 400
+    lineHeight: 1.04
+    letterSpacing: "-0.025em"
+  headline:                 # h2, one per band
+    fontFamily: "Albert Sans, sans-serif"
+    fontSize: "3.75rem"     # 2.25rem mobile
+    fontWeight: 400
+    lineHeight: 1
+    letterSpacing: "-0.02em"
+  title:                    # h3: names, offer titles, values
+    fontFamily: "Albert Sans, sans-serif"
+    fontSize: "1.5rem"      # up to 2.25rem for offer titles; 1.25rem for value titles
+    fontWeight: 400
+    letterSpacing: "-0.01em"
+  lead:                     # leads, status words, sign-offs
+    fontFamily: "Source Serif 4, Georgia, serif"
+    fontSize: "1.5rem"      # 1.25rem mobile
+    fontWeight: 300
+    lineHeight: 1.375
+  letter:                   # the founders' letter and the promise
+    fontFamily: "Source Serif 4, Georgia, serif"
+    fontSize: "1.75rem"     # 1.5rem mobile
+    fontWeight: 300
+    lineHeight: 1.45
   body:
-    fontFamily: Geist
-    fontSize: 16px
+    fontFamily: "Albert Sans, sans-serif"
+    fontSize: "1rem"        # 1.125rem in offer text
     fontWeight: 400
     lineHeight: 1.5
-  small:
-    fontFamily: Geist
-    fontSize: 14px
-    fontWeight: 400
-  button:
-    fontFamily: Geist
-    fontSize: 16px
-    fontWeight: 600
-  wordmark:
-    fontFamily: Geist
+  label:                    # buttons, data labels, the one text link with an arrow
+    fontFamily: "Albert Sans, sans-serif"
+    fontSize: "0.875rem"    # 0.75rem for data labels and the header button
     fontWeight: 500
-    lineHeight: 0.95
-    letterSpacing: -0.025em
-
+    letterSpacing: "0.06em"
 rounded:
-  sm: 8px
-  md: 11px
-  base: 14px      # --radius 0.875rem
-  xl: 20px
-  2xl: 25px       # icon tiles, cards
-  3xl: 31px       # visuals, large cards
-  arch: "top corners full, flat base"  # the motif: photo masks, SunArch
-  full: 9999px    # buttons, badges
-
+  none: "0px"
 spacing:
-  gutter-mobile: 16px
-  gutter: 24px
-  section-y-mobile: 80px
-  section-y: 128px
-  container-max: 1152px
-  stack-sm: 16px
-  stack-md: 32px
-  stack-lg: 48px
-  split-gap: 80px
-
+  gutter-sm: "16px"
+  gutter-md: "24px"
+  gutter-lg: "40px"
+  band-sm: "96px"
+  band-md: "128px"
+  band-lg: "144px"
+  header: "72px"
 components:
-  section-default:
-    backgroundColor: "{colors.background}"
-    textColor: "{colors.foreground}"
-    padding: "{spacing.section-y}"
-  section-muted:
-    backgroundColor: "{colors.secondary}"
-    textColor: "{colors.foreground}"
-  section-fjord:
-    description: "Emphasis band. Applies dark-mode tokens locally, so everything inside switches to dark roles."
-    backgroundColor: "{colors.fjord}"
-    textColor: "{colors.mist}"
-  section-sun:
-    description: "Closing call-to-action band. Fjord text, fjord button."
-    backgroundColor: "{colors.sun}"
-    textColor: "{colors.fjord}"
-  nav-bar:
-    backgroundColor: "{colors.background}"
-    height: 64px
-    content: "Logo left, one CTA right. No section links; language switch lives in the footer."
   button-primary:
-    description: "The single sun button per view."
     backgroundColor: "{colors.sun}"
-    textColor: "{colors.fjord}"
-    typography: "{typography.button}"
-    rounded: "{rounded.full}"
-    height: 48px
-    paddingX: 24px
-  button-inverse:
-    description: "Primary action on a sun section."
-    backgroundColor: "{colors.fjord}"
-    textColor: "{colors.mist}"
-    typography: "{typography.button}"
-    rounded: "{rounded.full}"
-    height: 48px
-  button-secondary:
-    description: "Outline pill with a trailing arrow."
-    backgroundColor: transparent
-    textColor: "{colors.foreground}"
-    borderColor: "{colors.border}"
-    rounded: "{rounded.full}"
-    height: 48px
-  link:
-    textColor: "{colors.link}"
-    textDecoration: underline
-  badge:
-    backgroundColor: "{colors.sun}"
-    textColor: "{colors.fjord}"
-    rounded: "{rounded.full}"
-    typography: "12px / 600 / uppercase / wide tracking"
-  visual:
-    description: "Every image slot. Real photo masked by the arch (or rounded-3xl), or a flat brand illustration (sunrise, sun, mist)."
-    rounded: "{rounded.arch}"
-    aspectRatio: "4/5 (side-by-side), 16/9–21/9 (hero, wide)"
-  value-card:
+    textColor: "{colors.ink}"
+    typography: "{typography.label}"
+    rounded: "{rounded.none}"
+    padding: "0 28px"
+    height: "48px"
+  button-outline:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    typography: "{typography.label}"
+    rounded: "{rounded.none}"
+    padding: "0 20px"
+    height: "40px"
+  tab:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.none}"
+    padding: "0 20px"
+    height: "44px"
+  tab-active:
+    backgroundColor: "{colors.ink}"
+    textColor: "{colors.paper}"
+    rounded: "{rounded.none}"
+  card-offer:
     backgroundColor: "{colors.card}"
-    textColor: "{colors.foreground}"
-    rounded: "{rounded.3xl}"
-    icon-tile: "48px square, {rounded.2xl}, sun fill, fjord icon"
-  sun-arch:
-    description: "The motif: a half sun standing on a flat line. 52px as a list bullet, up to 900px as a band."
-    backgroundColor: "{colors.sun}"
-  details-list:
-    description: "Rows with a SunArch bullet, label and text; separated by space, no lines."
-  faq-tiles:
-    description: "Filled tiles one tone step from the ground, 8px apart; the open tile turns sun with fjord text."
-    backgroundColor: "{colors.secondary}"
-    rounded: "{rounded.3xl}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.none}"
+    padding: "40px"
+  band-teal:
+    backgroundColor: "{colors.teal}"
+    textColor: "{colors.on-teal}"
 ---
 
-# Happy Human — DESIGN.md
+# Design System: Happy Human
 
-> A summary of the design system for design tools and AI agents (Google Stitch, Figma, Claude, Lovable, etc.). **The live style guide is the source of truth:** `/no/styleguide` (code: `web/app/[lang]/styleguide/page.tsx`), with tokens in `web/app/globals.css` and rules in `AGENTS.md` → *Design system* and *Product principles*. If this file and those disagree, they win; update this file.
+> **Outdated (2026-11-03, evening).** The site now uses the "sea and buoy" look: foam `#F2F5F3`, sea glass `#D3E6E0`, deep sea `#0F2B33`, buoy orange `#FF5A36` and seaglass `#9FD3C7`; Albert Sans only, semibold headings; pill buttons and large rounded media; still photos only; Norwegian only. The tokens and rules below describe the earlier founder-editorial version. Until this file is regenerated, the Design system section of `AGENTS.md` and `web/app/globals.css` are the source of truth.
+
+> **Source of truth.** The live style guide (`/no/styleguide`, source `web/app/[lang]/styleguide/page.tsx`), the tokens in `web/app/globals.css` and the Design system section of `AGENTS.md` win if this file disagrees with them. This file summarises the same system for design tools. The reference build is the front page (`web/app/[lang]/page.tsx`, sections in `web/components/home/`). `/trening`, the info pages and parts of the style guide still carry the previous world (Geist, rounded pills, the rising-sun arch, eyebrow badges) and are due a redesign; they are not the reference.
 
 ## Overview
 
-Happy Human is a lifestyle brand for health and happiness: free group classes and paid personal training first, then an athleisure clothing line and a blog. The audience is people aged 18–44 who care about mental and physical health. It started as a free community bootcamp on the Norwegian west coast, open to every level, kids welcome.
+**Creative North Star: "The Founders' Letter"**
 
-The look is **calm water lit by sunshine**: a deep blue-green *fjord*, a pale *mist* and a single warm *sun* yellow, taken from the bootcamp punch card. It should feel warm, playful and inclusive, like a training session where everyone goes home happier than they came. Not a gym ad: no aggression, no neon, no dark "grind" aesthetic.
+The movement is two real people inviting you in. The system reads like a calm, well-edited founders' profile: warm paper, a coast photographed full bleed, a letter set large in a light serif and signed by Kaja and Hoang. It refuses the gym-ad default (dark, loud, bodies) and the template grid of icon cards. Personal, professional, clean, modern, styled after The Pilates Class.
 
-**One motif.** The rising-sun arch from the H monogram (a half circle standing on a flat line) is the page's only decorative shape: photo masks, the half sun in the hero and the sunrise band, list bullets.
+Density is low. Each band carries one idea, separated by generous vertical space and thin hairlines rather than boxes. Colour is almost entirely paper, sand and ink; the deep coastal teal appears as exactly one band per page and the pale sun as exactly one filled action per view. Everything is square-cornered.
 
-**Less is more.** Few sections, short copy, big type, one large visual per section and a lot of white space. Prefer one strong image and one sentence over a grid of small cards, icons and badges.
+The voice is Norwegian bokmål first, English second: warm, playful, inclusive ("Vi har plass til alle"), addressing the reader as "du" and speaking as "vi". Imagery shows real people and the real place; never appearance, never before/after.
+
+**Key Characteristics:**
+- Warm paper and sand grounds, charcoal ink, one teal band, one sun fill.
+- Albert Sans at regular weight for everything structural; Source Serif 4 light for every warm, longer line.
+- Square corners on photos, buttons, tabs, cards and fields.
+- Full-bleed or large photography with one shared warm, soft grade.
+- Hairline dividers, generous whitespace, one idea per band.
+- One authored motion moment per page.
 
 ## Colors
 
-### Brand & accent
-- **Sun `#E9C46A`**: the **one** main action per view (e.g. "Bli med i gruppa"), plus small highlights: badges, icon tiles, the logo dot, key facts on fjord. A fill colour, never text on light backgrounds.
-- **Fjord `#264653`**: body text in light mode; page background in dark mode; emphasis bands; focus ring in light mode.
-- **Mist `#F4F8F8`**: page background in light mode; text in dark mode.
+A warm, near-neutral paper palette with one deep coastal teal for emphasis and one pale sun yellow reserved for the main action.
 
-### Surface
-- Light: background mist `#F4F8F8`, cards white `#FFFFFF`, quiet bands light fjord `#E3ECEE`.
-- Dark: background fjord `#264653`, cards and quiet bands `#2F5564`.
-- Borders: `#D3E0E3` (light), `#3E6878` (dark). Used on inputs and the language toggle; not as dividers.
+### Primary
+- **Pale Sun** (`sun`): fill of the single main action per view (the square join button), always with ink text (11.3:1). Also the text-selection colour and the focus ring in dark mode and on the teal band.
 
-### Text
-- Body: fjord on light, mist on dark.
-- Secondary text: `#4F6B76` (light), `#B9CED4` (dark).
-- Links: fjord (light) / sun (dark), **always underlined** (light-mode links share the body colour).
-- On sun: always fjord.
+### Secondary
+- **Coastal Teal** (`teal`): the one dark emphasis band per page ("Plass til alle"). The band sets its own light text tokens (`on-teal`, `on-teal-muted`) and keeps the same colour in both themes.
 
-### Approved contrast pairs (WCAG, light / dark)
-| Pair | Light | Dark |
-|---|---|---|
-| background / foreground | 9.4:1 | 9.4:1 |
-| card / card text | 10.1:1 | 7.5:1 |
-| sun / fjord text | 6.0:1 | 6.0:1 |
-| secondary / text | 8.4:1 | 7.5:1 |
-| muted / muted text | 4.7:1 | 4.9:1 |
-| background / link | 9.4:1 | 6.0:1 |
+### Neutral
+- **Warm Paper** (`paper`): light page background, header, the hero's founder lockup chip.
+- **Sand** (`sand`): alternate bands (the founders), the footer, empty photo slots.
+- **Charcoal Ink** (`ink`): body and heading text in light mode, text on photos and on sun, the focus ring in light mode, the active tab fill.
+- **Muted Ink** (`muted-ink`): roles, captions, secondary paragraphs, data labels.
+- **Hairline** (`hairline`): every border and divider.
+- **Card White** (`card`): the one offer card at the close.
+- **After Sunset** (`dark-background`, `dark-foreground`, `dark-card`, `dark-muted-foreground`, `dark-border`): dark mode is the same rooms after sunset, a warm charcoal. Sand bands and cards become `dark-card`; the teal band and the sun button keep their colours.
 
-Every text/background pair must reach 4.5:1 (3:1 for text ≥ 24px or bold ≥ 19px). **White or mist on sun is 1.7:1 and is banned.**
+The legacy names `--fjord`, `--mist` and `--link` survive in `globals.css` only as aliases (teal, paper, ink) for the old `/trening` page.
 
-### Semantic
-Destructive red is shadcn's default (light `oklch(0.577 0.245 27)`, dark `oklch(0.704 0.191 22)`). Chart colours (green `#2A9D8F`, orange `#F4A261`, red-orange `#E76F51`) are for data only, never UI chrome.
+### Named Rules
+**The One Sun Rule.** One sun-filled button per view. A repeat of the same action (the header) uses the outline button.
+
+**The One Teal Band Rule.** Teal is a band, used once per page, never a text colour, border or small fill.
+
+**The Ink on Sun Rule.** Text on sun is always ink. Sun is a fill, never text or thin lines on light grounds.
 
 ## Typography
 
-### Font family
-**One typeface: Geist** (sans), with Geist Mono only for code. Its plain grotesque matches the "Happy Human" wordmark. Don't introduce display or serif fonts.
+**Display Font:** Albert Sans (with sans-serif)
+**Body Font:** Albert Sans (with sans-serif)
+**Serif Font:** Source Serif 4, light, optical sizes (with Georgia, serif)
+**Mono Font:** Geist Mono, code only
+
+**Character:** A calm Scandinavian geometric sans, always at regular weight, carries headings, body and labels; a light serif carries the human voice: leads, the letter, quotes, status words and sign-offs.
 
 ### Hierarchy
-| Role | Size (mobile → desktop) | Weight | Notes |
-|---|---|---|---|
-| Display / h1 | 48 → 60 → 96px | 600 | line-height 0.98, tracking -0.05em, balanced wrap |
-| Section heading / h2 | 36 → 60px | 600 | line-height 1.05, tracking -0.05em |
-| Statement (values list) | 36 → 72px | 600 | one short word or phrase per line |
-| Quote | 30 → 48px | 600 | Norwegian «guillemets» |
-| h3 | 24px | 600 | |
-| h4 | 20px | 600 | |
-| Lead | 18 → 20px | 400 | secondary text colour, pretty wrap |
-| Body | 16px | 400 | |
-| Small / labels | 14px | 400–500 | secondary text colour |
-| Button | 16px (14px in header) | 600 | |
+- **Display** (400, 2.75rem → 3.75rem → 4.5rem, 1.04, -0.025em): the hero h1 only, max ~16ch, balanced.
+- **Headline** (400, 2.25rem → 3.75rem, -0.02em): one h2 per band.
+- **Title** (400, 1.5rem; 1.875–2.25rem for offer titles; 1.25rem for values, -0.01 to -0.02em): founder names, offer titles, value titles.
+- **Lead** (Source Serif 4 300, 1.25rem → 1.5rem, snug): the line under each h2, status words ("Gratis", "Kommer"), the founder lockup, max ~36rem.
+- **Letter** (Source Serif 4 300, 1.5rem → 1.75rem, 1.45): the founders' letter, within a 48rem reading column; the promise on the teal band runs larger (up to 2.25rem, 1.4).
+- **Body** (400, 1rem; 1.125rem for offer text): bios, values, footer.
+- **Label** (500, 0.75–0.875rem, uppercase, 0.06em): button labels, data labels in the offer card, the single arrow text link.
 
-### Principles
-- Headings are semibold with tight tracking. **Never bold or extra-bold headings.**
-- Big type does the work that decoration would do elsewhere.
-- Copy is Norwegian bokmål first (English secondary): sentence case, «guillemets», `…` not `...`. Norwegian compound words are long, so let text wrap rather than truncate.
+### Named Rules
+**The Regular Weight Rule.** Headings are never semibold or bold. Size and tracking carry hierarchy; weight does not. (Footer column titles are the only semibold text.)
+
+**The Serif Speaks Rule.** Anything the founders would say aloud goes in the light serif; anything structural stays in the sans.
+
+**The No Kicker Rule.** No eyebrow or kicker labels above headings. Status words go after the heading, in the serif.
 
 ## Layout
 
-### Spacing system
-Section bands have 80px vertical padding on mobile and 128px from 768px up, with 16px side gutters (24px from 640px). Inside a section, stack content with 16 / 32 / 48px gaps.
+Pages are a stack of full-width bands. Gutters are 16px / 24px / 40px (mobile / ≥640px / ≥1024px). Bands use 96px vertical padding on mobile and 128–144px from 768px. Content sits in a 72rem container (`max-w-6xl`) or a 48rem reading column (`max-w-3xl`) for the letter and the close.
 
-### Grid & container
-Content sits in a centred container, max 1152px. Two-column splits (visual + text) stack on mobile and sit side by side from 1024px with an 80px gap, either 1:1 or 2:3.
+Rhythm on the reference page: full-bleed hero → paper (letter) → sand (founders) → paper (offer) → the one teal band → paper (join) → sand footer.
 
-### Whitespace philosophy
-White space is the brand. If a section feels empty, make the type or the visual bigger instead of adding elements. Don't add a section or element unless it earns its place.
+The header is 72px from 1024px: links left, logo centred, outline join button right. Below 1024px the logo and button share the first row and the links sit on a second 44px row under a hairline, so no menu is needed. The hero fills the remaining viewport (min 36rem, max 60rem), with the h1, serif lead and sun button in the sky top-left and the founder lockup bottom-left.
 
-### Page rhythm
-A page is a vertical stack of full-width bands. Alternate tones for rhythm: **default → muted → … → fjord** for emphasis (e.g. the trainer), and end with a **sun** call-to-action band. Each band opens with a heading (and optional lead). No eyebrow badges on the landing page.
-
-### Responsive strategy
-Mobile first. Check at 375px, 768px and 1280px with no horizontal scroll. Visuals switch aspect ratio by breakpoint (hero 4:5 → 16:9 → 21:9).
+Two-column splits appear only at large widths (heading beside portraits; 3:2 photo and text in the offer). Lists are separated by `border-t` hairlines, not boxes. Mobile first: check at 375, 768 and 1280px with no horizontal scroll.
 
 ## Elevation & Depth
 
-Flat. Depth comes from tone changes between bands and filled tiles one tone step from the ground, never from shadows or hairlines. Separate items with space.
+Flat. There are no shadows. Depth comes from tonal bands (paper, sand, teal), hairlines, and photography. The hero's founder lockup sits on a flat paper chip over the photo; the closing offer card is set off by a hairline and a white fill, not a shadow.
+
+### Named Rules
+**The Flat Paper Rule.** Surfaces are flat at every state. Separate with tone or a hairline, never a shadow.
 
 ## Shapes
 
-### Border radius scale
-Base radius 14px. Cards and visuals use 25–31px (`rounded-2xl`/`rounded-3xl`); buttons and badges are full pills. Rounded and friendly everywhere; no sharp corners on interactive elements.
-
-### Logo
-An **H monogram** (two bars joined by two arches that meet in the middle) next to a two-line "Happy / Human" wordmark in Geist medium. Always **one colour** (fjord on light, mist on dark, fjord on sun). The monogram alone works as an icon, stamp or oversized cropped graphic.
-
-### Photography geometry
-Large arch-masked frames (round top, flat base) at 4:5 or wider; small arch thumbnails can sit inside a line of text. Real photos first: our own, then openly licensed photos of Blomvåg and the coast (credited in the footer). Otherwise flat brand illustrations fill the slots: a sun rising over the fjord ("sunrise"), an oversized cropped monogram on sun ("sun"), a quiet monogram on mist ("mist").
+Square corners everywhere (`--radius: 0`): photos, portraits, buttons, tabs, the offer card, fields. The NO/EN language toggle in the footer is still a pill carried over from the previous world; it is drift, not a pattern to copy. Photos are cropped to 4:5 (portraits), 4:3 (offer) or full bleed (hero). The H monogram (two bars joined by two arches) is the only recurring silhouette; it also stands in, at 15% ink, for things that are not launched yet.
 
 ## Components
 
-### Navigation
-64px header on the page background: logo left, one call-to-action right. On pages whose main sun button is elsewhere, the header CTA is an outline pill so only one sun button shows per view. The language switch (NO/EN) and theme switch live in the footer.
-
-### Hero
-The monogram split in two: an arch-masked photo of Blomvåg (slow crossfade) beside a card with the h1, lead and sun button, a big half sun rising from the card's bottom edge carrying three stats (e.g. "60 minutter", "8–10 stasjoner", "0 kr alltid gratis").
-
 ### Buttons
-- **Primary**: sun pill, fjord text, 48px tall, 24px horizontal padding, semibold 16px. One per view.
-- **Inverse**: fjord pill with mist text, for sun sections.
-- **Secondary**: outline pill with a trailing arrow.
-- **External** (Facebook group): trailing external-link icon; opens in a new tab with a screen-reader hint.
-- **Ghost / link**: for tertiary actions; links are underlined.
+Square, quiet and certain.
+- **Shape:** square corners (0px), 48px tall.
+- **Primary:** sun fill, ink label, 28px side padding, uppercase 0.875rem label at 0.06em tracking, weight 500, trailing external-link icon for Facebook. Hover dims the fill to 80%.
+- **Outline:** paper fill, hairline border, ink label; 40px tall in the header with a 0.75rem label. Hover fills with sand.
+- **Focus:** visible ring in the `ring` token (ink in light, sun in dark and on teal); outlines are never removed.
 
-### Inputs & forms
-shadcn inputs on brand tokens: border colour, 14px radius, visible focus ring (fjord in light, sun in dark). Labels always visible. Sign-up flows allow "I'm bringing children".
+### Tabs (signature interaction)
+The offer section's switch between Fellestimer / Personlig trening / Klær / Blogg.
+- **Style:** square 44px buttons, hairline border, 0.875rem ink label, 8px gap, wrapping on small screens.
+- **States:** hover darkens the border to ink; the active tab fills with ink and the label turns paper.
+- **Content:** one large 4:3 photo and a text column per tab; items not yet launched show the monogram on sand instead of a photo and a serif status word ("Kommer").
 
-### Cards & containers
-- **Value card**: white (light) / `#2F5564` (dark) card, 48px sun icon tile with a fjord line icon, h4 title, short muted text.
-- **Details list**: rows with a small `SunArch` bullet, a semibold label and body text, separated by space.
-- **FAQ**: filled tiles (one open at a time); the open tile turns sun with fjord text.
-- **Level switch**: a segmented pill (Lettere / Tøffere) that switches every exercise between its easier and harder version; the selected option is filled with the foreground colour.
+### Cards / Containers
+- **Corner Style:** square.
+- **Background:** card white (dark: `dark-card`).
+- **Shadow Strategy:** none (see Elevation & Depth).
+- **Border:** one hairline.
+- **Internal Padding:** 24px mobile, 40px from 640px.
+- Used once, at the close: a two-column list of facts (uppercase muted labels over 1.25rem values) above a full-width sun button.
 
-### Icons
-`lucide-react` line icons only, decorative ones hidden from screen readers. Usually inside a sun or fjord rounded tile.
+### Navigation
+Header links are 0.875rem ink text with an underline that fades in on hover (6px offset). Footer links are always underlined at 30% ink, full ink on hover. Links in running text are always underlined and share the body colour. The language switch lives in the footer.
 
-### Signature patterns
-- **Values as large type**: each value one huge line ("Mestring", "Treningsglede", "Plass til alle", "Kropp og sinn") with a short explanation beside it.
-- **Trainer quote on fjord**: a big quote in «guillemets», name and role small, key facts with sun-coloured numbers.
-- **Sun closing band**: centred heading and lead, fjord join button.
+### Founder lockup
+Two square portraits side by side with "Startet av Kaja og Hoang" (or the letter's signature) in the light serif. It appears on a paper chip in the hero corner (anchoring to the founders band) and under a hairline as the letter's signature.
 
-## Imagery & content
+### Logo
+The H monogram plus the two-line "Happy Human" wordmark, Albert Sans medium, always one colour (`currentColor`). Small and centred in the header, large at the top of the footer. Never retype the name as a logo.
 
-- Show **real people training together**, having fun: different ages, sizes and levels, outdoors by the sea, kids welcome.
-- **Never**: before/after shots, shirtless "physique" photos, focus on appearance, weight loss, calorie counting, "earn your food", supplements or performance enhancers.
-- Talk about **energy, strength, fun, community, mestring (mastery) and treningsglede (joy in training)**. Every exercise shows an easier and a harder alternative.
-- Voice: warm, playful, inclusive; address the reader as "du", the brand speaks as "vi" ("Vi har plass til alle").
+### Photography
+Full bleed or large, square-cornered, with one shared warm, soft grade (graded copies in `web/public/images/home/`, originals in `images/place` and `images/people`; every raster carries its provenance). Real photos only: our own, or openly licensed photos of the place credited in the footer.
+
+### Motion
+One authored moment per page: the founders' letter paragraphs rise 12px from 25% opacity as they scroll in (scroll-driven, transform and opacity only), plus a slow 700ms fade on tab images. Everything sits inside `prefers-reduced-motion: no-preference`.
 
 ## Do's and Don'ts
 
-### Do
-- Use semantic roles (background, foreground, card, primary, muted) so dark mode works automatically.
-- Use one sun button per view; fjord text on sun, always.
-- Pair each main section with one large rounded visual, or make it large type.
-- Use space, big headings and tone steps; reuse the arch instead of new shapes.
-- Keep focus rings visible and everything keyboard-reachable.
-- Design light and dark together; the theme follows the system.
+### Do:
+- **Do** build pages as full-width bands on paper and sand, with exactly one teal band for the page's emphasis.
+- **Do** keep one sun-filled button per view, with ink text; repeats use the outline button.
+- **Do** set headings in Albert Sans at regular weight with tight negative tracking, and every lead, letter, quote and sign-off in Source Serif 4 light.
+- **Do** use square corners on photos, buttons, tabs, cards and fields.
+- **Do** separate list items with thin hairlines, and let generous whitespace do the rest.
+- **Do** show real people training together, of different ages, sizes and levels, and kids, since kids are welcome; show the real place.
+- **Do** write user-facing text in Norwegian bokmål first, English second, warm and inclusive, in the dictionaries.
+- **Do** keep every text pair at 4.5:1 (3:1 at 24px and up) in both themes, with a visible focus ring.
 
-### Don't
-- Don't use white or mist text on sun, or sun as text/thin lines on light backgrounds.
-- Don't add colours outside the palette (no neon, no gradients, no grey Tailwind palettes).
-- Don't add fonts, bold headings or eyebrow badges on the landing page.
-- Don't fill sections with grids of small cards, icons and badges.
-- Don't use placeholder labels like "Bilde:" in visible UI.
-- Don't retype "Happy Human" as a logo; use the monogram + wordmark.
-- Don't show appearance-focused or before/after imagery.
-
-## Responsive Behavior
-
-| Breakpoint | Changes |
-|---|---|
-| < 640px | 16px gutters, h1 48px, h2 36px, everything stacked, hero visual 4:5 |
-| ≥ 640px | 24px gutters, h1 60px, hero visual 16:9 |
-| ≥ 768px | section padding 128px, h1 96px, h2 60px |
-| ≥ 1024px | two-column splits, hero visual 21:9 |
-
-Touch targets are at least 40px (header CTA) and 48px (main CTAs).
-
-## Agent Prompt Guide
-
-**Quick reference:** background mist `#F4F8F8` · text fjord `#264653` · one action in sun `#E9C46A` with fjord text · quiet bands `#E3ECEE` · dark mode swaps fjord and mist, cards `#2F5564` · Geist semibold, tight tracking · pills for buttons, 31px-rounded visuals · lots of white space.
-
-**Example prompts:**
-- "Using DESIGN.md, design a mobile-first page for booking a personal training intro session: a big h1, short lead, one large arch-masked photo of the trainer, a details list (duration, price, place) with SunArch bullets, and one sun 'Book a time' button."
-- "Using DESIGN.md, design an Instagram story (1080×1920) announcing a free Saturday class: fjord background, huge mist Geist headline in bokmål, sun circle like a rising sun, H monogram small in the corner."
-- "Using DESIGN.md, design a blog post layout for mental-health and nutrition articles: generous reading width, h1 in display size, lead in muted text, one wide visual, underlined links, no sidebar clutter."
+### Don't:
+- **Don't** use semibold or bold headings, or add fonts beyond Albert Sans, Source Serif 4 and Geist Mono (code only).
+- **Don't** put kicker or eyebrow labels above headings, or badges anywhere.
+- **Don't** round corners or use pill shapes.
+- **Don't** add shadows; depth is tone and hairlines.
+- **Don't** use teal as text or a small accent, or sun as text or a thin line.
+- **Don't** build grids of icon cards.
+- **Don't** show before/after pictures, shirtless "physique" shots, or anything focused on appearance or weight.
+- **Don't** present stock photos of strangers as members, or invent class photos, testimonials or prices.
+- **Don't** copy patterns from `/trening`, the info pages or the old parts of the style guide (arches, pills, eyebrow badges); they belong to the previous world.

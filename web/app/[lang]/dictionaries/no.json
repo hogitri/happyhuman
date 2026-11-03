@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Happy Human – trening som gjør deg glad",
-    "description": "Gratis, leken og intensiv funksjonell trening i Blomvåg med PT og idrettsviter Kaja Haugen. For alle – fra nybegynner til topptrent."
+    "title": "Happy Human: trening som gjør deg glad",
+    "description": "Gratis, leken og intensiv funksjonell trening i Blomvåg med PT og idrettsviter Kaja Haugen. For alle, fra nybegynner til topptrent."
   },
   "ui": {
     "language": "Språk",
@@ -16,28 +16,29 @@
     "opensFacebook": "åpnes på Facebook"
   },
   "cta": {
-    "join": "Bli med i gruppa",
-    "how": "Slik funker det"
+    "join": "Bli med i gruppen",
+    "how": "Slik funker det",
+    "joinShort": "Bli med"
   },
   "hero": {
     "title": "Trening som gjør deg glad.",
-    "lead": "Gratis, leken funksjonell trening i Blomvåg. Ingen krav til form – her er alle velkommen.",
-    "imageLabel": "Blomvåg en vinterkveld: husene ved vågen og sola som går ned over sjøen",
+    "lead": "Gratis, leken funksjonell trening i Blomvåg. Ingen krav til form, her er alle velkommen.",
+    "imageLabel": "Blomvåg en vinterkveld: husene ved vågen og solen som går ned over sjøen",
     "stats": [
       {
-        "value": "60",
-        "label": "minutter"
+        "value": "Leken",
+        "label": "og variert"
       },
       {
-        "value": "8–10",
-        "label": "stasjoner"
+        "value": "Intensiv",
+        "label": "på ditt nivå"
       },
       {
-        "value": "0 kr",
-        "label": "alltid gratis"
+        "value": "For alle",
+        "label": "store og små"
       }
     ],
-    "imageAlt": "Blomvåg en vinterkveld: husene ved vågen og sola som går ned over sjøen"
+    "imageAlt": "Blomvåg en vinterkveld: husene ved vågen og solen som går ned over sjøen"
   },
   "why": {
     "title": "Trening som føles bra",
@@ -46,7 +47,7 @@
       {
         "icon": "trophy",
         "title": "Mestring",
-        "text": "Hver øvelse har en lettere og en tøffere variant, så du alltid kan utfordre deg – på ditt nivå."
+        "text": "Hver øvelse har en lettere og en tøffere variant, så du alltid kan utfordre deg på ditt nivå."
       },
       {
         "icon": "smile",
@@ -56,7 +57,7 @@
       {
         "icon": "users",
         "title": "Plass til alle",
-        "text": "Fra nybegynner til topptrent. Ingen sammenligning – bare fellesskap."
+        "text": "Fra nybegynner til topptrent. Ingen sammenligning, bare fellesskap."
       },
       {
         "icon": "heart",
@@ -65,42 +66,16 @@
       }
     ]
   },
-  "trainer": {
-    "imageLabel": "Portrett av Kaja Haugen",
-    "name": "Kaja Haugen",
-    "role": "Grunnlegger, PT og idrettsviter",
-    "bio": "PT og gruppeinstruktør i over sju år, med master i idrettsvitenskap fra Norges idrettshøgskole. I dag jobber hun i Antidoping Norge. Kaja brenner for trening som gjør godt – for både kropp og sinn.",
-    "quote": "Målet mitt er at du skal føle på mestring og treningsglede.",
-    "facts": [
-      {
-        "value": "7+",
-        "label": "år som PT og instruktør"
-      },
-      {
-        "value": "3000",
-        "label": "PT-timer"
-      },
-      {
-        "value": "MSc",
-        "label": "idrettsvitenskap, NIH"
-      }
-    ],
-    "title": "Treneren din er idrettsviter",
-    "imageAlt": "Portrett av Kaja Haugen",
-    "bioTitle": "Kaja Haugen",
-    "whyTitle": "Hvorfor hun gjør dette",
-    "why": "Kaja har sett hvordan tanker om kropp, mat og trening kan bli skadelige. Derfor lager hun trening som handler om glede, fellesskap og å kjenne at du mestrer."
-  },
   "faq": {
     "title": "Lurer du på noe?",
     "items": [
       {
         "q": "Må jeg være i god form?",
-        "a": "Nei! Alle øvelser har en lettere og en tøffere variant, så timen passer for alle – fra nybegynner til topptrent."
+        "a": "Nei! Alle øvelser har en lettere og en tøffere variant, så timen passer for alle, fra nybegynner til topptrent."
       },
       {
         "q": "Hvordan melder jeg meg på?",
-        "a": "Bli med i Facebook-gruppa. Der legger Kaja ut nye økter, og du huker av for om du kommer."
+        "a": "Bli med i Facebook-gruppen. Der legger Kaja ut nye økter, og du huker av for om du kommer."
       },
       {
         "q": "Hva koster det?",
@@ -112,7 +87,7 @@
       },
       {
         "q": "Hvor og når trener dere?",
-        "a": "I gymsalen i Blomvåg barnehage om vinteren, og ute når været tillater det. Tidene legges ut i gruppa, ofte hverdager kl. 17.30 eller lørdager kl. 10."
+        "a": "I gymsalen i Blomvåg barnehage om vinteren, og ute når været tillater det. Tidene legges ut i gruppen, ofte hverdager kl. 17.30 eller lørdager kl. 10."
       },
       {
         "q": "Hva må jeg ha med?",
@@ -120,24 +95,23 @@
       },
       {
         "q": "Tilbyr dere personlig trening?",
-        "a": "Det kommer. Personlig trening med Kaja blir et betalt tilbud – følg gruppa for å få vite når det åpner."
+        "a": "Ja. Personlig trening med Kaja er et betalt tilbud med ulike pakker. Ta kontakt, så finner vi det som passer deg."
       }
     ]
   },
   "finalCta": {
     "title": "Klar for å bli med?",
-    "lead": "Finn neste økt i gruppa – kom alene eller ta med en venn. Vi har plass til alle.",
-    "imageAlt": "Hjeltefjorden sett fra den gamle ferjekaien på Rong"
+    "lead": "Finn neste økt i gruppen. Kom alene eller ta med en venn, vi har plass til alle.",
+    "imageAlt": "Kyststien på Rong en vinterettermiddag"
   },
   "footer": {
     "linksTitle": "Snarveier",
     "placeTitle": "Hvor",
     "place": "Blomvåg, Øygarden",
-    "facebook": "Facebook-gruppa",
+    "facebook": "Facebook-gruppen",
     "tagline": "Trening som gjør deg glad.",
     "copyright": "© 2026 Happy Human",
     "contactTitle": "Kontakt",
-    "photos": "Foto",
     "pagesTitle": "Om Happy Human"
   },
   "nav": {
@@ -145,36 +119,11 @@
     "session": "Timen",
     "stations": "Stasjonene",
     "trainer": "Kaja",
-    "faq": "Spørsmål"
-  },
-  "intro": {
-    "title": "Om treningen",
-    "parts": [
-      {
-        "text": "Vi trener ved sjøen"
-      },
-      {
-        "image": "sea",
-        "alt": "Hjeltefjorden en blank dag"
-      },
-      {
-        "text": "i Blomvåg med enkelt utstyr"
-      },
-      {
-        "image": "kettlebell",
-        "alt": "En kettlebell i sanden"
-      },
-      {
-        "text": "– store og små, side om side"
-      },
-      {
-        "image": "village",
-        "alt": "Husene ved vågen i Blomvåg"
-      },
-      {
-        "text": "."
-      }
-    ]
+    "faq": "Spørsmål",
+    "movement": "Hvorfor",
+    "training": "Trening",
+    "founders": "Kaja og Hoang",
+    "offer": "Tilbud"
   },
   "session": {
     "title": "Slik er en time",
@@ -183,7 +132,7 @@
     "steps": [
       {
         "title": "Kom som du er",
-        "text": "Alene, med en venn eller med ungene. Et kryss i Facebook-gruppa er nok."
+        "text": "Alene, med en venn eller med ungene. Et kryss i Facebook-gruppen er nok."
       },
       {
         "title": "Varm opp sammen",
@@ -212,7 +161,7 @@
       },
       {
         "name": "Armhevinger",
-        "easier": "Mot veggen eller med knærne i matta.",
+        "easier": "Mot veggen eller med knærne i matten.",
         "harder": "Med føttene opp på en kasse."
       },
       {
@@ -233,7 +182,7 @@
       {
         "name": "Hoppetau",
         "easier": "Spretter lett på tærne, eller marsjerer på stedet.",
-        "harder": "Raske hopp med tau – prøv gjerne å få tauet rundt to ganger per hopp."
+        "harder": "Raske hopp med tau. Prøv gjerne å få tauet rundt to ganger per hopp."
       },
       {
         "name": "Fjellklatrer",
@@ -255,7 +204,7 @@
       },
       {
         "label": "Når",
-        "text": "Legges ut i Facebook-gruppa, ofte hverdager kl. 17.30 eller lørdager kl. 10."
+        "text": "Legges ut i Facebook-gruppen, ofte hverdager kl. 17.30 eller lørdager kl. 10."
       },
       {
         "label": "Pris",
@@ -263,12 +212,123 @@
       },
       {
         "label": "Ta med",
-        "text": "Treningstøy, sko, vann – og gjerne en venn."
+        "text": "Treningstøy, sko, vann og gjerne en venn."
       },
       {
         "label": "Barn",
         "text": "Velkommen. Vi tilpasser underveis, og noen ganger blir det leketreff."
       }
     ]
+  },
+  "home": {
+    "metaTitle": "Happy Human: trening som gjør deg glad",
+    "metaDescription": "Gratis, leken funksjonell trening i Blomvåg og personlig trening med idrettsviter Kaja Haugen. For alle, fra nybegynner til topptrent.",
+    "hero": {
+      "title": "Trening som gjør deg glad.",
+      "lead": "Gratis, leken funksjonell trening i Blomvåg. Ingen krav til form, her er alle velkommen.",
+      "secondary": "Personlig trening",
+      "imageAlt": "Kyststien på Rong en vinterettermiddag, med svaberg og sjø"
+    },
+    "why": {
+      "title": "Trening skal føles bra i kropp og hode",
+      "items": [
+        {
+          "title": "Mestring",
+          "text": "Hver øvelse har en lettere og en tøffere variant, så du alltid kan utfordre deg på ditt nivå."
+        },
+        {
+          "title": "Treningsglede",
+          "text": "Leken og variert trening med god stemning. Du skal gå hjem gladere enn da du kom."
+        },
+        {
+          "title": "Plass til alle",
+          "text": "Fra nybegynner til topptrent. Ingen sammenligning, bare fellesskap."
+        },
+        {
+          "title": "Kropp og sinn",
+          "text": "Helse er mer enn muskler. Trening handler om å ha det bra, ikke om hvordan du ser ut."
+        }
+      ],
+      "promise": "Leken, intensiv funksjonell trening med egen kroppsvekt og enkelt utstyr. Øktene varierer fra gang til gang, og utfordrer komfortsonen med enkle og effektive øvelser.",
+      "imageAlt": "Ulvsund en rolig dag, med båter og hus langs sundet"
+    },
+    "offer": {
+      "title": "Dette tilbyr vi",
+      "bootcamp": {
+        "title": "Bootcamp i Blomvåg",
+        "price": "Gratis",
+        "lead": "En leken, intensiv time. Styrke, kondis og mobilitet med egen kroppsvekt og enkelt utstyr. Alle øvelser har en lettere og en tøffere variant.",
+        "details": [
+          {
+            "label": "Format",
+            "text": "Sirkel med 8–10 stasjoner, eller puls + mobilitet"
+          },
+          {
+            "label": "Hvor",
+            "text": "Gymsalen i Blomvåg barnehage, og ute om sommeren"
+          },
+          {
+            "label": "Når",
+            "text": "Legges ut i Facebook-gruppen, ofte hverdager kl. 17.30 eller lørdager kl. 10"
+          },
+          {
+            "label": "Ta med",
+            "text": "Treningstøy, sko, vann og gjerne en venn"
+          }
+        ],
+        "more": "Les mer om timene",
+        "imageAlt": "Illustrasjon: en gruppe trener sammen ved sjøen, med knebøy, sprellemenn, planke og kettlebellsving, og et barn som hopper med"
+      },
+      "pt": {
+        "title": "Personlig trening",
+        "price": "Betalt",
+        "lead": "Et opplegg laget for deg, med en trener som ser hele mennesket. Ta kontakt, så finner vi pakken som passer deg.",
+        "details": [
+          {
+            "label": "Trener",
+            "text": "Kaja Haugen, idrettsviter og PT"
+          },
+          {
+            "label": "Passer for",
+            "text": "Deg som vil ha en plan, oppfølging og trygghet"
+          },
+          {
+            "label": "Pris",
+            "text": "Ta kontakt for ulike pakker tilpasset dine behov"
+          }
+        ],
+        "cta": "Ta kontakt",
+        "mailSubject": "Personlig trening",
+        "imageAlt": "Illustrasjon: personlig trening innendørs i et hjemmegym, der en person tar en dyp knebøy med stang i stativet, sett forfra, mens treneren veileder, med benk og manualer langs veggen"
+      }
+    },
+    "faq": {
+      "title": "Lurer du på noe?",
+      "items": [
+        {
+          "q": "Må jeg være i god form?",
+          "a": "Nei! Alle øvelser har en lettere og en tøffere variant, så timen passer for alle, fra nybegynner til topptrent."
+        },
+        {
+          "q": "Hvordan melder jeg meg på?",
+          "a": "Bli med i Facebook-gruppen. Der legger Kaja ut nye økter, og du huker av for om du kommer."
+        },
+        {
+          "q": "Kan jeg ta med barn?",
+          "a": "Ja! Ingen barnevakt? Ta med ungene, så tilpasser vi underveis. Noen ganger blir det leketreff for de minste."
+        }
+      ]
+    },
+    "join": {
+      "title": "Klar for å bli med?",
+      "lead": "Finn neste økt i gruppen. Kom alene eller ta med en venn, vi har plass til alle."
+    },
+    "footer": {
+      "places": "Finn oss",
+      "backToTop": "Til toppen"
+    }
+  },
+  "training": {
+    "metaTitle": "Trening i Blomvåg"
   }
 }

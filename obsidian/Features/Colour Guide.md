@@ -1,8 +1,11 @@
 ---
 type: feature
-status: in-progress
-updated: 2026-11-02
+status: outdated
+updated: 2026-11-03
 ---
+
+> **Outdated since 2026-11-03.** The site moved to a new visual world (paper, sand, ink, teal, pale sun; Albert Sans + Source Serif 4; square corners). See [[Decisions/2026-11-03 Founder editorial front page]], `DESIGN.md` and the Design system section of `AGENTS.md`. The notes below describe the 2026-10-26/11-02 system and are kept as history.
+
 # Colour Guide
 
 ## Purpose

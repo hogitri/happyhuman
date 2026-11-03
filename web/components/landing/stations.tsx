@@ -1,10 +1,17 @@
+import { BabyIcon, BackpackIcon, CalendarClockIcon, GiftIcon, MapPinIcon } from "lucide-react"
+
+import { stationIcons } from "@/components/brand/exercise-icons"
 import { Section } from "@/components/brand/section"
-import { SunArch } from "@/components/brand/visual"
 import type { Dictionary } from "@/app/[lang]/dictionaries"
 
 // The page's one live thing: switch every station between its easier and harder version.
 // Pure CSS (radio inputs + :has() in globals.css), so it works without JavaScript;
 // browsers without :has() simply show both versions.
+// Icons for the practical list, in the order of `stations.practical`: where, when, price, bring, kids
+const practicalIcons = [MapPinIcon, CalendarClockIcon, GiftIcon, BackpackIcon, BabyIcon]
+
+const tile = "flex size-12 items-center justify-center rounded-2xl bg-secondary text-secondary-foreground"
+
 export function Stations({ dict }: { dict: Dictionary }) {
   const { stations } = dict
   const levels = [
@@ -42,16 +49,21 @@ export function Stations({ dict }: { dict: Dictionary }) {
             <p className="text-base">{stations.count}</p>
           </div>
           <ul data-reveal className="mt-10 grid gap-x-16 gap-y-9 md:grid-cols-2">
-            {stations.items.map((item) => (
-              <li key={item.name} className="grid grid-cols-[3.25rem_1fr] items-start gap-5">
-                <SunArch className="hh-level-sun mt-1 aspect-2/1 w-full" />
+            {stations.items.map((item, i) => {
+              const Icon = stationIcons[i] ?? stationIcons[0]
+              return (
+              <li key={item.name} className="grid grid-cols-[3rem_1fr] items-start gap-5">
+                <span className={tile}>
+                  <Icon />
+                </span>
                 <div>
                   <p className="text-lg font-semibold">{item.name}</p>
                   <p data-level="easier" className="mt-1 max-w-[40ch] text-base text-pretty">{item.easier}</p>
                   <p data-level="harder" className="mt-1 max-w-[40ch] text-base text-pretty">{item.harder}</p>
                 </div>
               </li>
-            ))}
+              )
+            })}
           </ul>
           <p className="mt-10 text-sm text-muted-foreground">{stations.note}</p>
         </div>
@@ -62,15 +74,20 @@ export function Stations({ dict }: { dict: Dictionary }) {
             <p className="text-base">{stations.practicalCount}</p>
           </div>
           <dl data-reveal className="mt-10 grid gap-x-16 gap-y-9 md:grid-cols-2">
-            {stations.practical.map((item) => (
-              <div key={item.label} className="grid grid-cols-[3.25rem_1fr] items-start gap-5">
-                <SunArch className="mt-1 aspect-2/1 w-full" />
+            {stations.practical.map((item, i) => {
+              const Icon = practicalIcons[i] ?? MapPinIcon
+              return (
+              <div key={item.label} className="grid grid-cols-[3rem_1fr] items-start gap-5">
+                <span className={tile}>
+                  <Icon aria-hidden className="size-6" />
+                </span>
                 <div>
                   <dt className="text-lg font-semibold">{item.label}</dt>
                   <dd className="mt-1 max-w-[40ch] text-base text-pretty">{item.text}</dd>
                 </div>
               </div>
-            ))}
+              )
+            })}
           </dl>
         </div>
       </div>

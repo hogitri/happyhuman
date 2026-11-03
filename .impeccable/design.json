@@ -1,0 +1,424 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-03T11:32:32+00:00",
+  "title": "Design System: Happy Human",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "oklch(0.980 0.006 84.6)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 84.6)",
+          "oklch(0.27 0.006 84.6)",
+          "oklch(0.39 0.009 84.6)",
+          "oklch(0.51 0.011 84.6)",
+          "oklch(0.63 0.010 84.6)",
+          "oklch(0.75 0.008 84.6)",
+          "oklch(0.86 0.006 84.6)",
+          "oklch(0.95 0.004 84.6)"
+        ]
+      },
+      "sand": {
+        "role": "neutral",
+        "displayName": "Sand",
+        "canonical": "oklch(0.944 0.012 84.6)",
+        "tonalRamp": [
+          "oklch(0.15 0.005 84.6)",
+          "oklch(0.27 0.008 84.6)",
+          "oklch(0.39 0.011 84.6)",
+          "oklch(0.51 0.014 84.6)",
+          "oklch(0.63 0.013 84.6)",
+          "oklch(0.75 0.010 84.6)",
+          "oklch(0.86 0.007 84.6)",
+          "oklch(0.95 0.005 84.6)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Charcoal Ink",
+        "canonical": "oklch(0.252 0.004 84.6)",
+        "tonalRamp": [
+          "oklch(0.15 0.003 84.6)",
+          "oklch(0.27 0.004 84.6)",
+          "oklch(0.39 0.006 84.6)",
+          "oklch(0.51 0.007 84.6)",
+          "oklch(0.63 0.007 84.6)",
+          "oklch(0.75 0.005 84.6)",
+          "oklch(0.86 0.004 84.6)",
+          "oklch(0.95 0.003 84.6)"
+        ]
+      },
+      "teal": {
+        "role": "secondary",
+        "displayName": "Coastal Teal",
+        "canonical": "oklch(0.349 0.034 192.8)",
+        "tonalRamp": [
+          "oklch(0.15 0.015 192.8)",
+          "oklch(0.27 0.024 192.8)",
+          "oklch(0.39 0.033 192.8)",
+          "oklch(0.51 0.042 192.8)",
+          "oklch(0.63 0.039 192.8)",
+          "oklch(0.75 0.030 192.8)",
+          "oklch(0.86 0.022 192.8)",
+          "oklch(0.95 0.015 192.8)"
+        ]
+      },
+      "sun": {
+        "role": "primary",
+        "displayName": "Pale Sun",
+        "canonical": "oklch(0.888 0.102 91.1)",
+        "tonalRamp": [
+          "oklch(0.15 0.040 91.1)",
+          "oklch(0.27 0.064 91.1)",
+          "oklch(0.39 0.088 91.1)",
+          "oklch(0.51 0.112 91.1)",
+          "oklch(0.63 0.104 91.1)",
+          "oklch(0.75 0.080 91.1)",
+          "oklch(0.86 0.058 91.1)",
+          "oklch(0.95 0.040 91.1)"
+        ]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "Card White",
+        "canonical": "oklch(1 0 0)",
+        "tonalRamp": [
+          "oklch(0.15 0.000 0)",
+          "oklch(0.27 0.000 0)",
+          "oklch(0.39 0.000 0)",
+          "oklch(0.51 0.000 0)",
+          "oklch(0.63 0.000 0)",
+          "oklch(0.75 0.000 0)",
+          "oklch(0.86 0.000 0)",
+          "oklch(0.95 0.000 0)"
+        ]
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "oklch(0.498 0.012 81.8)",
+        "tonalRamp": [
+          "oklch(0.15 0.005 81.8)",
+          "oklch(0.27 0.007 81.8)",
+          "oklch(0.39 0.010 81.8)",
+          "oklch(0.51 0.013 81.8)",
+          "oklch(0.63 0.012 81.8)",
+          "oklch(0.75 0.009 81.8)",
+          "oklch(0.86 0.007 81.8)",
+          "oklch(0.95 0.005 81.8)"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(0.899 0.015 84.6)",
+        "tonalRamp": [
+          "oklch(0.15 0.005 84.6)",
+          "oklch(0.27 0.008 84.6)",
+          "oklch(0.39 0.011 84.6)",
+          "oklch(0.51 0.014 84.6)",
+          "oklch(0.63 0.013 84.6)",
+          "oklch(0.75 0.010 84.6)",
+          "oklch(0.86 0.007 84.6)",
+          "oklch(0.95 0.005 84.6)"
+        ]
+      },
+      "on-teal": {
+        "role": "neutral",
+        "displayName": "Text on Teal",
+        "canonical": "oklch(0.953 0.011 84.6)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 84.6)",
+          "oklch(0.27 0.006 84.6)",
+          "oklch(0.39 0.009 84.6)",
+          "oklch(0.51 0.011 84.6)",
+          "oklch(0.63 0.010 84.6)",
+          "oklch(0.75 0.008 84.6)",
+          "oklch(0.86 0.006 84.6)",
+          "oklch(0.95 0.004 84.6)"
+        ]
+      },
+      "on-teal-muted": {
+        "role": "neutral",
+        "displayName": "Muted Text on Teal",
+        "canonical": "oklch(0.821 0.02 181)",
+        "tonalRamp": [
+          "oklch(0.15 0.008 181)",
+          "oklch(0.27 0.013 181)",
+          "oklch(0.39 0.018 181)",
+          "oklch(0.51 0.023 181)",
+          "oklch(0.63 0.022 181)",
+          "oklch(0.75 0.017 181)",
+          "oklch(0.86 0.012 181)",
+          "oklch(0.95 0.008 181)"
+        ]
+      },
+      "dark-background": {
+        "role": "neutral",
+        "displayName": "After Sunset",
+        "canonical": "oklch(0.221 0.004 106.7)",
+        "tonalRamp": [
+          "oklch(0.15 0.002 106.7)",
+          "oklch(0.27 0.003 106.7)",
+          "oklch(0.39 0.004 106.7)",
+          "oklch(0.51 0.006 106.7)",
+          "oklch(0.63 0.005 106.7)",
+          "oklch(0.75 0.004 106.7)",
+          "oklch(0.86 0.003 106.7)",
+          "oklch(0.95 0.002 106.7)"
+        ]
+      },
+      "dark-foreground": {
+        "role": "neutral",
+        "displayName": "After Sunset Text",
+        "canonical": "oklch(0.953 0.011 84.6)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 84.6)",
+          "oklch(0.27 0.006 84.6)",
+          "oklch(0.39 0.009 84.6)",
+          "oklch(0.51 0.011 84.6)",
+          "oklch(0.63 0.010 84.6)",
+          "oklch(0.75 0.008 84.6)",
+          "oklch(0.86 0.006 84.6)",
+          "oklch(0.95 0.004 84.6)"
+        ]
+      },
+      "dark-card": {
+        "role": "neutral",
+        "displayName": "After Sunset Band",
+        "canonical": "oklch(0.268 0.005 106.8)",
+        "tonalRamp": [
+          "oklch(0.15 0.002 106.8)",
+          "oklch(0.27 0.003 106.8)",
+          "oklch(0.39 0.004 106.8)",
+          "oklch(0.51 0.006 106.8)",
+          "oklch(0.63 0.005 106.8)",
+          "oklch(0.75 0.004 106.8)",
+          "oklch(0.86 0.003 106.8)",
+          "oklch(0.95 0.002 106.8)"
+        ]
+      },
+      "dark-muted-foreground": {
+        "role": "neutral",
+        "displayName": "After Sunset Muted",
+        "canonical": "oklch(0.765 0.017 82.8)",
+        "tonalRamp": [
+          "oklch(0.15 0.006 82.8)",
+          "oklch(0.27 0.010 82.8)",
+          "oklch(0.39 0.013 82.8)",
+          "oklch(0.51 0.017 82.8)",
+          "oklch(0.63 0.016 82.8)",
+          "oklch(0.75 0.012 82.8)",
+          "oklch(0.86 0.009 82.8)",
+          "oklch(0.95 0.006 82.8)"
+        ]
+      },
+      "dark-border": {
+        "role": "neutral",
+        "displayName": "After Sunset Hairline",
+        "canonical": "oklch(0.344 0.007 95.3)",
+        "tonalRamp": [
+          "oklch(0.15 0.003 95.3)",
+          "oklch(0.27 0.004 95.3)",
+          "oklch(0.39 0.006 95.3)",
+          "oklch(0.51 0.007 95.3)",
+          "oklch(0.63 0.007 95.3)",
+          "oklch(0.75 0.005 95.3)",
+          "oklch(0.86 0.004 95.3)",
+          "oklch(0.95 0.003 95.3)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero h1 only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "One h2 per band."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Founder names, offer titles, value titles."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Serif line under each h2, status words, the founder lockup."
+      },
+      "letter": {
+        "displayName": "Letter",
+        "purpose": "The founders' letter and the promise on the teal band."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Bios, values, offer text, footer."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase button labels, data labels, the arrow text link."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Shared easing for authored entrances."
+      },
+      {
+        "name": "letter-rise",
+        "value": "translateY(12px), opacity 0.25 → 1, scroll-driven (view(), entry 0%–70%)",
+        "purpose": "The one authored moment: founders' letter paragraphs rise as they enter. Reduced-motion off."
+      },
+      {
+        "name": "image-fade",
+        "value": "fade-in 700ms",
+        "purpose": "Tab images fade in on switch."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one sun-filled join action per view.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Bli med på en gratis time <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 3h6v6\"/><path d=\"M10 14 21 3\"/><path d=\"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6\"/></svg></a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 28px; background: var(--sun, #F3D88A); color: var(--ink, #232220); font-family: 'Albert Sans', sans-serif; font-size: 14px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border: 1px solid transparent; border-radius: 0; transition: background 0.15s; } .ds-btn-primary:hover { background: color-mix(in oklch, #F3D88A 80%, transparent); } .ds-btn-primary:focus-visible { outline: 3px solid color-mix(in oklch, #232220 50%, transparent); outline-offset: 0; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Repeat of the join action (header), so only one sun button shows per view.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\">Bli med</a>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; height: 40px; padding: 0 20px; background: #FAF8F4; color: #232220; font-family: 'Albert Sans', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border: 1px solid #E2DDD3; border-radius: 0; transition: background 0.15s; } .ds-btn-outline:hover { background: #F0ECE4; } .ds-btn-outline:focus-visible { outline: 3px solid color-mix(in oklch, #232220 50%, transparent); }"
+    },
+    {
+      "name": "Offer Tabs",
+      "kind": "chip",
+      "refersTo": "tab",
+      "description": "Signature switch between the movement's parts; active tab fills with ink.",
+      "html": "<div class=\"ds-tabs\" role=\"tablist\"><button class=\"ds-tab\" aria-selected=\"true\">Fellestimer</button><button class=\"ds-tab\">Personlig trening</button><button class=\"ds-tab\">Klær</button><button class=\"ds-tab\">Blogg</button></div>",
+      "css": ".ds-tabs { display: flex; flex-wrap: wrap; gap: 8px; } .ds-tab { height: 44px; padding: 0 20px; background: transparent; color: #232220; font-family: 'Albert Sans', sans-serif; font-size: 14px; font-weight: 500; border: 1px solid #E2DDD3; border-radius: 0; cursor: pointer; transition: border-color 0.15s; } .ds-tab:hover { border-color: #232220; } .ds-tab[aria-selected=\"true\"] { background: #232220; color: #FAF8F4; border-color: #232220; } .ds-tab:focus-visible { outline: 3px solid color-mix(in oklch, #232220 50%, transparent); }"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "Links left, monogram and wordmark centred, outline join button right.",
+      "html": "<header class=\"ds-header\"><nav><a href=\"#\">Bevegelsen</a><a href=\"#\">Trening</a><a href=\"#\">Kaja og Hoang</a></nav><span class=\"ds-logo\"><svg viewBox=\"0 0 176 152\" height=\"28\" fill=\"currentColor\" aria-hidden=\"true\"><path fill-rule=\"evenodd\" d=\"M0 0H176V152H0Z M24 0H152V5A64.4 64.4 0 0 1 24 5Z M24 152V147A64.4 64.4 0 0 1 152 147V152Z M24 64L46 76L24 88Z M152 64L130 76L152 88Z\"/></svg><span>Happy<br>Human</span></span><a class=\"ds-header-cta\" href=\"#\">Bli med</a></header>",
+      "css": ".ds-header { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: 72px; padding: 0 40px; background: #FAF8F4; color: #232220; border-bottom: 1px solid #E2DDD3; font-family: 'Albert Sans', sans-serif; } .ds-header nav { display: flex; gap: 32px; font-size: 14px; } .ds-header nav a { color: inherit; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 6px; transition: text-decoration-color 0.15s; } .ds-header nav a:hover { text-decoration-color: #232220; } .ds-logo { display: inline-flex; align-items: center; gap: 10px; font-size: 15px; line-height: 0.95; font-weight: 500; letter-spacing: -0.025em; } .ds-header-cta { justify-self: end; display: inline-flex; align-items: center; height: 40px; padding: 0 20px; border: 1px solid #E2DDD3; color: #232220; font-size: 12px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; } .ds-header-cta:hover { background: #F0ECE4; }"
+    },
+    {
+      "name": "Offer Card",
+      "kind": "card",
+      "refersTo": "card-offer",
+      "description": "The one closing card: facts list over a full-width sun button.",
+      "html": "<div class=\"ds-card\"><dl><div><dt>Tid</dt><dd>60 minutter</dd></div><div><dt>Sted</dt><dd>Blomvåg, Øygarden</dd></div><div><dt>Pris</dt><dd>0 kr</dd></div><div><dt>Barn</dt><dd>Velkommen</dd></div></dl><a class=\"ds-card-btn\" href=\"#\">Bli med på en gratis time</a></div>",
+      "css": ".ds-card { display: flex; flex-direction: column; gap: 32px; max-width: 36rem; padding: 40px; background: #FFFFFF; color: #232220; border: 1px solid #E2DDD3; border-radius: 0; font-family: 'Albert Sans', sans-serif; } .ds-card dl { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; margin: 0; } .ds-card dt { font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #66625B; } .ds-card dd { margin: 4px 0 0; font-size: 20px; } .ds-card-btn { display: flex; justify-content: center; align-items: center; height: 48px; background: #F3D88A; color: #232220; font-size: 14px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; } .ds-card-btn:hover { background: color-mix(in oklch, #F3D88A 80%, transparent); }"
+    },
+    {
+      "name": "Teal Band",
+      "kind": "custom",
+      "refersTo": "band-teal",
+      "description": "The one dark emphasis band per page: serif promise over hairline-separated values.",
+      "html": "<section class=\"ds-teal\"><h2>Plass til alle</h2><p class=\"ds-teal-lead\">Uansett form, alder eller størrelse.</p><ul><li><h3>Mestring</h3><p>En lettere og en tøffere variant av hver øvelse.</p></li><li><h3>Treningsglede</h3><p>Leken trening du gleder deg til.</p></li></ul></section>",
+      "css": ".ds-teal { padding: 96px 40px; background: #24403F; color: #F3EFE7; font-family: 'Albert Sans', sans-serif; } .ds-teal h2 { margin: 0 0 32px; font-size: 60px; font-weight: 400; letter-spacing: -0.02em; } .ds-teal-lead { font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; font-size: 36px; line-height: 1.4; margin: 0 0 64px; } .ds-teal ul { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 40px; list-style: none; padding: 0; margin: 0; } .ds-teal li { border-top: 1px solid oklch(0.45 0.03 190); padding: 24px 0; } .ds-teal h3 { margin: 0 0 8px; font-size: 20px; font-weight: 400; } .ds-teal li p { margin: 0; color: #B7C9C5; }"
+    },
+    {
+      "name": "Founder Lockup",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Two square portraits and a serif signature; hero corner chip and letter sign-off.",
+      "html": "<a class=\"ds-lockup\" href=\"#\"><span class=\"ds-lockup-pics\"><span></span><span></span></span><span class=\"ds-lockup-text\">Startet av Kaja og Hoang</span></a>",
+      "css": ".ds-lockup { display: inline-flex; align-items: center; gap: 20px; padding: 12px 24px 12px 12px; background: #FAF8F4; color: #232220; text-decoration: none; } .ds-lockup-pics { display: flex; } .ds-lockup-pics span { width: 76px; height: 96px; background: #F0ECE4; } .ds-lockup-pics span + span { background: #E2DDD3; } .ds-lockup-text { font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; font-size: 20px; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; transition: text-decoration-color 0.15s; } .ds-lockup:hover .ds-lockup-text { text-decoration-color: #232220; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Founders' Letter",
+    "overview": "**Creative North Star: \"The Founders' Letter\"**\n\nThe movement is two real people inviting you in. The system reads like a calm, well-edited founders' profile: warm paper, a coast photographed full bleed, a letter set large in a light serif and signed by Kaja and Hoang. It refuses the gym-ad default (dark, loud, bodies) and the template grid of icon cards. Personal, professional, clean, modern, styled after The Pilates Class.\n\nDensity is low. Each band carries one idea, separated by generous vertical space and thin hairlines rather than boxes. Colour is almost entirely paper, sand and ink; the deep coastal teal appears as exactly one band per page and the pale sun as exactly one filled action per view. Everything is square-cornered.\n\nThe voice is Norwegian bokmål first, English second: warm, playful, inclusive (\"Vi har plass til alle\"), addressing the reader as \"du\" and speaking as \"vi\". Imagery shows real people and the real place; never appearance, never before/after.",
+    "keyCharacteristics": [
+      "Warm paper and sand grounds, charcoal ink, one teal band, one sun fill.",
+      "Albert Sans at regular weight for everything structural; Source Serif 4 light for every warm, longer line.",
+      "Square corners on photos, buttons, tabs, cards and fields.",
+      "Full-bleed or large photography with one shared warm, soft grade.",
+      "Hairline dividers, generous whitespace, one idea per band.",
+      "One authored motion moment per page."
+    ],
+    "rules": [
+      {
+        "name": "The One Sun Rule",
+        "body": "One sun-filled button per view. A repeat of the same action (the header) uses the outline button.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Teal Band Rule",
+        "body": "Teal is a band, used once per page, never a text colour, border or small fill.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink on Sun Rule",
+        "body": "Text on sun is always ink. Sun is a fill, never text or thin lines on light grounds.",
+        "section": "colors"
+      },
+      {
+        "name": "The Regular Weight Rule",
+        "body": "Headings are never semibold or bold. Size and tracking carry hierarchy; weight does not. (Footer column titles are the only semibold text.)",
+        "section": "typography"
+      },
+      {
+        "name": "The Serif Speaks Rule",
+        "body": "Anything the founders would say aloud goes in the light serif; anything structural stays in the sans.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Kicker Rule",
+        "body": "No eyebrow or kicker labels above headings. Status words go after the heading, in the serif.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Paper Rule",
+        "body": "Surfaces are flat at every state. Separate with tone or a hairline, never a shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** build pages as full-width bands on paper and sand, with exactly one teal band for the page's emphasis.",
+      "**Do** keep one sun-filled button per view, with ink text; repeats use the outline button.",
+      "**Do** set headings in Albert Sans at regular weight with tight negative tracking, and every lead, letter, quote and sign-off in Source Serif 4 light.",
+      "**Do** use square corners on photos, buttons, tabs, cards and fields.",
+      "**Do** separate list items with thin hairlines, and let generous whitespace do the rest.",
+      "**Do** show real people training together, of different ages, sizes and levels, and kids, since kids are welcome; show the real place.",
+      "**Do** write user-facing text in Norwegian bokmål first, English second, warm and inclusive, in the dictionaries.",
+      "**Do** keep every text pair at 4.5:1 (3:1 at 24px and up) in both themes, with a visible focus ring."
+    ],
+    "donts": [
+      "**Don't** use semibold or bold headings, or add fonts beyond Albert Sans, Source Serif 4 and Geist Mono (code only).",
+      "**Don't** put kicker or eyebrow labels above headings, or badges anywhere.",
+      "**Don't** round corners or use pill shapes.",
+      "**Don't** add shadows; depth is tone and hairlines.",
+      "**Don't** use teal as text or a small accent, or sun as text or a thin line.",
+      "**Don't** build grids of icon cards.",
+      "**Don't** show before/after pictures, shirtless \"physique\" shots, or anything focused on appearance or weight.",
+      "**Don't** present stock photos of strangers as members, or invent class photos, testimonials or prices.",
+      "**Don't** copy patterns from `/trening`, the info pages or the old parts of the style guide (arches, pills, eyebrow badges); they belong to the previous world."
+    ]
+  }
+}

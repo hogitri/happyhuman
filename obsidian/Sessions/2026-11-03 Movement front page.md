@@ -26,6 +26,8 @@ date: 2026-11-03
 - Deployed: committed as 7777ff4 on branch `redesign-sea-and-buoy`, Vercel preview built successfully, `main` fast-forwarded and pushed; happyhuman.no serves the new site (checked /no, /no/trening, /no/om-oss, and the /en and / redirects).
 - Motion added where it helps: slow reps in the illustrations, rising suns, smooth FAQ answers, a soft Lettere/Tøffere switch, card hover lifts.
 - Removed the "Gratis" and "Betalt" labels from the offer cards.
+- The browser tab icon is now the H monogram (SVG, ICO and Apple icon) instead of the default Next.js icon.
+- Removed the slow reps and rising suns from the illustrations again (the user wants them still); smooth FAQ, the level fade and hover lifts stay.
 
 ## Why
 The founders want happyhuman.no to show the movement and its mission, not only the bootcamp. The user chose the founder editorial direction styled after The Pilates Class, through Impeccable's direction rounds.

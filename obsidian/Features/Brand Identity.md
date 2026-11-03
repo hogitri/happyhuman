@@ -101,3 +101,6 @@ The H monogram is in the web app: `web/components/brand/logo.tsx` (`LogoMark`, p
 - [[Sources/Brand explorations 2025]]
 - [[Features/Colour Guide]]
 - [[Decisions/2026-10-26 Brand palette energetic and warm]]
+
+## Site icon (2026-11-03)
+The browser tab icon is the H monogram in foam on a deep sea rounded square: `web/app/icon.svg` (modern browsers), `web/app/favicon.ico` (16, 32 and 48 px PNGs inside, for older browsers) and `web/app/apple-icon.png` (180 × 180, square, for iPhone home screens). Next.js adds the `<link>` tags itself. Regenerate the ICO and PNG from `icon.svg` with sharp if the logo changes.

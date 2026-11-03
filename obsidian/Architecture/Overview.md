@@ -18,3 +18,6 @@ Run the app with `npm run dev` in `web/` (serves on http://localhost:3000).
 Known dev-server quirk: a running `npm run dev` (Turbopack) can miss newly created route folders and keep returning 404 for them, even though `npm run build` serves them. Saving the page file again doesn't always help; restart the dev server. Seen on 2026-10-26 with `/[lang]/personvern` and `/[lang]/salgsvilkar`.
 
 Note: this Next.js version has breaking changes from older versions; read `web/node_modules/next/dist/docs/` before writing Next.js code (see `web/AGENTS.md`).
+
+## Deployment
+The site is hosted on **Vercel** (project `happyhuman`, root directory `web/`), connected to GitHub `hogitri/happyhuman`. Every pushed branch gets a preview deployment (behind Vercel login); pushing to `main` deploys to production at **happyhuman.no**. Work on a branch, check that the preview builds, then merge into `main`.

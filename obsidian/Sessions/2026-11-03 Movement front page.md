@@ -23,6 +23,7 @@ date: 2026-11-03
 - The offer cards now show drawn illustrations of the services themselves (group bootcamp, personal training) instead of landscapes.
 - The personal training illustration now shows indoor one-to-one training in the home gym (squat rack, bench, dumbbells).
 - `/trening` no longer has the people section; `/om-oss` was expanded with Kaja's and Hoang's backgrounds (futsal national team, BLNO), checked with a web search where possible.
+- Deployed: committed as 7777ff4 on branch `redesign-sea-and-buoy`, Vercel preview built successfully, `main` fast-forwarded and pushed; happyhuman.no serves the new site (checked /no, /no/trening, /no/om-oss, and the /en and / redirects).
 
 ## Why
 The founders want happyhuman.no to show the movement and its mission, not only the bootcamp. The user chose the founder editorial direction styled after The Pilates Class, through Impeccable's direction rounds.

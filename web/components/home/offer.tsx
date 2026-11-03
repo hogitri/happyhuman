@@ -12,7 +12,6 @@ type Detail = { label: string; text: string }
 
 function Card({
   title,
-  price,
   lead,
   details,
   illustration,
@@ -20,7 +19,6 @@ function Card({
   children,
 }: {
   title: string
-  price: string
   lead: string
   details: Detail[]
   illustration: React.ReactNode
@@ -28,15 +26,12 @@ function Card({
   children: React.ReactNode
 }) {
   return (
-    <article className={cn("flex flex-col overflow-hidden rounded-[1.75rem]", tone)}>
+    <article className={cn("flex flex-col overflow-hidden rounded-[1.75rem] transition-transform duration-300 ease-out hover:-translate-y-1", tone)}>
       <div className="relative aspect-16/10 overflow-hidden">
         {illustration}
       </div>
       <div className="flex flex-1 flex-col gap-6 p-6 sm:p-10">
-        <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
-          <h3 className="text-title font-semibold tracking-[-0.03em]">{title}</h3>
-          <p className="text-title font-semibold tracking-[-0.03em] text-muted-foreground">{price}</p>
-        </div>
+        <h3 className="text-title font-semibold tracking-[-0.03em]">{title}</h3>
         <p className="text-base text-pretty">{lead}</p>
         <dl className="grid gap-4 sm:grid-cols-[7rem_1fr]">
           {details.map((detail) => (

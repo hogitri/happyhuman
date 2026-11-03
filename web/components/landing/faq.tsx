@@ -20,7 +20,7 @@ export function Faq({ dict }: { dict: Dictionary }) {
               key={item.q}
               name="faq"
               open={i === 0}
-              className="group rounded-3xl bg-secondary transition-colors open:bg-sun open:text-fjord"
+              className="hh-details group rounded-3xl bg-secondary transition-colors open:bg-sun open:text-fjord"
             >
               <summary className="flex min-h-18 cursor-pointer list-none items-center justify-between gap-6 rounded-3xl px-6 py-5 text-lg font-medium transition-transform active:scale-[0.99] md:text-xl [&::-webkit-details-marker]:hidden">
                 {item.q}

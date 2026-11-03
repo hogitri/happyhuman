@@ -65,7 +65,7 @@ export function Session({ dict }: { dict: Dictionary }) {
         {session.steps.map((step, i) => {
           const Illustration = illustrations[i] ?? Arrive
           return (
-            <li key={step.title} className="flex flex-col gap-6 rounded-[1.75rem] bg-card p-6 text-card-foreground sm:p-8">
+            <li key={step.title} className="flex flex-col gap-6 rounded-[1.75rem] bg-card p-6 text-card-foreground transition-transform duration-300 ease-out hover:-translate-y-1 sm:p-8">
               <div className="rounded-2xl bg-background px-6 py-4">
                 <Illustration />
               </div>

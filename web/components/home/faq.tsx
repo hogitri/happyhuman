@@ -14,7 +14,7 @@ export function Faq({ dict }: { dict: Dictionary }) {
         </h2>
         <div data-reveal className="flex flex-col gap-2 lg:col-span-8">
           {faq.items.map((item) => (
-            <details key={item.q} name="faq" className="group rounded-2xl bg-card text-card-foreground">
+            <details key={item.q} name="faq" className="hh-details group rounded-2xl bg-card text-card-foreground">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl px-6 py-5 text-lead font-medium [&::-webkit-details-marker]:hidden">
                 {item.q}
                 <PlusIcon aria-hidden className="size-5 shrink-0 transition-transform duration-300 ease-out group-open:rotate-45" />

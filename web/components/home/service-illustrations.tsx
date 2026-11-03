@@ -33,7 +33,7 @@ function Coast({ sun }: { sun: Point }) {
   return (
     <>
       <rect width="800" height="500" className="fill-glass" />
-      <circle cx={sun[0]} cy={sun[1]} r="44" className="fill-buoy" />
+      <circle cx={sun[0]} cy={sun[1]} r="44" className="hh-sun-up fill-buoy" />
       <path d="M0 300 C90 250 170 262 250 288 C330 312 400 250 500 262 C590 272 680 236 800 270 V340 H0Z" className="fill-tide" />
       <rect y="320" width="800" height="24" className="fill-foam" />
       <path d="M0 340 C200 330 600 330 800 340 V500 H0Z" className="fill-seaglass" />
@@ -59,16 +59,24 @@ export function BootcampIllustration({ label }: { label: string }) {
       <Cone x={345} />
       <Cone x={565} />
       {/* Squat */}
-      <Person pose={{ head: [128, 332], neck: [126, 352], hip: [98, 402], elbows: [[152, 362], [156, 368]], hands: [[178, 360], [182, 366]], knees: [[140, 404], [150, 400]], feet: [[136, 442], [150, 442]] }} />
+      <g className="hh-rep">
+        <Person pose={{ head: [128, 332], neck: [126, 352], hip: [98, 402], elbows: [[152, 362], [156, 368]], hands: [[178, 360], [182, 366]], knees: [[140, 404], [150, 400]], feet: [[136, 442], [150, 442]] }} />
+      </g>
       {/* Jumping jack */}
+      <g className="hh-hop">
       <Person pose={{ head: [272, 288], neck: [272, 310], hip: [272, 376], elbows: [[246, 284], [298, 284]], hands: [[230, 258], [314, 258]], knees: [[257, 410], [287, 410]], feet: [[244, 442], [300, 442]] }} />
+      </g>
       {/* Plank */}
       <Person pose={{ head: [402, 398], neck: [418, 408], hip: [482, 420], elbows: [[424, 440], [432, 440]], hands: [[446, 440], [454, 440]], knees: [[512, 428], [516, 430]], feet: [[540, 440], [544, 440]] }} />
       {/* Kettlebell swing */}
+      <g className="hh-rep hh-late">
       <Person pose={{ head: [628, 320], neck: [628, 340], hip: [610, 394], elbows: [[650, 362], [652, 364]], hands: [[672, 374], [674, 376]], knees: [[628, 414], [640, 414]], feet: [[620, 442], [648, 442]] }} />
       <Kettlebell at={[684, 388]} />
+      </g>
       {/* A kid, jumping along */}
+      <g className="hh-hop hh-late">
       <Person scale={0.62} pose={{ head: [738, 368], neck: [738, 382], hip: [738, 414], elbows: [[726, 368], [750, 368]], hands: [[718, 352], [758, 352]], knees: [[732, 428], [744, 428]], feet: [[728, 442], [748, 442]] }} />
+      </g>
     </svg>
   )
 }
@@ -96,7 +104,7 @@ export function PersonalTrainingIllustration({ label }: { label: string }) {
       <rect y="432" width="800" height="68" className="fill-seaglass" />
       <g clipPath="url(#pt-window)">
         <rect x="70" y="80" width="150" height="190" className="fill-foam" />
-        <circle cx="160" cy="150" r="36" className="fill-buoy" />
+        <circle cx="160" cy="150" r="36" className="hh-sun-up fill-buoy" />
         <path d="M70 230 C110 210 160 222 220 206 V270 H70Z" className="fill-tide" />
       </g>
       <path d="M145 80V270M70 175H220" className="stroke-glass" strokeWidth="8" />
@@ -110,6 +118,7 @@ export function PersonalTrainingIllustration({ label }: { label: string }) {
         <rect x="276" y="428" width="208" height="10" rx="4" />
       </g>
 
+      <g className="hh-rep hh-slow">
       {/* The client, seen straight from the front in a deep, upright back squat: chest up, bar on
           the upper back, hips down between the knees, knees pushed out over the toes, feet flat */}
       <Person pose={{ head: [380, 258], neck: [380, 282], hip: [380, 352], elbows: [[340, 314], [420, 314]], hands: [[330, 290], [430, 290]], knees: [[334, 376], [426, 376]], feet: [[348, 432], [412, 432]] }} />
@@ -117,6 +126,7 @@ export function PersonalTrainingIllustration({ label }: { label: string }) {
       <path d="M262 288H498" className="stroke-deep" strokeWidth="8" strokeLinecap="round" />
       <rect x="268" y="256" width="18" height="64" rx="4" className="fill-buoy" />
       <rect x="474" y="256" width="18" height="64" rx="4" className="fill-buoy" />
+      </g>
 
       {/* The trainer, beside the rack, coaching */}
       <Person pose={{ head: [540, 276], neck: [540, 298], hip: [540, 368], elbows: [[514, 318], [560, 334]], hands: [[490, 312], [566, 356]], knees: [[532, 400], [548, 400]], feet: [[526, 432], [554, 432]] }} />

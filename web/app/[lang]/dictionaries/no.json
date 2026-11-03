@@ -256,7 +256,6 @@
       "title": "Dette tilbyr vi",
       "bootcamp": {
         "title": "Bootcamp i Blomvåg",
-        "price": "Gratis",
         "lead": "En leken, intensiv time. Styrke, kondis og mobilitet med egen kroppsvekt og enkelt utstyr. Alle øvelser har en lettere og en tøffere variant.",
         "details": [
           {
@@ -281,7 +280,6 @@
       },
       "pt": {
         "title": "Personlig trening",
-        "price": "Betalt",
         "lead": "Et opplegg laget for deg, med en trener som ser hele mennesket. Ta kontakt, så finner vi pakken som passer deg.",
         "details": [
           {

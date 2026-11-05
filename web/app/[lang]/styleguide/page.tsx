@@ -370,9 +370,9 @@ export default async function StyleguidePage({ params }: PageProps<"/[lang]/styl
             </div>
 
             <div className="grid gap-3">
-              <p className="font-mono text-sm text-muted-foreground">&lt;Visual shape=&quot;arch&quot; src=&#123;[…]&#125; /&gt; – the motif as a photo mask; several srcs crossfade · &lt;SunArch /&gt; – the motif as bullet or band</p>
+              <p className="font-mono text-sm text-muted-foreground">&lt;Visual shape=&quot;arch&quot; src=&quot;…&quot; /&gt; – the motif as a photo mask, one still photo · &lt;SunArch /&gt; – the motif as bullet or band</p>
               <div className="grid items-end gap-4 sm:grid-cols-2">
-                <Visual src={["/images/home/ill-blomvaag-tall.webp", "/images/home/ill-ulvsund-tall.webp"]} alt={dict.hero.imageAlt} shape="arch" sizes="33vw" className="aspect-4/5" />
+                <Visual src="/images/home/ill-blomvaag-tall.webp" alt={dict.hero.imageAlt} shape="arch" sizes="33vw" className="aspect-4/5" />
                 <div className="flex flex-col gap-4">
                   <SunArch className="aspect-2/1 w-12" />
                   <SunArch className="aspect-2/1 w-full" />

@@ -77,7 +77,7 @@ Rules:
 
 ### Building pages
 - Reach for `web/components/brand/*`, then `web/components/ui/*`, then something new. Page sections live in `components/<page>/`.
-- Bands: one pair of margins, `px-4 sm:px-8`, `py-24`–`py-40` between sections. Front page order: deep hero (logo, centred headline, orange button, one photo that opens to full width as you scroll) → why (values, a wide illustration, a short description of the sessions) → the offer (bootcamp on deep, personal training on sea glass) → three questions → buoy closing panel → deep footer. **No menu** on any page.
+- Bands: one pair of margins, `px-4 sm:px-8`, `py-24`–`py-40` between sections. Front page order: deep hero (logo, centred headline, sun-yellow button, one photo that opens to full width as you scroll) → why (values, a wide illustration, a short description of the sessions) → the offer (bootcamp on deep, personal training on sea glass) → three questions → buoy closing panel → deep footer. **No menu** on any page.
 - **Shapes:** pill buttons (`rounded-full`), large media and panels at `rounded-[1.75rem]`, small cards `rounded-2xl`. No hairlines, outlined boxes, shadows, gradients or monospace.
 
 | Brand component | Use it for |

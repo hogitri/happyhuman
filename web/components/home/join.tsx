@@ -1,7 +1,7 @@
 import { FacebookCta } from "@/components/brand/cta-button"
 import type { Dictionary } from "@/app/[lang]/dictionaries"
 
-// The close: one whole field of buoy orange, one sentence and the way in
+// The close: one whole field of sun yellow, one sentence and the way in
 export function Join({ dict }: { dict: Dictionary }) {
   const { join } = dict.home
 

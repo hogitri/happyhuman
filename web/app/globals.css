@@ -108,7 +108,7 @@
   --chart-1: var(--deep);
   --chart-2: var(--buoy);
   --chart-3: var(--seaglass);
-  --chart-4: oklch(0.781 0.127 57.9);
+  --chart-4: var(--tide);
   --chart-5: oklch(0.63 0.101 183);
   --radius: 0.75rem;
   --sidebar: var(--glass);
@@ -145,7 +145,7 @@
   --ring: var(--buoy);
   --chart-1: var(--buoy);
   --chart-2: var(--seaglass);
-  --chart-3: oklch(0.781 0.127 57.9);
+  --chart-3: var(--glass);
   --chart-4: oklch(0.63 0.101 183);
   --chart-5: var(--foam);
   --sidebar: oklch(0.291 0.039 220.3);
@@ -232,11 +232,6 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  /* Hero: the photos of Blomvåg and Ulvsund slowly crossfade, like evening light shifting */
-  .hh-crossfade > :not(:first-child) {
-    opacity: 0;
-    animation: hh-crossfade 16s ease-in-out infinite;
-  }
   .hh-drift {
     animation: hh-drift 24s ease-in-out infinite alternate;
   }
@@ -277,11 +272,6 @@
   }
 }
 
-@keyframes hh-crossfade {
-  0%, 40% { opacity: 0; }
-  50%, 90% { opacity: 1; }
-  100% { opacity: 0; }
-}
 @keyframes hh-drift {
   from { transform: scale(1); }
   to { transform: scale(1.06); }

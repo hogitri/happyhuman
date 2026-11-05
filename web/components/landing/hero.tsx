@@ -2,7 +2,8 @@ import { FacebookCta } from "@/components/brand/cta-button"
 import { SunArch, Visual } from "@/components/brand/visual"
 import type { Dictionary } from "@/app/[lang]/dictionaries"
 
-const heroPhotos = ["/images/home/ill-blomvaag-tall.webp", "/images/home/ill-ulvsund-tall.webp"]
+// One still photo: pictures never crossfade or change
+const heroPhoto = "/images/home/ill-blomvaag-tall.webp"
 
 // The H monogram split in two: the photo of Blomvåg under the top arch on the right,
 // the sun rising from the bottom of the card on the left, carrying three words about the class.
@@ -13,7 +14,7 @@ export function Hero({ dict }: { dict: Dictionary }) {
     <section aria-labelledby="hero-title" className="px-4 pb-4 sm:px-6 sm:pb-6">
       <div className="grid gap-3 lg:h-[calc(100svh-5.5rem)] lg:min-h-[40rem] lg:max-h-[60rem] lg:grid-cols-2">
         <Visual
-          src={heroPhotos}
+          src={heroPhoto}
           alt={hero.imageAlt}
           shape="arch"
           priority

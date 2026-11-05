@@ -55,8 +55,8 @@ export function Visual({
   imageClassName,
 }: {
   scene?: VisualScene
-  /** One photo, or several of the same framing that slowly crossfade (the first one is described by `alt`) */
-  src?: string | string[]
+  /** One still photo (pictures never crossfade or change) */
+  src?: string
   /** Describes the photo; illustrations are decorative and hidden from screen readers */
   alt: string
   shape?: VisualShape
@@ -65,24 +65,10 @@ export function Visual({
   className?: string
   imageClassName?: string
 }) {
-  const sources = src ? (Array.isArray(src) ? src : [src]) : []
-
   return (
     <div className={cn("relative isolate overflow-hidden", shapes[shape], className)}>
-      {sources.length > 0 ? (
-        <div className={cn("absolute inset-0", sources.length > 1 && "hh-crossfade")}>
-          {sources.map((source, i) => (
-            <Image
-              key={source}
-              src={source}
-              alt={i === 0 ? alt : ""}
-              fill
-              priority={priority && i === 0}
-              sizes={sizes}
-              className={cn("object-cover", imageClassName)}
-            />
-          ))}
-        </div>
+      {src ? (
+        <Image src={src} alt={alt} fill priority={priority} sizes={sizes} className={cn("object-cover", imageClassName)} />
       ) : (
         <div aria-hidden className="absolute inset-0">
           {scenes[scene]}

@@ -107,7 +107,7 @@ components:
 
 # Design System: Happy Human
 
-> **Outdated (2026-11-03, evening).** The site now uses the "sea and buoy" look: foam `#F2F5F3`, sea glass `#D3E6E0`, deep sea `#0F2B33`, buoy orange `#FF5A36` and seaglass `#9FD3C7`; Albert Sans only, semibold headings; pill buttons and large rounded media; still photos only; Norwegian only. The tokens and rules below describe the earlier founder-editorial version. Until this file is regenerated, the Design system section of `AGENTS.md` and `web/app/globals.css` are the source of truth.
+> **Outdated (2026-11-03, evening).** The site now uses the "sea and buoy" look: foam `#F2F5F3`, sea glass `#D3E6E0`, deep sea `#0F2B33`, sun yellow `#F3D88A` (token `buoy`; buoy orange `#FF5A36` until 2026-11-05) and seaglass `#9FD3C7`; Albert Sans only, semibold headings; pill buttons and large rounded media; still photos only; Norwegian only. The tokens and rules below describe the earlier founder-editorial version. Until this file is regenerated, the Design system section of `AGENTS.md` and `web/app/globals.css` are the source of truth.
 
 > **Source of truth.** The live style guide (`/no/styleguide`, source `web/app/[lang]/styleguide/page.tsx`), the tokens in `web/app/globals.css` and the Design system section of `AGENTS.md` win if this file disagrees with them. This file summarises the same system for design tools. The reference build is the front page (`web/app/[lang]/page.tsx`, sections in `web/components/home/`). `/trening`, the info pages and parts of the style guide still carry the previous world (Geist, rounded pills, the rising-sun arch, eyebrow badges) and are due a redesign; they are not the reference.
 

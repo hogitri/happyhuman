@@ -19,7 +19,7 @@ export function Section({
   return (
     <section
       data-tone={tone}
-      className={cn("scroll-mt-16 px-4 py-20 sm:px-6 md:py-32", tones[tone], className)}
+      className={cn("scroll-mt-20 px-4 py-20 sm:px-6 md:py-32", tones[tone], className)}
       {...props}
     >
       <div className="mx-auto w-full max-w-6xl">{children}</div>

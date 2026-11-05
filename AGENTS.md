@@ -86,7 +86,7 @@ Rules:
 | Exercise pictograms (`components/brand/exercise-icons.tsx`) | One line pictogram per bootcamp station (squat, push-up, lunge, plank, kettlebell, jump rope, mountain climber, mobility), lucide-style 24px; shown in sea-glass tiles on `/trening` |
 | `Logo`, `LogoMark` | The H monogram + "Happy Human" wordmark, one colour (`currentColor`) |
 | `FacebookCta`, `SecondaryCta`, `CtaLink` | Pill calls to action (`h-12`) |
-| `SiteHeader`, `SiteFooter` | Header: the logo only, no menu (the front page puts it in the hero); footer on deep sea. No photo credits on the site |
+| `SiteHeader`, `SiteFooter` | Header: the logo only, no menu, sticky at the top on a solid `bg-background` so the way home stays in reach (the front page puts the logo in the hero instead); anchored sections use `scroll-mt-20` to clear it; footer on deep sea. No photo credits on the site |
 | `Reveal` | Section entrances for `[data-reveal]` blocks; also pauses looping motion while the tab is hidden |
 | `ThemeToggle` | Light/dark/system |
 

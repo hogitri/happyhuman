@@ -1,5 +1,5 @@
 // Flat illustrations of the two services, in the palette of the place illustrations:
-// sea glass sky, a buoy-orange sun, deep teal hills, seaglass ground, people in deep sea.
+// sea glass sky, a sun-yellow sun, deep teal hills, seaglass ground, people in deep sea.
 // People are drawn from joints (head, neck, hip, elbows, hands, knees, feet) with thick round strokes.
 
 type Point = readonly [number, number]

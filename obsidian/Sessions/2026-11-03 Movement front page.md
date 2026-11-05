@@ -28,6 +28,8 @@ date: 2026-11-03
 - Removed the "Gratis" and "Betalt" labels from the offer cards.
 - The browser tab icon is now the H monogram (SVG, ICO and Apple icon) instead of the default Next.js icon.
 - Removed the slow reps and rising suns from the illustrations again (the user wants them still); smooth FAQ, the level fade and hover lifts stay.
+- 2026-11-05: copy pass for a friendly, warm, normal and non-salesy tone (session description, personal training card, FAQ on PT, "Slik jobber vi" and two lines about Kaja and Hoang on `/om-oss`).
+- 2026-11-05: accent back to sun yellow `#F3D88A`; illustrations regenerated with yellow suns that stay inside phone crops (the user thought the sun was gone because it was cropped away on phones).
 
 ## Why
 The founders want happyhuman.no to show the movement and its mission, not only the bootcamp. The user chose the founder editorial direction styled after The Pilates Class, through Impeccable's direction rounds.

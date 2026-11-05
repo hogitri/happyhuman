@@ -47,7 +47,7 @@ const brandColors = [
   { name: "Foam", token: "--foam", className: "bg-foam", hex: "#F2F5F3", dark: "#0B2026 (background)", role: "Page ground", text: "text-deep" },
   { name: "Sea glass", token: "--glass", className: "bg-glass", hex: "#D3E6E0", dark: "#123039 (secondary)", role: "Quiet bands and cards", text: "text-deep" },
   { name: "Deep sea", token: "--deep", className: "bg-deep", hex: "#0F2B33", dark: "#F2F5F3 (foreground)", role: "Text; deep fields (hero, footer)", text: "text-foam" },
-  { name: "Buoy", token: "--buoy", className: "bg-buoy", hex: "#FF5A36", dark: "#FF5A36", role: "The one main action; the closing panel", text: "text-deep" },
+  { name: "Sun", token: "--buoy", className: "bg-buoy", hex: "#F3D88A", dark: "#F3D88A", role: "The one main action; the closing panel; illustration suns", text: "text-deep" },
   { name: "Seaglass", token: "--seaglass", className: "bg-seaglass", hex: "#9FD3C7", dark: "#9FD3C7", role: "Small calm accents, selection", text: "text-deep" },
 ]
 
@@ -55,7 +55,7 @@ const brandColors = [
 const semanticTokens = [
   { token: "background / foreground", bg: "bg-background", fg: "text-foreground", light: "#F2F5F3 / #0F2B33", dark: "#0B2026 / #F2F5F3", contrast: ["13.5", "15.3"] },
   { token: "secondary / secondary-foreground", bg: "bg-secondary", fg: "text-secondary-foreground", light: "#D3E6E0 / #0F2B33", dark: "#123039 / #F2F5F3", contrast: ["11.4", "13.0"] },
-  { token: "primary / primary-foreground", bg: "bg-primary", fg: "text-primary-foreground", light: "#FF5A36 / #0F2B33", dark: "#FF5A36 / #0F2B33", contrast: ["4.8", "4.8"] },
+  { token: "primary / primary-foreground", bg: "bg-primary", fg: "text-primary-foreground", light: "#F3D88A / #0F2B33", dark: "#F3D88A / #0F2B33", contrast: ["10.6", "10.6"] },
   { token: "muted / muted-foreground", bg: "bg-muted", fg: "text-muted-foreground", light: "#D3E6E0 / #4B6168", dark: "#123039 / #A9C0C2", contrast: ["5.0", "7.8"] },
   { token: "hh-deep field / text, muted text", bg: "hh-deep", fg: "", light: "#0F2B33 / #F2F5F3, #A9C0C2", dark: "same", contrast: ["13.5", "7.8"] },
   { token: "background / link", bg: "bg-background", fg: "text-link", light: "#F2F5F3 / #0F2B33", dark: "#0B2026 / #F2F5F3", contrast: ["13.5", "15.3"] },
@@ -63,15 +63,15 @@ const semanticTokens = [
 
 const rules = {
   do: [
-    "Use buoy orange only for the one main action on screen (join the group) and the closing panel.",
-    "Always put deep-sea text on buoy (4.8:1).",
+    "Use the sun yellow only for the one main action on screen (join the group), the closing panel and the illustration suns.",
+    "Always put deep-sea text on the sun yellow (10.6:1).",
     "Set everything in Albert Sans; headings semibold with tight tracking.",
     "Use pill buttons and large rounded media; keep photographs still.",
     "Let deep, foam and sea-glass fields carry the rhythm; less is more.",
     "Underline links: they share the text colour.",
   ],
   dont: [
-    "Never put white or foam text on buoy (2.8:1).",
+    "Never put white or foam text on the sun yellow.",
     "No eyebrow labels, hairlines, outlined boxes, gradients or shadows.",
     "No crossfading or changing pictures.",
     "Don't hard-code hex values in components – use the tokens/utilities.",
@@ -109,7 +109,7 @@ export default async function StyleguidePage({ params }: PageProps<"/[lang]/styl
 
         {/* 1. Palette */}
         <Section tone="muted" id="palette">
-          <SectionHeading eyebrow="1 · Palette" title="Brand colours" lead="Sea and buoy (2026-11-03): the calm of the coast (foam, sea glass, deep sea) with the energy of a rescue buoy for the one main action." />
+          <SectionHeading eyebrow="1 · Palette" title="Brand colours" lead="The calm of the coast (foam, sea glass, deep sea) with a warm sun yellow for the one main action." />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {brandColors.map((c) => (
               <div key={c.name} className="overflow-hidden rounded-2xl bg-card ring-1 ring-foreground/10">

@@ -68,15 +68,15 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-/* Happy Human palette (2026-11-03): the calm of the coast with the energy of a rescue buoy.
-   Foam and sea glass grounds, deep-sea ink, one buoy orange for the main action. See DESIGN.md and /styleguide. */
+/* Happy Human palette: the calm of the coast with a warm sun. Foam and sea glass grounds,
+   deep-sea ink, one sun yellow (token name: buoy) for the main action. See DESIGN.md and /styleguide. */
 :root {
   --foam: oklch(0.967 0.004 157.2); /* #F2F5F3 */
   --glass: oklch(0.909 0.022 175); /* #D3E6E0 */
   --seaglass: oklch(0.827 0.057 179); /* #9FD3C7 */
   --deep: oklch(0.271 0.037 219.3); /* #0F2B33 */
   --tide: oklch(0.43 0.047 202); /* #2F5E62, a deep teal step used in illustrations */
-  --buoy: oklch(0.684 0.207 33.9); /* #FF5A36 */
+  --buoy: oklch(0.888 0.102 91.1); /* #F3D88A, the sun yellow (was buoy orange #FF5A36 until 2026-11-05) */
   /* Legacy names (older pages and components) mapped onto the new palette */
   --paper: var(--foam);
   --sand: var(--glass);

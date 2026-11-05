@@ -95,7 +95,7 @@
       },
       {
         "q": "Tilbyr dere personlig trening?",
-        "a": "Ja. Personlig trening med Kaja er et betalt tilbud med ulike pakker. Ta kontakt, så finner vi det som passer deg."
+        "a": "Ja, med Kaja i hjemmegymmet vårt. Ta kontakt, så finner vi et opplegg som passer deg."
       }
     ]
   },
@@ -249,7 +249,7 @@
           "text": "Helse er mer enn muskler. Trening handler om å ha det bra, ikke om hvordan du ser ut."
         }
       ],
-      "promise": "Leken, intensiv funksjonell trening med egen kroppsvekt og enkelt utstyr. Øktene varierer fra gang til gang, og utfordrer komfortsonen med enkle og effektive øvelser.",
+      "promise": "Vi bruker egen kroppsvekt og enkelt utstyr, og ingen økter er helt like. Enkle øvelser som gir mye, og akkurat nok utfordring til at du kjenner at du har jobbet.",
       "imageAlt": "Ulvsund en rolig dag, med båter og hus langs sundet"
     },
     "offer": {
@@ -260,7 +260,7 @@
         "details": [
           {
             "label": "Format",
-            "text": "Sirkel med 8–10 stasjoner, eller puls + mobilitet"
+            "text": "Sirkeltrening med 8–10 stasjoner, eller puls og bevegelighet"
           },
           {
             "label": "Hvor",
@@ -280,7 +280,7 @@
       },
       "pt": {
         "title": "Personlig trening",
-        "lead": "Et opplegg laget for deg, med en trener som ser hele mennesket. Ta kontakt, så finner vi pakken som passer deg.",
+        "lead": "Trening én til én i hjemmegymmet vårt, med et opplegg som passer deg og hverdagen din. Ta kontakt, så finner vi ut av det sammen.",
         "details": [
           {
             "label": "Trener",
@@ -288,11 +288,11 @@
           },
           {
             "label": "Passer for",
-            "text": "Deg som vil ha en plan, oppfølging og trygghet"
+            "text": "Deg som vil ha en plan og noen å trene sammen med"
           },
           {
             "label": "Pris",
-            "text": "Ta kontakt for ulike pakker tilpasset dine behov"
+            "text": "Vi har ulike pakker. Ta kontakt, så finner vi det som passer deg"
           }
         ],
         "cta": "Ta kontakt",

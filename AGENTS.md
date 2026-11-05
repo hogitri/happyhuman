@@ -58,7 +58,7 @@ Defined once in `web/app/globals.css` (`:root` light, `.dark` dark) and mapped o
 | Foam `#F2F5F3` | `background` (light), `bg-foam` | Page ground |
 | Sea glass `#D3E6E0` | `secondary`, `muted`, `.hh-glass` | Quiet bands and cards (personal training, the founders) |
 | Deep sea `#0F2B33` | `foreground` (light), `.hh-deep` | Text; the hero, the bootcamp card and the footer as deep fields |
-| Buoy `#FF5A36` | `primary`, `.hh-buoy`, `text-buoy` | The **one** main action per view (deep text on it, 4.8:1), the closing panel |
+| Sun `#F3D88A` (token name `buoy`) | `primary`, `.hh-buoy`, `text-buoy` | The **one** main action per view (deep text on it, 10.6:1), the closing panel, the sun and accents in the illustrations. Was buoy orange `#FF5A36` until 2026-11-05 |
 | Seaglass `#9FD3C7` | `accent`, `bg-seaglass` | Small calm accents (text selection) |
 | Tide `#2F5E62` | `fill-tide` | A deep teal step, only inside illustrations (hills) |
 
@@ -66,8 +66,8 @@ Dark mode is the sea at night (`#0B2026` ground, foam text, `#123039` cards); `.
 
 Rules:
 - **Use semantic tokens** and the field classes; **no raw colours** in components.
-- **Text on buoy is always deep sea** (never white: 2.8:1).
-- **One orange button per view.** The header repeats the action as an outline pill.
+- **Text on the sun yellow is always deep sea** (never white or foam).
+- **One yellow button per view.** The header repeats the action as an outline pill.
 - Every text/background pair must reach **4.5:1** (3:1 for text ≥ 24px).
 
 ### Type
@@ -90,7 +90,7 @@ Rules:
 | `Reveal` | Section entrances for `[data-reveal]` blocks; also pauses looping motion while the tab is hidden |
 | `ThemeToggle` | Light/dark/system |
 
-- **Imagery:** places are shown as **flat palette illustrations made from real CC0 photos** (screen-print look: five palette tones and a buoy-orange sun), and the founders' portraits are gradient-mapped in the same palette (deep sea to foam). Still pictures only, never crossfading or changing. Files in `web/public/images/home/` (`ill-*.webp`, `*-duo.webp`), made from the originals in originals in `images/place`, `images/people`, `images/found`; each carries its origin in a `.json` sidecar). The script recipe is in `obsidian/Features/Landing Page.md`. **Only CC0 or our own photos**, because the site shows no photo credits (CC BY/BY-SA would require one).
+- **Imagery:** places are shown as **flat palette illustrations made from real CC0 photos** (screen-print look: five palette tones and a sun-yellow sun, placed so it stays inside phone crops), and the founders' portraits are gradient-mapped in the same palette (deep sea to foam). Still pictures only, never crossfading or changing. Files in `web/public/images/home/` (`ill-*.webp`, `*-duo.webp`), made from the originals in originals in `images/place`, `images/people`, `images/found`; each carries its origin in a `.json` sidecar). The script recipe is in `obsidian/Features/Landing Page.md`. **Only CC0 or our own photos**, because the site shows no photo credits (CC BY/BY-SA would require one).
 - **Motion:** the hero rises in on load; the hero photo opens from a rounded card to full width on scroll; wide pictures drift slightly inside their frames; the illustrations stand still (no reps or rising suns, removed at the user's request); FAQ answers open smoothly (`.hh-details`); the Lettere/Tøffere text fades in; cards lift 4px on hover; buttons press. All inside `prefers-reduced-motion: no-preference`, paused while the tab is hidden. Note: after changing `globals.css`, restart `npm run dev` if the change doesn't show (Turbopack sometimes serves stale CSS), and avoid nested `@starting-style` in it, which made the build drop a whole block.
 - **Less is more.** Few sections, short copy, one idea per band.
 - **Imagery:** real people training together, different ages, sizes and levels. No before/after, no appearance focus (see Product principles).

@@ -31,3 +31,4 @@ After two redesigns on 2026-11-03, the user asked for one combined result: a cri
 
 > **Update 2026-11-03:** the moving line of values was removed (too fast and distracting); the participant gains now stand still under the wide illustration.
 > **Update 2026-11-03 (later):** the line of participant gains was removed completely.
+> **Update 2026-11-05:** the accent changed back from buoy orange `#FF5A36` to the sun yellow `#F3D88A` (the user's choice). The CSS token is still called `buoy`. Illustration suns are yellow and placed so they stay visible in phone crops.

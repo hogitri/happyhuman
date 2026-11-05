@@ -36,9 +36,10 @@ export function Hero({ dict }: { dict: Dictionary }) {
 
           <div className="relative mt-auto -mx-7 -mb-7 pt-12 sm:-mx-10 sm:-mb-10 lg:-mx-14 lg:-mb-14">
             <SunArch className="hh-rise-in aspect-2/1 w-full" />
-            <dl className="absolute inset-x-0 bottom-0 grid grid-cols-3 gap-2 px-[12%] pb-[7%] text-center text-fjord">
+            {/* Centred on the half disc's visual middle (about 62% down), not its flat bottom edge */}
+            <dl className="absolute inset-x-0 top-[28%] bottom-[4%] grid grid-cols-3 content-center gap-2 px-[12%] text-center text-fjord">
               {hero.stats.map((stat) => (
-                <div key={stat.label} className="flex flex-col-reverse gap-0.5">
+                <div key={stat.label} className="flex flex-col-reverse justify-end gap-0.5">
                   <dt className="text-sm font-medium">{stat.label}</dt>
                   <dd className="text-xl font-semibold tracking-tight sm:text-2xl lg:text-3xl xl:text-4xl">{stat.value}</dd>
                 </div>

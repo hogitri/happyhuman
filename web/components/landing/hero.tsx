@@ -35,17 +35,23 @@ export function Hero({ dict }: { dict: Dictionary }) {
             <FacebookCta label={dict.cta.join} srHint={dict.ui.opensFacebook} />
           </div>
 
-          <div className="relative mt-auto -mx-7 -mb-7 pt-12 sm:-mx-10 sm:-mb-10 lg:-mx-14 lg:-mb-14">
-            <SunArch className="hh-rise-in aspect-2/1 w-full" />
-            {/* Centred on the half disc's visual middle (about 62% down), not its flat bottom edge */}
-            <dl className="absolute inset-x-0 top-[28%] bottom-[4%] grid grid-cols-3 content-center gap-2 px-[12%] text-center text-fjord">
-              {hero.stats.map((stat) => (
-                <div key={stat.label} className="flex flex-col-reverse justify-end gap-0.5">
-                  <dt className="text-sm font-medium">{stat.label}</dt>
-                  <dd className="text-xl font-semibold tracking-tight sm:text-2xl lg:text-3xl xl:text-4xl">{stat.value}</dd>
-                </div>
-              ))}
-            </dl>
+          <div className="relative mt-auto -mx-7 -mb-7 pt-12 sm:-mx-10 sm:-mb-10 lg:-mx-14 lg:-mb-14 lg:pt-6">
+            {/* Own box for the sun and the words, so the padding above the sun doesn't skew the centre */}
+            <div className="relative">
+              <SunArch className="hh-rise-in aspect-2/1 w-full" />
+              {/* The block's middle sits on the half disc's centroid (4r/3π above the flat edge, about 57% down).
+                  Subgrid rows keep the three values on one line and the labels on the next, even when one label wraps. */}
+              <dl className="absolute inset-x-0 top-[57%] grid -translate-y-1/2 grid-cols-3 gap-x-2 gap-y-0.5 px-[8%] text-center sm:px-[12%] text-fjord">
+                {hero.stats.map((stat) => (
+                  <div key={stat.label} className="row-span-2 grid grid-rows-subgrid">
+                    <dt className="row-start-2 text-sm font-medium">{stat.label}</dt>
+                    <dd className="row-start-1 text-xl font-semibold tracking-tight sm:text-2xl lg:text-3xl xl:text-4xl">
+                      {stat.value}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
           </div>
         </div>
       </div>

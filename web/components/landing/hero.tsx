@@ -39,12 +39,13 @@ export function Hero({ dict }: { dict: Dictionary }) {
             {/* Own box for the sun and the words, so the padding above the sun doesn't skew the centre */}
             <div className="relative">
               <SunArch className="hh-rise-in aspect-2/1 w-full" />
-              {/* The block's middle sits on the half disc's centroid (4r/3π above the flat edge, about 57% down).
-                  Subgrid rows keep the three values on one line and the labels on the next, even when one label wraps. */}
-              <dl className="absolute inset-x-0 top-[57%] grid -translate-y-1/2 grid-cols-3 gap-x-2 gap-y-0.5 px-[8%] text-center sm:px-[12%] text-fjord">
+              {/* The words sit in the lower half of the sun, centred in it (75% down), so the arch has open sky above
+                  them and as much air below as above. Subgrid rows keep the three values on one line and the labels
+                  on the next, even when one label wraps. */}
+              <dl className="absolute inset-x-0 top-3/4 grid -translate-y-1/2 grid-cols-3 gap-x-2 gap-y-1 px-[8%] text-center sm:px-[12%] text-fjord">
                 {hero.stats.map((stat) => (
                   <div key={stat.label} className="row-span-2 grid grid-rows-subgrid">
-                    <dt className="row-start-2 text-sm font-medium">{stat.label}</dt>
+                    <dt className="row-start-2 text-sm font-medium text-fjord/80">{stat.label}</dt>
                     <dd className="row-start-1 text-xl font-semibold tracking-tight sm:text-2xl lg:text-3xl xl:text-4xl">
                       {stat.value}
                     </dd>

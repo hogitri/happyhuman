@@ -49,7 +49,7 @@ export async function SiteFooter({ lang, dict }: { lang: Locale; dict: Dictionar
 
       <div className="mt-20 flex flex-wrap items-center justify-between gap-4 text-small text-muted-foreground">
         <p>
-          {dict.footer.copyright} · {COMPANY.name} · {pages.footer.orgNr} {COMPANY.orgNr} · {COMPANY.address}
+          {dict.footer.copyright} · {COMPANY.name} · {pages.footer.orgNr} {COMPANY.orgNr}
         </p>
         <a href="#" className={linkClass}>{dict.home.footer.backToTop}</a>
       </div>
